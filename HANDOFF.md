@@ -125,3 +125,19 @@ Terceiros, licença MIT, copiadas sem alteração. Ver `THIRD_PARTY.md`.
   de 3 cortes em `docs/gta6/teste1-analise.md`.
 - Próximo: usuário aprova cortes e roteiros; estimar custo; gerar voz Vilaca;
   montar (layout com fundo desfocado, pois a fonte é 360p).
+
+## Registro 2026-11-17 (noite): primeiro teste renderizado
+- Decisões do usuário: cortes e roteiros aprovados, seguir em 360p com fundo
+  desfocado, curiosidade só com fonte oficial.
+- Pesquisa: "física da água/carros" do GTA VI são só rumores (não confirmados
+  pela Rockstar). Fato oficial usado no corte A: lançamento em 19/11/2026,
+  estado de Leonida (https://www.rockstargames.com/VI). Não afirmar física
+  sem fonte.
+- Narração gerada (Vilaca, eleven_v4, 1 take cada): 137 + 170 + 149 = 456
+  créditos (~US$ 0,09). Flow: https://elevenlabs.io/app/flows/xK8ZDsf92eHGtRHiiJUo
+- Código novo: `tools/gta6/render_clip.py` + `tools/gta6/teste1.json`
+  (fundo desfocado, ducking por sidechain, legenda alinhada ao roteiro,
+  normalização -14 LUFS). Rodar com o Python do `mpt`.
+- Saídas (1080x1920) ficam fora do Git. Corte C: -16,7 LUFS (mais baixo que o
+  alvo de -14; ajustar com normalização em duas passagens se incomodar).
+- Pendente: o usuário assistir e dar o retorno (voz, volume, legenda, ritmo).

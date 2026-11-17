@@ -1,0 +1,40 @@
+{
+  "source": "trailer.mp4",
+  "language": "pt",
+  "words_per_caption": 3,
+  "tail": 0.6,
+  "clips": [
+    {
+      "id": "corte_A",
+      "start": 23.267,
+      "end": 34.133,
+      "voice": "audio/A.mp3",
+      "narration_delay": 0.3,
+      "text": "Chega dia 19 de novembro, em Leonida. Repara na lancha: o casco abre o mar e deixa uma esteira de espuma. E a cidade em volta nunca para."
+    },
+    {
+      "id": "corte_B",
+      "start": 41.333,
+      "end": 52.167,
+      "voice": "audio/B.mp3",
+      "narration_delay": 0.3,
+      "text": "Detalhe que quase ninguém notou: boa parte desse trailer é feita de vídeos de celular, com nome de usuário e comentários, como se Vice City tivesse a própria rede social."
+    },
+    {
+      "id": "corte_C",
+      "start": 59.533,
+      "end": 72.833,
+      "voice": "audio/C.mp3",
+      "narration_delay": 4.6,
+      "original_volume": 1.0,
+      "original_lines": [
+        {
+          "t0": 0.0,
+          "t1": 4.3,
+          "text": "\"A gente vai superar isso.\""
+        }
+      ],
+      "text": "No final, o caos: motos empinando na terra, viaturas fechando o cruzamento visto de cima, um carro derrapando na poeira. Quanta coisa ao mesmo tempo."
+    }
+  ]
+}
