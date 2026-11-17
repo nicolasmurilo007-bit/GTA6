@@ -1,7 +1,10 @@
 # Regras de trabalho deste projeto
 
-Este repositório (`nicolasmurilo007-bit/MoneyPrinterTurbo`) é um fork de
-[harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo).
+Este projeto vive no repositório **privado** `nicolasmurilo007-bit/GTA6`
+(branch principal: `main`). Ele foi criado a partir de
+[harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo)
+(o "upstream"). O fork público `nicolasmurilo007-bit/MoneyPrinterTurbo` não é
+mais usado para trabalho.
 
 ## Onde o projeto vive
 
@@ -18,7 +21,7 @@ Este repositório (`nicolasmurilo007-bit/MoneyPrinterTurbo`) é um fork de
 
 ## Segurança
 
-- O fork é **público**. Nunca commitar `config.toml`, chaves de API, tokens
+- O repositório GTA6 é privado, mas mesmo assim: nunca commitar `config.toml`, chaves de API, tokens
   ou vídeos gerados (`/storage/`). O `config.toml` já está no `.gitignore`.
 - Chaves de API ficam nos segredos do ambiente da nuvem, não no código.
 
