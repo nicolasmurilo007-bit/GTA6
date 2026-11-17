@@ -141,3 +141,11 @@ Terceiros, licença MIT, copiadas sem alteração. Ver `THIRD_PARTY.md`.
 - Saídas (1080x1920) ficam fora do Git. Corte C: -16,7 LUFS (mais baixo que o
   alvo de -14; ajustar com normalização em duas passagens se incomodar).
 - Pendente: o usuário assistir e dar o retorno (voz, volume, legenda, ritmo).
+
+## Registro 2026-11-17: referência de estilo recebida
+- O usuário enviou um vídeo de referência (curiosidade narrada com fonte
+  citada, legenda palavra por palavra, ~29 cortes/minuto). Medidas e lacunas em
+  `docs/gta6/estilo-referencia.md`.
+- Isso muda o alvo: o produto é **explicativo curto com fatos e fonte**, não
+  cortes de uma gameplay longa com falas do jogador.
+- Material do vídeo de referência é de terceiros: usar só como estilo.
