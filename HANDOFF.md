@@ -162,3 +162,21 @@ Terceiros, licença MIT, copiadas sem alteração. Ver `THIRD_PARTY.md`.
 - Evitar: "concept gameplay" / "fan made" / re-uploads de terceiros.
 - **Política Take-Two: uso não comercial é tolerado; monetizar fica fora.** Decisão
   pendente do usuário sobre monetização (ver SKILL buscar-material).
+
+## Registro 2026-11-17: cortes de vídeos de streamers (pergunta do usuário)
+Ideia levantada: fazer cortes de gameplays de youtubers (ex.: Alanzoka) e
+monetizar. Pesquisa feita:
+- Não achei política pública do Alanzoka autorizando canais de cortes. Existem
+  vários canais de cortes dele, mas isso não prova autorização.
+- Há DUAS camadas de direitos: a do streamer (voz, rosto, comentário, edição) e a
+  da publicadora do jogo (ex.: Rockstar: só uso não comercial).
+- YouTube (política de monetização, "reused content"): monetiza se houver
+  comentário/narração original substancial ou valor educativo/de entretenimento;
+  "clipes editados juntos com pouca ou nenhuma narrativa" violam; vale mesmo com
+  permissão do criador original; direitos autorais continuam valendo à parte.
+  Desde julho/2025 a política de conteúdo "inautêntico" (repetitivo/em massa)
+  também vale, independente de como foi feito: vídeos em série quase iguais
+  correm risco. Fontes: support.google.com/youtube/answer/1311392 e a resposta
+  oficial de julho/2025 sobre políticas do YPP.
+- Não conferi os requisitos atuais de entrada no Programa de Parcerias.
+- Não é aconselhamento jurídico.
