@@ -47,12 +47,33 @@ git merge upstream/main
 Este `CLAUDE.md` está no `.gitignore` do upstream; ele foi adicionado com
 `git add -f` e continua rastreado normalmente.
 
+## REGRA GLOBAL: resumo no final de TODA resposta (decisão do usuário)
+
+Ao final de **todo** output, sem exceção, trazer um resumo **muito direto** do
+estado do projeto, neste formato:
+
+1. **Estado atual** (uma ou duas linhas).
+2. **O que falta fazer** (lista curta).
+3. **O que o usuário precisa decidir**: tabela com **sempre 3 opções**, sendo
+   **uma delas a recomendação do Claude**, marcada como "(recomendado)".
+
+| Decisão | Opção 1 | Opção 2 | Opção 3 |
+|---|---|---|---|
+| ... | ... | ... (recomendado) | ... |
+
+Se não houver decisão pendente, dizer isso e propor 3 próximos passos mesmo
+assim. Manter curto: o usuário lê o resumo primeiro.
+
 ## Fluxo do projeto (decidido com o usuário)
 
 **Objetivo:** pegar uma gameplay longa do **GTA 6**, tirar cortes e fazer uma
 **narração por cima** que explica o contexto (ex.: o jogador faz uma manobra de
 carro e a narração conta como ele chegou nela e por que é difícil). Algumas
 falas do próprio jogador ficam no vídeo para complementar.
+
+**Ângulo da narração (decidido):** comentar o que cada cena mostra do jogo
+(física do jogo, física dos carros etc.), com curiosidades e um **gancho** no
+início que prenda o espectador, mantendo um assunto que segura até o fim.
 
 **Voz da narração:** ElevenLabs, voz **Vilaca - Hype Esports Narrator**
 (`voice_id` `VTOydm0boYf1E4rUz1Qx`), português do Brasil, modelo `eleven_v4`.

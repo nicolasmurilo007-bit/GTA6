@@ -53,6 +53,20 @@ próprio jogador ficam no vídeo para complementar. Saída vertical 9:16.
   YouTube, Google Drive, Pexels e `api.elevenlabs.io` direto do container são
   recusados. O ElevenLabs funciona pelo conector, não pelo container.
 
+## Rede (decisão do usuário em 2026-11-17)
+Rede do ambiente "MoneyPrinterTurbo" passou a **sem restrição** para o
+`yt-dlp` baixar do YouTube e para buscar o áudio do ElevenLabs
+(`elevenlabsusercontent.com`). Se voltar para "limitada", re-liberar:
+`huggingface.co`, `cdn-lfs.huggingface.co`, `cas-bridge.xethub.hf.co`,
+`cas-server.xethub.hf.co`, `us.aws.cdn.hf.co`, `elevenlabsusercontent.com`.
+
+## Primeiro teste
+Vídeo: trailer oficial de GTA VI, Rockstar Games Brasil, 1 min 31 s
+(https://youtu.be/3JUboYgqIxc). Só teste técnico privado: é conteúdo da
+Rockstar; publicar exige autorização ou aceitar risco de bloqueio.
+Ângulo: comentar o que cada cena mostra (física, carros), com curiosidade e
+gancho.
+
 ## Próximos passos
 1. Receber o link e resolver o acesso ao arquivo.
 2. (Opcional) chave grátis do Gemini (aistudio.google.com/apikey) para a skill
@@ -89,3 +103,11 @@ reconectada se for preciso ver o saldo de créditos.
 
 ## Skills do projeto (`.claude/skills`)
 Terceiros, licença MIT, copiadas sem alteração. Ver `THIRD_PARTY.md`.
+
+## Registro 2026-11-17 (noite): download do YouTube
+- Rede do ambiente liberada (sem restrição) e `deno` instalado (`npm i -g deno`).
+- Mesmo assim o YouTube responde "Sign in to confirm you're not a bot" para o
+  IP da nuvem (`yt-dlp` com e sem `--js-runtimes deno`). Não insistir.
+- Não usar cookies da conta Google do usuário (risco de segurança).
+- Caminhos que sobram: o usuário envia o arquivo .mp4 (Google Drive via conector,
+  ainda não testado com arquivo grande) ou envia por outro meio.
