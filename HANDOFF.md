@@ -180,3 +180,24 @@ monetizar. Pesquisa feita:
   oficial de julho/2025 sobre políticas do YPP.
 - Não conferi os requisitos atuais de entrada no Programa de Parcerias.
 - Não é aconselhamento jurídico.
+
+## Registro 2026-11-17: TikTok (regras conferidas nas páginas oficiais, ago-set/2026)
+- Creator Rewards Program está aberto no Brasil (também EUA, Reino Unido,
+  Alemanha, Japão, Coreia do Sul, França, México). Exige: conta pessoal, 18+,
+  >=10.000 seguidores, >=100.000 visualizações de vídeo em 30 dias, vídeos
+  >=1 minuto, "original e de alta qualidade, filmado, desenhado e produzido
+  inteiramente por você", >=1.000 visualizações qualificadas no For You.
+  Não contam como original: Duet/Stitch, lip sync, música com direitos >1 min.
+  Inferência (não é texto literal): vídeo feito com imagens de terceiros
+  (Rockstar, streamers) dificilmente se qualifica.
+- Diretrizes (vigentes desde 24/09/2026): proíbem repostar material com direitos
+  autorais sem permissão; conteúdo "não original ou reutilizado sem nada novo"
+  fica fora do For You (menos alcance).
+- IA: TikTok exige rotular conteúdo gerado/muito editado por IA com cenas ou
+  pessoas realistas e pede rótulo para áudio realista gerado por IA. Ligar a
+  opção "Conteúdo gerado por IA" ao postar vídeos com a voz do ElevenLabs.
+  YouTube também exige divulgar conteúdo realista alterado ou sintético.
+- Qualquer uso comercial (TikTok Shop, afiliados, patrocínio) conflita com a
+  política da Take-Two (só uso não comercial das imagens do jogo).
+- Fontes: tiktok.com/creator-academy (Creator Rewards), support.tiktok.com,
+  tiktok.com/community-guidelines.
