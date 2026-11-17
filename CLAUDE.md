@@ -54,12 +54,13 @@ estado do projeto, neste formato:
 
 1. **Estado atual** (uma ou duas linhas).
 2. **O que falta fazer** (lista curta).
-3. **O que o usuário precisa decidir**: tabela com **sempre 3 opções**, sendo
-   **uma delas a recomendação do Claude**, marcada como "(recomendado)".
+3. **O que o usuário precisa decidir**: tabela com **sempre 3 opções,
+   rotuladas A, B e C. A opção A é SEMPRE a recomendação do Claude**
+   (escrever "(recomendado)" nela). B e C são alternativas reais.
 
-| Decisão | Opção 1 | Opção 2 | Opção 3 |
+| Decisão | A (recomendado) | B | C |
 |---|---|---|---|
-| ... | ... | ... (recomendado) | ... |
+| ... | ... | ... | ... |
 
 Se não houver decisão pendente, dizer isso e propor 3 próximos passos mesmo
 assim. Manter curto: o usuário lê o resumo primeiro.

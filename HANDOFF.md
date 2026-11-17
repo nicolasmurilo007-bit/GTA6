@@ -111,3 +111,11 @@ Terceiros, licença MIT, copiadas sem alteração. Ver `THIRD_PARTY.md`.
 - Não usar cookies da conta Google do usuário (risco de segurança).
 - Caminhos que sobram: o usuário envia o arquivo .mp4 (Google Drive via conector,
   ainda não testado com arquivo grande) ou envia por outro meio.
+
+## Registro 2026-11-17: decisões do usuário
+- Seguir a opção recomendada em tudo: o `.mp4` do trailer chega pelo Google Drive
+  (o usuário baixa e sobe); rede do ambiente de volta para "limitada" com
+  `huggingface.co`, `cdn-lfs.huggingface.co`, `cas-bridge.xethub.hf.co`,
+  `cas-server.xethub.hf.co`, `us.aws.cdn.hf.co`, `elevenlabsusercontent.com`;
+  chave do Gemini adiada.
+- Formato do resumo final: opções sempre A, B, C, com A = recomendação.
