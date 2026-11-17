@@ -119,3 +119,9 @@ Terceiros, licença MIT, copiadas sem alteração. Ver `THIRD_PARTY.md`.
   `cas-server.xethub.hf.co`, `us.aws.cdn.hf.co`, `elevenlabsusercontent.com`;
   chave do Gemini adiada.
 - Formato do resumo final: opções sempre A, B, C, com A = recomendação.
+
+## Registro 2026-11-17: arquivo recebido e analisado
+- O `.mp4` chegou pelo conector do Drive (7,4 MB, 640x360). Análise e proposta
+  de 3 cortes em `docs/gta6/teste1-analise.md`.
+- Próximo: usuário aprova cortes e roteiros; estimar custo; gerar voz Vilaca;
+  montar (layout com fundo desfocado, pois a fonte é 360p).
