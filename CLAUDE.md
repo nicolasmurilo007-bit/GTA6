@@ -82,6 +82,8 @@ em volume.
 - YouTube e Google Drive são bloqueados pela rede do ambiente; `yt-dlp` falha
   com 403 do proxy. Liberar exige mudar a rede do ambiente (Configurações).
 - Sem placa de vídeo: transcrição local de vídeo longo é lenta.
+- Whisper local: o ambiente já libera os endereços do Hugging Face (ver
+  HANDOFF.md). Outro modelo pode exigir liberar mais um endereço.
 
 **Lacunas a construir (código novo neste repositório)**
 - Detector de momentos por áudio/imagem para gameplay.

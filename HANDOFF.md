@@ -44,6 +44,14 @@ próprio jogador ficam no vídeo para complementar. Saída vertical 9:16.
   falha com 403 do proxy. Opções: liberar a rede do ambiente
   (Configurações > Ambientes) ou outro jeito de enviar o arquivo.
 - **Ainda não recebemos o link do vídeo.**
+- **Transcrição local (Whisper) funciona**: liberamos no ambiente "MoneyPrinterTurbo"
+  os endereços do Hugging Face (`huggingface.co`, `cdn-lfs.huggingface.co`,
+  `cas-bridge.xethub.hf.co`, `cas-server.xethub.hf.co`, `us.aws.cdn.hf.co`).
+  Testado com o modelo `tiny` (2026-11-17). Se um modelo maior (small, large)
+  pedir outro endereço, o proxy recusa e o erro lista o host: liberar só esse.
+- Rede testada: `generativelanguage.googleapis.com` (Gemini) responde; Groq,
+  YouTube, Google Drive, Pexels e `api.elevenlabs.io` direto do container são
+  recusados. O ElevenLabs funciona pelo conector, não pelo container.
 
 ## Próximos passos
 1. Receber o link e resolver o acesso ao arquivo.
