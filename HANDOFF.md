@@ -149,3 +149,16 @@ Terceiros, licença MIT, copiadas sem alteração. Ver `THIRD_PARTY.md`.
 - Isso muda o alvo: o produto é **explicativo curto com fatos e fonte**, não
   cortes de uma gameplay longa com falas do jogador.
 - Material do vídeo de referência é de terceiros: usar só como estilo.
+
+## Registro 2026-11-17: busca de material e política de uso
+- `skills find` não funciona na nuvem (skills.sh bloqueado). As skills de busca no
+  YouTube achadas na web usam `yt-dlp` e falhariam aqui (bloqueio anti-robô).
+  Solução usada: provedor `youtube-com` do Firecrawl (Alexandria). Método gravado
+  em `.claude/skills/buscar-material/SKILL.md`.
+- Melhor fonte de imagem real e longa: "Grand Theft Auto VI: An Extended Look"
+  (canal oficial Rockstar Games, 26:49, capturado do jogo no PS5):
+  https://www.youtube.com/watch?v=tJbzMqJGH4k . Também: Trailer 1
+  (QdBZY2fkU-0, 1:31) e o trailer de lançamento (3JUboYgqIxc).
+- Evitar: "concept gameplay" / "fan made" / re-uploads de terceiros.
+- **Política Take-Two: uso não comercial é tolerado; monetizar fica fora.** Decisão
+  pendente do usuário sobre monetização (ver SKILL buscar-material).
