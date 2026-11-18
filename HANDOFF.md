@@ -201,3 +201,35 @@ monetizar. Pesquisa feita:
   política da Take-Two (só uso não comercial das imagens do jogo).
 - Fontes: tiktok.com/creator-academy (Creator Rewards), support.tiktok.com,
   tiktok.com/community-guidelines.
+
+## Registro 2026-11-18: decisões do usuário (todas as opções A/recomendadas)
+- Publicar no TikTok e no YouTube Shorts, **sem monetizar** no início; rótulo de
+  IA sempre ligado (TikTok) e aviso de conteúdo sintético (YouTube).
+- Caminho de conteúdo: explicativos com narração nossa e imagens oficiais; deixar
+  o Alanzoka de lado por enquanto (só voltar com autorização por escrito).
+- Material de imagem: o usuário sobe o "An Extended Look" (720p) no Drive. AINDA
+  NÃO CHEGOU (em 18/11 só o trailer está no Drive).
+- Tema do 1º vídeo: fato oficial com fonte (ver opções abaixo).
+
+## Temas com fonte oficial (Rockstar)
+- A (recomendado): **trilha adaptativa**. Site oficial (rockstargames.com/VI/music):
+  a trilha original é de Justice (dupla francesa vencedora do Grammy, Gaspard
+  Augé e Xavier de Rosnay), "adaptive score" ajustada dinamicamente a como o
+  jogador interage com Vice City e Leonida; lançamento da trilha em 11 de
+  dezembro; rádio com "a maior e mais variada seleção de rádio e podcasts" da
+  série, de Classic Rock a Talk Radio.
+- B: **contagem final**: pre-load começou em 10/11; lançamento 19/11/2026;
+  "The Festival" em 21/11 no Mana Wynwood, Miami (newswire de 09/11).
+- C: **as "redes sociais" de Vice City** (observação visual do trailer; não é
+  fato oficial; dizer que é observação).
+- Newswire oficial: https://www.rockstargames.com/newswire
+
+## Pipeline v2 (estilo da referência)
+- `tools/gta6/render_video.py` + `tools/gta6/exemplo_v2.json`: locução contínua,
+  planos de ~2,2 s, legenda de uma palavra (alinhada ao roteiro), barras que
+  estendem as bordas do plano (fonte <1080p) ou tela cheia (>=1080p), som do jogo
+  baixo e abaixando sob a voz, -14 LUFS. Testado só com trailer 360p e a narração
+  do teste 1 (sem custo de créditos).
+- Pendente: fonte condensada (o servidor só tem DejaVu/Inter/Liberation Sans, sem
+  versão condensada: cai numa fonte comum em negrito itálico); cartões de fonte
+  (print com frase destacada); setas/mapa.
