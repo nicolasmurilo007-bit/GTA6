@@ -45,3 +45,11 @@ htmlcov/
 
 # Claude Code 订阅令牌（docker compose 自动读取），禁止提交
 .env
+
+# Saídas de produção dos clipes (vídeo/áudio de terceiros nunca vão para o Git)
+runs/**/*.mp4
+runs/**/*.mov
+runs/**/*.mkv
+runs/**/*.mp3
+runs/**/*.wav
+runs/**/source/

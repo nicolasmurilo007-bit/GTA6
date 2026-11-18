@@ -1,0 +1,32 @@
+---
+name: produzir-clipe
+description: Roteiro de produção de ponta a ponta de um clipe (do momento escolhido até o post), chamando os agentes do projeto em ordem. Use quando o usuário pedir para produzir, montar ou postar um clipe ou corte.
+---
+
+# Produzir um clipe, passo a passo
+
+Quem executa este roteiro é a sessão principal: subagentes não chamam outros subagentes. Cada etapa grava arquivos em `runs/<AAAA-MM-DD_slug>/` (vídeo e áudio ficam fora do Git).
+
+| # | Etapa | Agente | Entrada -> saída |
+|---|---|---|---|
+| 1 | Achar o momento | `cacador-de-momentos` | live/VOD/clipes -> `momentos.json` |
+| 2 | Aprovação do momento | (usuário, no modo inicial) | escolhe 1 dos candidatos |
+| 3 | Gancho | `gancho` | momento -> `gancho.md` |
+| 4 | Roteiro/contexto | `roteirista` | momento + gancho -> `roteiro.md`, `fontes.md` |
+| 5 | Voz (só explicativo) | ElevenLabs (`estimate_only` antes) | roteiro -> `locucao.mp3` |
+| 6 | Legendas | `legendas` | áudio + roteiro -> `legendas.ass` |
+| 7 | Montagem | `editor-de-video` | tudo -> `final.mp4`, `edicao.md` |
+| 8 | Título | `titulo` | -> `titulo.md` |
+| 9 | Descrição e hashtags | `descricao-hashtags` | -> `descricao.md` |
+| 10 | Capa | `capa` | `final.mp4` -> `capa.png` |
+| 11 | Qualidade | `qualidade` | `final.mp4` -> `qa.json` |
+| 12 | Créditos e direitos | `creditos-e-direitos` | tudo -> `checklist.json` |
+| 13 | Aprovação final | (usuário) | vê o vídeo e o checklist |
+| 14 | Publicar | `publicador` | só com 11 e 12 APROVADOS -> `publicacao.json` |
+
+Regras do roteiro:
+- Etapas 3, 4 e 6 podem rodar em paralelo depois da 1/2; 8, 9 e 10 podem rodar em paralelo depois da 7.
+- Estimar custo do ElevenLabs antes de gerar e respeitar o teto por clipe definido em `docs/gta6/automacao.md`.
+- Se `qualidade` ou `creditos-e-direitos` bloquear, voltar ao agente indicado; nunca pular a checagem.
+- Postar só com a confirmação do usuário para aquele clipe (modo inicial). A autonomia só aumenta depois de N clipes aprovados seguidos, decisão registrada em `docs/gta6/automacao.md`.
+- Terminar sempre com o resumo A/B/C da regra global do `CLAUDE.md`.

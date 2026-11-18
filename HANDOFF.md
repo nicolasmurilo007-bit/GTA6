@@ -233,3 +233,19 @@ monetizar. Pesquisa feita:
 - Pendente: fonte condensada (o servidor só tem DejaVu/Inter/Liberation Sans, sem
   versão condensada: cai numa fonte comum em negrito itálico); cartões de fonte
   (print com frase destacada); setas/mapa.
+
+## Registro 2026-11-18: agentes e plano de automação
+- Pedido do usuário: um agente por função (legenda, roteiro, título, descrição...),
+  clipes do Alanzoka mantendo o formato de créditos do exemplo, e automação de
+  ponta a ponta: perceber o momento na live -> produzir -> postar.
+- Criados: 11 agentes em `.claude/agents/` (cacador-de-momentos, gancho,
+  roteirista, legendas, titulo, descricao-hashtags, creditos-e-direitos, capa,
+  editor-de-video, qualidade, publicador), a skill `produzir-clipe` (roteiro que a
+  sessão principal executa; subagentes não chamam subagentes) e
+  `docs/gta6/automacao.md` (ferramentas por etapa, limites, regras de API).
+- Os agentes novos só carregam em uma sessão nova (ou /agents). Não foram testados.
+- Plugin Social Media Skills ficou ativo; Posty sugerido (não confirmado instalado).
+- Não existe provedor da Twitch no catálogo do Firecrawl: precisa API Helix com
+  credenciais gratuitas do usuário (client id/secret).
+- Pendente: credenciais da Twitch, escolha do publicador (Upload-Post/Posty/
+  Ayrshare), modo de rodar sem sessão ligada (agendado), autorização do Alanzoka.
