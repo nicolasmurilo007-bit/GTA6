@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Pipeline v2: vídeo vertical 9:16 no estilo "curiosidade com fonte".
+"""Pipeline v2: vídeo vertical 9:16 (modos "explicativo" e "corte").
+
+Modo "corte": clipe de live com a voz original do streamer, recorte opcional da câmera
+(`crop` por fonte), gancho no topo (`hook`) e legenda de uma palavra. Ver exemplo_corte.json.
+
+Modo "explicativo" (padrão): estilo "curiosidade com fonte".
 
 Diferenças para o render_clip.py (teste 1):
   - UMA locução contínua (mp3) em vez de trechos soltos;
@@ -121,24 +126,73 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     path.write_text("".join(lines), encoding="utf-8")
 
 
-def render(cfg: dict, workdir: Path, out: Path, whisper_model: str) -> None:
-    narr = workdir / cfg["narration"]
-    total = duration(narr) + float(cfg.get("tail", 0.5))
-    shot_seconds = float(cfg.get("shot_seconds", 2.2))
-    shots = build_shots(cfg["segments"], total, shot_seconds)
-    print(f"{len(shots)} planos para {total:.1f}s de vídeo")
+def wrap_hook(text: str, width: int = 20) -> str:
+    """Quebra o gancho em linhas curtas (\\N do ASS)."""
+    words, lines, cur = text.split(), [], ""
+    for w in words:
+        if cur and len(cur) + 1 + len(w) > width:
+            lines.append(cur)
+            cur = w
+        else:
+            cur = f"{cur} {w}".strip()
+    if cur:
+        lines.append(cur)
+    return "\\N".join(lines)
 
-    # fontes de vídeo
+
+def add_hook_to_ass(path: Path, hook: str, seconds: float) -> None:
+    """Acrescenta o gancho (texto no topo, primeiros segundos) a um .ass já criado."""
+    text = wrap_hook(hook.upper().replace("\\", "").replace("{", "").replace("}", ""))
+    line = f"Dialogue: 1,{ass_time(0.0)},{ass_time(seconds)},Word,,0,0,0,,{{\\an5\\pos({W // 2},360)\\fs88}}{text}\n"
+    path.write_text(path.read_text(encoding="utf-8") + line, encoding="utf-8")
+
+
+def render(cfg: dict, workdir: Path, out: Path, whisper_model: str) -> None:
+    mode = cfg.get("mode", "explicativo")
+
+    # fontes de vídeo: "nome": "arquivo.mp4"  ou  "nome": {"path": "...", "crop": [x, y, w, h]}
     src_names = list(cfg["sources"].keys())
     src_idx = {name: i for i, name in enumerate(src_names)}
-    src_sizes = {n: probe_size(workdir / cfg["sources"][n]) for n in src_names}
+    src_path, src_crop, src_sizes = {}, {}, {}
+    for n in src_names:
+        v = cfg["sources"][n]
+        src_path[n] = workdir / (v["path"] if isinstance(v, dict) else v)
+        src_crop[n] = v.get("crop") if isinstance(v, dict) else None
+        if src_crop[n]:
+            # vídeo 4:2:0 exige medidas pares: recortes ímpares travam o ffmpeg
+            src_crop[n] = [int(c) - (int(c) % 2) for c in src_crop[n]]
+            src_sizes[n] = (int(src_crop[n][2]), int(src_crop[n][3]))
+        else:
+            src_sizes[n] = probe_size(src_path[n])
 
-    # legenda: palavras do roteiro com tempos do Whisper
+    if mode == "corte":
+        # corte de live: voz original do streamer, sem narração nova, sem cortes rápidos
+        shots = [
+            {"src": sg["src"], "start": float(sg["start"]), "dur": float(sg["end"]) - float(sg["start"])}
+            for sg in cfg["segments"]
+        ]
+        total = sum(sh["dur"] for sh in shots)
+        wav = workdir / (out.stem + "_fala.wav")
+        first = shots[0]
+        subprocess.run(
+            ["ffmpeg", "-loglevel", "error", "-y", "-ss", str(first["start"]), "-t", str(total), "-i", str(src_path[first["src"]]), "-vn", "-ac", "1", "-ar", "16000", str(wav)],
+            check=True,
+        )
+        narr = wav
+    else:
+        narr = workdir / cfg["narration"]
+        total = duration(narr) + float(cfg.get("tail", 0.5))
+        shots = build_shots(cfg["segments"], total, float(cfg.get("shot_seconds", 2.2)))
+    print(f"{len(shots)} planos para {total:.1f}s de vídeo (modo {mode})")
+
+    # legenda: palavras do roteiro (ou do Whisper) com tempos do Whisper
     words = transcribe_words(narr, cfg.get("language", "pt"), whisper_model)
     if cfg.get("text"):
         words = align_to_script(cfg["text"], words)
     ass = workdir / (out.stem + ".ass")
     build_ass(ass, words)
+    if cfg.get("hook"):
+        add_hook_to_ass(ass, cfg["hook"], float(cfg.get("hook_seconds", 3.5)))
 
     layout_pref = cfg.get("layout", "auto")
     vparts, aparts = [], []
@@ -147,29 +201,38 @@ def render(cfg: dict, workdir: Path, out: Path, whisper_model: str) -> None:
         sw, shh = src_sizes[sh["src"]]
         layout = layout_pref if layout_pref != "auto" else ("fill" if shh >= 1080 else "gradient")
         chain = layout_chain(layout, sw, shh)
+        cr = src_crop[sh["src"]]
+        crop = f"crop={cr[2]}:{cr[3]}:{cr[0]}:{cr[1]}," if cr else ""
         s, e = sh["start"], sh["start"] + sh["dur"]
-        vparts.append(f"[{k}:v]trim=start={s:.3f}:end={e:.3f},setpts=PTS-STARTPTS,fps={FPS},{chain}[v{i}]")
+        vparts.append(f"[{k}:v]trim=start={s:.3f}:end={e:.3f},setpts=PTS-STARTPTS,fps={FPS},{crop}{chain}[v{i}]")
         aparts.append(
             f"[{k}:a]atrim=start={s:.3f}:end={e:.3f},asetpts=PTS-STARTPTS,"
             f"aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo[a{i}]"
         )
     n = len(shots)
     vconcat = "".join(f"[v{i}]" for i in range(n)) + f"concat=n={n}:v=1:a=0,ass={ass.name}:fontsdir={FONT_DIR},format=yuv420p[v]"
-    aconcat = "".join(f"[a{i}]" for i in range(n)) + f"concat=n={n}:v=0:a=1,volume={float(cfg.get('game_audio_volume', 0.2))}[game]"
-    nar_idx = len(src_names)
-    amix = (
-        f"[{nar_idx}:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,apad,atrim=end={total:.3f},asplit=2[nsc][nmix];"
-        "[game][nsc]sidechaincompress=threshold=0.012:ratio=10:attack=15:release=400:makeup=1[duck];"
-        "[duck][nmix]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11[a]"
-    )
-    graph = ";".join(vparts + aparts + [vconcat, aconcat, amix])
+    if mode == "corte":
+        # voz original do streamer: volume cheio, só normaliza
+        amix = "".join(f"[a{i}]" for i in range(n)) + f"concat=n={n}:v=0:a=1,loudnorm=I=-14:TP=-1.5:LRA=11[a]"
+        graph = ";".join(vparts + aparts + [vconcat, amix])
+        extra_inputs: list[str] = []
+    else:
+        aconcat = "".join(f"[a{i}]" for i in range(n)) + f"concat=n={n}:v=0:a=1,volume={float(cfg.get('game_audio_volume', 0.2))}[game]"
+        nar_idx = len(src_names)
+        mix = (
+            f"[{nar_idx}:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,apad,atrim=end={total:.3f},asplit=2[nsc][nmix];"
+            "[game][nsc]sidechaincompress=threshold=0.012:ratio=10:attack=15:release=400:makeup=1[duck];"
+            "[duck][nmix]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11[a]"
+        )
+        graph = ";".join(vparts + aparts + [vconcat, aconcat, mix])
+        extra_inputs = ["-i", str(narr)]
     graph_file = workdir / (out.stem + ".filtergraph")
     graph_file.write_text(graph, encoding="utf-8")
 
     cmd = ["ffmpeg", "-loglevel", "warning", "-y"]
     for name in src_names:
-        cmd += ["-i", str(workdir / cfg["sources"][name])]
-    cmd += ["-i", str(narr), "-filter_complex_script", str(graph_file), "-map", "[v]", "-map", "[a]", "-t", f"{total:.3f}"]
+        cmd += ["-i", str(src_path[name])]
+    cmd += extra_inputs + ["-filter_complex_script", str(graph_file), "-map", "[v]", "-map", "[a]", "-t", f"{total:.3f}"]
     cmd += ["-c:v", "libx264", "-preset", "medium", "-crf", "20", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", str(out)]
     out.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run(cmd, check=True, cwd=workdir)

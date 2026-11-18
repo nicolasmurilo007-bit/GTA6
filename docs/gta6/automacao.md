@@ -38,3 +38,41 @@ Roteiro de produção: skill `produzir-clipe`.
 - Máx. 3 posts por dia por plataforma; intervalo mínimo de 3 h; nunca repostar o mesmo clipe.
 - Teto de custo de voz por clipe explicativo: 1.200 créditos ElevenLabs (~US$ 0,25).
 - Segredos (Twitch, Upload-Post, etc.) só como segredos do ambiente (`request_credential`), nunca no Git.
+
+## Decisões do usuário em 18/11/2026 (B, A, A)
+1. **Direitos do Alanzoka:** seguir com cortes mantendo só o formato de créditos do
+   exemplo, assumindo o risco (recomendação do Claude era pedir autorização por
+   escrito; o usuário escolheu seguir). O agente `creditos-e-direitos` só avisa.
+   Mantido: interruptor para parar tudo e registro de origem de cada clipe.
+2. **Execução:** tarefa agendada do Claude, a cada 1 h, modo SEMIAUTOMÁTICO (o
+   usuário aprova cada clipe antes de postar; aviso por notificação). Só agendar
+   depois de os pré-requisitos abaixo estarem prontos.
+3. **Publicação:** Upload-Post (já integrado em `app/services/upload_post.py`).
+
+## Upload-Post (conferido em 18/11/2026 no site)
+- Free: US$ 0, 10 uploads/mês, 2 perfis. Basic: US$ 16/mês (US$ 192/ano), uploads
+  ilimitados, 5 perfis. Professional: US$ 33/mês, 25 perfis. Advanced: US$ 118/mês.
+  Business: US$ 350/mês.
+- Eles afirmam usar APIs oficiais já verificadas (você não cria app no TikTok nem
+  espera revisão). É afirmação do site; não verificada de forma independente.
+- NÃO apareceu no site: se o TikTok sai público ou em rascunho, e qual plano
+  inclui API. Testar com 1 post antes de assumir.
+- Conta: 3 posts/dia x 30 dias = 90 posts/mês: o gratuito (10) não basta; o Basic
+  cobre.
+
+## Twitch: como acessar sem credenciais de API (testado)
+- `yt-dlp` lista e baixa clipes/VODs pela GraphQL pública `gql.twitch.tv`: NÃO
+  precisa de client id/secret da Twitch. O proxy da nuvem recusou `gql.twitch.tv`
+  até liberarmos.
+- Começar pelos **clipes de espectadores** (curtos, já escolhidos pelo público,
+  servidos de poucos hosts). VODs usam subdomínios variáveis de CDN e podem exigir
+  rede sem restrição ou outro executor.
+- Hosts liberados no ambiente em 18/11: gql.twitch.tv,
+  clips-media-assets2.twitch.tv, production.assets.clips.twitchcdn.net (palpite
+  de hosts de clipes; ajustar conforme o proxy recusar).
+
+## Pré-requisitos antes de agendar a tarefa horária
+1. Conta no Upload-Post + chave de API (segredo do ambiente via request_credential).
+2. TikTok e YouTube do usuário conectados na conta do Upload-Post.
+3. Teste do download de 1 clipe real do Alanzoka na nuvem.
+4. 1 clipe produzido e postado de ponta a ponta com aprovação manual.

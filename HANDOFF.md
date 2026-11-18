@@ -249,3 +249,24 @@ monetizar. Pesquisa feita:
   credenciais gratuitas do usuário (client id/secret).
 - Pendente: credenciais da Twitch, escolha do publicador (Upload-Post/Posty/
   Ayrshare), modo de rodar sem sessão ligada (agendado), autorização do Alanzoka.
+
+## Registro 2026-11-18: decisões B/A/A e primeiro corte de live
+- Decisões do usuário: (1) direitos do Alanzoka: seguir só com o formato de
+  créditos, assumindo o risco (o Claude tinha recomendado pedir autorização);
+  (2) rodar por tarefa agendada de 1 h, começando semiautomático; (3) postar pelo
+  Upload-Post. Detalhes e preços em `docs/gta6/automacao.md`.
+- Upload-Post (site, 18/11): Free US$0 (10 posts/mês, 2 perfis); Basic US$16/mês
+  (ilimitado, 5 perfis). Falta confirmar: TikTok sai público ou rascunho e qual plano
+  dá API.
+- Twitch SEM credenciais: `yt-dlp` lista/baixa clipes pela GraphQL pública. Hosts
+  liberados no ambiente: gql.twitch.tv e d1ndex63qxojbr.cloudfront.net (CDN dos
+  clipes). Testado: listou clipes do Alanzoka e baixou um (52 s, 2560x1440 60 fps).
+  VODs ainda não testados (CDN com subdomínios variáveis).
+- Primeiro corte real feito: clipe "gta 6" do Alanzoka (talk, câmera + chat) ->
+  `tools/gta6/render_video.py` modo "corte" (`exemplo_corte.json`: recorte da câmera
+  em medidas PARES, gancho no topo, legenda de 1 palavra). Aviso: recorte de largura
+  ímpar derrubou o ffmpeg (corrigido no script). Enviado ao usuário, NÃO postado.
+- Limitação do layout atual: a câmera ocupa só ~1/3 da altura. Ideias: recorte mais
+  fechado no rosto (fonte 1440p aguenta) ou câmera em cima + chat embaixo.
+- NÃO criei a tarefa agendada ainda: faltam conta e chave do Upload-Post, TikTok e
+  YouTube conectados lá, e 1 clipe postado de ponta a ponta com aprovação.
