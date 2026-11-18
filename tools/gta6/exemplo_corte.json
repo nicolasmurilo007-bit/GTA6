@@ -26,5 +26,60 @@
     "Zelda",
     "Rockstar",
     "Jason"
-  ]
+  ],
+  "sfx": [
+    {
+      "name": "swish",
+      "t": 0.05,
+      "vol": 0.22
+    },
+    {
+      "name": "pop",
+      "t": 10.0,
+      "vol": 0.2
+    },
+    {
+      "name": "thud",
+      "t": 34.8,
+      "vol": 0.22
+    },
+    {
+      "name": "shimmer",
+      "t": 35.0,
+      "vol": 0.16
+    }
+  ],
+  "zooms": [
+    {
+      "t": 10.0,
+      "dur": 0.4,
+      "factor": 1.09
+    },
+    {
+      "t": 34.8,
+      "dur": 0.45,
+      "factor": 1.1
+    }
+  ],
+  "annotations": [
+    {
+      "type": "circle",
+      "t": 10.0,
+      "dur": 2.6,
+      "x": 722,
+      "y": 735,
+      "rx": 115,
+      "ry": 95
+    },
+    {
+      "type": "arrow",
+      "t": 34.8,
+      "dur": 2.8,
+      "x": 610,
+      "y": 905,
+      "angle": 225,
+      "scale": 1.0
+    }
+  ],
+  "background": "black"
 }

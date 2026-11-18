@@ -27,6 +27,7 @@ Config (JSON):
     "language": "pt",
     "shot_seconds": 2.2,
     "layout": "auto" | "gradient" | "fill",
+    "background": "black" (padrão) | "gradient"   (cor das sobras quando o vídeo não preenche a tela),
     "game_audio_volume": 0.2,
     "sources": {"trailer": "trailer.mp4"},
     "segments": [ {"src": "trailer", "start": 23.3, "end": 34.1}, ... ]
@@ -84,7 +85,7 @@ def build_shots(segments: list[dict], total: float, shot_seconds: float) -> list
     return shots
 
 
-def layout_chain(layout: str, src_w: int, src_h: int) -> str:
+def layout_chain(layout: str, src_w: int, src_h: int, background: str = "black") -> str:
     """Trecho de filtro que transforma [in] em um quadro 1080x1920 [out]."""
     if layout == "fill":
         return f"scale={W}:{H}:force_original_aspect_ratio=increase:flags=lanczos,crop={W}:{H},setsar=1"
@@ -92,7 +93,10 @@ def layout_chain(layout: str, src_w: int, src_h: int) -> str:
     bar = (H - fg_h) // 2
     if bar <= 0:
         return f"scale={W}:{H}:force_original_aspect_ratio=increase:flags=lanczos,crop={W}:{H},setsar=1"
-    # as barras esticam as bordas do próprio plano e desfocam (degradê da cor do plano)
+    if background == "black":
+        # fundo preto liso (decisão do usuário em 18/11/2026)
+        return f"scale={W}:{fg_h}:flags=lanczos,setsar=1,pad={W}:{H}:0:{bar}:color=black"
+    # "gradient": as barras esticam as bordas do próprio plano e desfocam (degradê da cor do plano)
     return (
         "split=3[t][m][b];"
         f"[m]scale={W}:{fg_h}:flags=lanczos,setsar=1[fg];"
@@ -112,6 +116,7 @@ WrapStyle: 2
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Word,{FONT_NAME},120,&H00FFFFFF,&H000000FF,&H00000000,&H64000000,-1,-1,0,0,100,100,0,0,1,9,3,5,40,40,0,1
+Style: Mark,{FONT_NAME},60,&H001E1EFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,6,0,5,0,0,0,1
 Style: Hook,{FONT_NAME},84,&H00000000,&H000000FF,&H004DD8FF,&H00000000,-1,-1,0,0,100,100,0,0,3,18,0,5,60,60,0,1
 
 [Events]
@@ -131,6 +136,102 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         pop = "\\fscx118\\fscy118\\t(0,110,\\fscx100\\fscy100)"
         lines.append(f"Dialogue: 0,{ass_time(start)},{ass_time(end)},Word,,0,0,0,,{{\\an5\\pos({W // 2},{CAPTION_Y}){pop}{color}}}{text}\n")
     path.write_text("".join(lines), encoding="utf-8")
+
+
+SFX_DIR = Path(__file__).resolve().parents[2] / "assets" / "sfx"
+RED_BGR = "&H001E1EFF&"  # vermelho (BGR), usado em círculos e setas
+
+
+def circle_path(rx: float, ry: float) -> str:
+    """Elipse como curvas de Bézier (desenho ASS), centrada em (0, 0)."""
+    k = 0.5523
+    return (
+        f"m 0 {-ry:.0f} b {k * rx:.0f} {-ry:.0f} {rx:.0f} {-k * ry:.0f} {rx:.0f} 0 "
+        f"b {rx:.0f} {k * ry:.0f} {k * rx:.0f} {ry:.0f} 0 {ry:.0f} "
+        f"b {-k * rx:.0f} {ry:.0f} {-rx:.0f} {k * ry:.0f} {-rx:.0f} 0 "
+        f"b {-rx:.0f} {-k * ry:.0f} {-k * rx:.0f} {-ry:.0f} 0 {-ry:.0f}"
+    )
+
+
+ARROW_PATH = "m 0 0 l -64 -48 -64 -22 -210 -22 -210 22 -64 22 -64 48"  # ponta em (0,0), aponta para +x
+
+
+def add_marks_to_ass(path: Path, marks: list[dict]) -> None:
+    """Círculos e setas vermelhas animados, como em edição manual.
+
+    {"type": "circle", "t": 10.0, "dur": 2.5, "x": 722, "y": 735, "rx": 115, "ry": 95}
+    {"type": "arrow",  "t": 34.8, "dur": 2.8, "x": 690, "y": 830, "angle": 225, "scale": 1.0}
+    Círculo: (x, y) é o CENTRO. Seta: (x, y) é onde a PONTA aponta; `angle` em graus,
+    anti-horário (0 = aponta para a direita, 225 = para baixo e à esquerda).
+    Usamos \\an7 (canto superior esquerdo): assim a origem do desenho cai exatamente em \\pos.
+    """
+    lines = []
+    for m in marks:
+        t0, t1 = float(m["t"]), float(m["t"]) + float(m.get("dur", 2.5))
+        kind = m.get("type", "circle")
+        if kind == "circle":
+            x, y = float(m["x"]), float(m["y"])
+            shape = circle_path(float(m.get("rx", 140)), float(m.get("ry", 100)))
+            # o traço "cresce" (borda de 2 para 12 px) e a forma assenta de 108% para 100%
+            tags = (
+                f"\\an7\\pos({x:.0f},{y:.0f})\\p1\\1a&HFF&\\3c{RED_BGR}\\shad0"
+                "\\bord2\\fscx108\\fscy108\\t(0,220,\\bord12\\fscx100\\fscy100)\\fad(90,160)"
+            )
+        elif kind == "arrow":
+            sc = float(m.get("scale", 1.0))
+            ang = float(m.get("angle", 225))
+            tipx, tipy = float(m["x"]), float(m["y"])
+            # "crava" no alvo: começa 160% maior e assenta em 100% com a ponta fixa
+            tags = (
+                f"\\an7\\pos({tipx:.0f},{tipy:.0f})\\frz{ang:.0f}\\p1\\1c{RED_BGR}\\3c&H000000&\\bord7\\shad0"
+                f"\\fscx{160 * sc:.0f}\\fscy{160 * sc:.0f}\\t(0,200,\\fscx{100 * sc:.0f}\\fscy{100 * sc:.0f})\\fad(80,160)"
+            )
+            shape = ARROW_PATH
+        else:
+            continue
+        lines.append(f"Dialogue: 2,{ass_time(t0)},{ass_time(t1)},Mark,,0,0,0,,{{{tags}}}{shape}{{\\p0}}\n")
+    if lines:
+        path.write_text(path.read_text(encoding="utf-8") + "".join(lines), encoding="utf-8")
+
+
+def build_sfx_track(items: list[dict], workdir: Path, total: float, name: str) -> Path | None:
+    """Mistura os SFX (nome, tempo, volume) numa faixa única do tamanho do vídeo."""
+    if not items:
+        return None
+    cmd = ["ffmpeg", "-loglevel", "error", "-y"]
+    filt, labels = [], []
+    for i, it in enumerate(items):
+        f = SFX_DIR / f"sfx_{it['name']}.mp3"
+        if not f.exists():
+            raise SystemExit(f"SFX inexistente: {f}")
+        cmd += ["-i", str(f)]
+        ms = int(round(float(it["t"]) * 1000))
+        filt.append(
+            f"[{i}:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,"
+            f"volume={float(it.get('vol', 0.2))},adelay={ms}|{ms}[s{i}]"
+        )
+        labels.append(f"[s{i}]")
+    filt.append("".join(labels) + f"amix=inputs={len(items)}:normalize=0:duration=longest,apad,atrim=end={total:.3f}[out]")
+    out = workdir / f"{name}_sfx.wav"
+    cmd += ["-filter_complex", ";".join(filt), "-map", "[out]", "-ar", "48000", "-ac", "2", str(out)]
+    subprocess.run(cmd, check=True)
+    return out
+
+
+def zoom_filter(zooms: list[dict], offset: float, w: int, h: int) -> str:
+    """Zoom de impacto (punch-in 1,08-1,10x, ~0,4 s) no centro, em tempo de SAÍDA menos `offset`."""
+    terms = []
+    for z in zooms:
+        a = float(z["t"]) - offset
+        b = a + float(z.get("dur", 0.4))
+        f = min(float(z.get("factor", 1.09)), 1.12)  # acima de 1.12x enjoa
+        if b <= 0:
+            continue
+        terms.append(f"({f - 1:.4f})*between(it,{a:.3f},{b:.3f})*min(1,(it-{a:.3f})/0.08)")
+    if not terms:
+        return ""
+    expr = "1+" + "+".join(terms)
+    return f"zoompan=z='{expr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={w}x{h}:fps={FPS},"
 
 
 def wrap_hook(text: str, width: int = 20) -> str:
@@ -200,18 +301,23 @@ def render(cfg: dict, workdir: Path, out: Path, whisper_model: str) -> None:
     build_ass(ass, words, {_norm(x) for x in cfg.get("emphasis", [])})
     if cfg.get("hook"):
         add_hook_to_ass(ass, cfg["hook"], float(cfg.get("hook_seconds", 3.5)))
+    add_marks_to_ass(ass, cfg.get("annotations", []))
+    sfx_track = build_sfx_track(cfg.get("sfx", []), workdir, total, out.stem)
 
     layout_pref = cfg.get("layout", "auto")
     vparts, aparts = [], []
+    shot_off = 0.0
     for i, sh in enumerate(shots):
         k = src_idx[sh["src"]]
         sw, shh = src_sizes[sh["src"]]
         layout = layout_pref if layout_pref != "auto" else ("fill" if shh >= 1080 else "gradient")
-        chain = layout_chain(layout, sw, shh)
+        chain = layout_chain(layout, sw, shh, cfg.get("background", "black"))
         cr = src_crop[sh["src"]]
         crop = f"crop={cr[2]}:{cr[3]}:{cr[0]}:{cr[1]}," if cr else ""
         s, e = sh["start"], sh["start"] + sh["dur"]
-        vparts.append(f"[{k}:v]trim=start={s:.3f}:end={e:.3f},setpts=PTS-STARTPTS,fps={FPS},{crop}{chain}[v{i}]")
+        zoom = zoom_filter(cfg.get("zooms", []), shot_off, sw, shh)
+        shot_off += sh["dur"]
+        vparts.append(f"[{k}:v]trim=start={s:.3f}:end={e:.3f},setpts=PTS-STARTPTS,fps={FPS},{crop}{zoom}{chain}[v{i}]")
         aparts.append(
             f"[{k}:a]atrim=start={s:.3f}:end={e:.3f},asetpts=PTS-STARTPTS,"
             f"aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo[a{i}]"
@@ -220,19 +326,25 @@ def render(cfg: dict, workdir: Path, out: Path, whisper_model: str) -> None:
     vconcat = "".join(f"[v{i}]" for i in range(n)) + f"concat=n={n}:v=1:a=0,ass={ass.name}:fontsdir={FONT_DIR},format=yuv420p[v]"
     if mode == "corte":
         # voz original do streamer: volume cheio, só normaliza
-        amix = "".join(f"[a{i}]" for i in range(n)) + f"concat=n={n}:v=0:a=1,loudnorm=I=-14:TP=-1.5:LRA=11[a]"
+        base = "".join(f"[a{i}]" for i in range(n)) + f"concat=n={n}:v=0:a=1"
+        if sfx_track:
+            amix = base + f"[orig];[orig][{len(src_names)}:a]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11[a]"
+            extra_inputs = ["-i", str(sfx_track)]
+        else:
+            amix = base + ",loudnorm=I=-14:TP=-1.5:LRA=11[a]"
+            extra_inputs = []
         graph = ";".join(vparts + aparts + [vconcat, amix])
-        extra_inputs: list[str] = []
     else:
         aconcat = "".join(f"[a{i}]" for i in range(n)) + f"concat=n={n}:v=0:a=1,volume={float(cfg.get('game_audio_volume', 0.2))}[game]"
         nar_idx = len(src_names)
         mix = (
             f"[{nar_idx}:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,apad,atrim=end={total:.3f},asplit=2[nsc][nmix];"
             "[game][nsc]sidechaincompress=threshold=0.012:ratio=10:attack=15:release=400:makeup=1[duck];"
-            "[duck][nmix]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11[a]"
+            "[duck][nmix]amix=inputs=2:normalize=0:duration=first[m];"
+            + (f"[m][{nar_idx + 1}:a]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11[a]" if sfx_track else "[m]loudnorm=I=-14:TP=-1.5:LRA=11[a]")
         )
         graph = ";".join(vparts + aparts + [vconcat, aconcat, mix])
-        extra_inputs = ["-i", str(narr)]
+        extra_inputs = ["-i", str(narr)] + (["-i", str(sfx_track)] if sfx_track else [])
     graph_file = workdir / (out.stem + ".filtergraph")
     graph_file.write_text(graph, encoding="utf-8")
 

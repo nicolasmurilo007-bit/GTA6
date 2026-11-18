@@ -280,3 +280,14 @@ monetizar. Pesquisa feita:
   portões de volume) em `docs/gta6/guia-de-layout.md`; aplicadas no `render_video.py`
   (gancho em faixa amarela, legenda com pop, palavras-chave amarelas).
 - Corte 01 refeito (v2) e enviado; ainda não postado.
+
+## Registro 2026-11-18: efeitos de editor e fundo preto
+- Pedido do usuário: clipes com efeitos sonoros, setas vermelhas, círculos (como editor humano)
+  e fundo PRETO (sem as faixas roxas). Pesquisa /find-skills: nenhum skill instalável fez setas/
+  círculos; o `edit-reel` (MIT) traz SFX CC0 e regras de zoom; o `heditor` tem marcações (círculo,
+  sublinhado, caixa) mas é pesado. Candidato não vetado: adamgodigital/claude-reel-effects (55 efeitos).
+- Feito no pipeline: `sfx`, `zooms`, `annotations`, `background: black` em `render_video.py`;
+  agente `efeitos`; `assets/sfx/` (CC0). Corte 01 v3 enviado (círculo na máscara de Zelda, seta
+  no rosto, 4 SFX, 2 zooms, fundo preto). NÃO postado.
+- Não ouvi o áudio (não consigo): conferi só que a faixa de SFX tem energia nos instantes certos.
+- Posicionamento ainda manual/guiado por quadros; automatizar com visão computacional fica pendente.

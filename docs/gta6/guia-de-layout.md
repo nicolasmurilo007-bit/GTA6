@@ -51,3 +51,14 @@ Também usado: o vídeo de referência do usuário (`estilo-referencia.md`).
 | Câmera ampliada/recorte fechado no rosto | NÃO feito |
 | Estilo "reação" com o post ao fundo | NÃO feito |
 | Checagem automática de silêncio/topo/LUFS/pico | NÃO feita (agente `qualidade` faz por ffmpeg) |
+
+## Decisões do usuário e efeitos (18/11/2026)
+- **Fundo do clipe: PRETO liso**, sem faixas coloridas ou borradas. É o padrão do `render_video.py`
+  (`"background": "black"`; `"gradient"` continua disponível).
+- Clipes "de editor": efeitos sonoros, setas vermelhas, círculos e zoom de impacto. Implementados em
+  `render_video.py` (campos `sfx`, `zooms`, `annotations`); agente `efeitos` decide e posiciona.
+- SFX: 15 sons CC0 em `assets/sfx/` (origem e licença em `assets/sfx/CREDITS.md`).
+- Regras de zoom/SFX: do projeto `artemisln/edit-reel` (MIT): zoom 1,08-1,10x, máx. 5, 0,35-0,45 s;
+  SFX volume 0,15-0,20, nunca repetir o mesmo.
+- Lição técnica: em desenhos ASS use `\an7` (canto superior esquerdo). Com `\an5` o libass reposiciona o
+  desenho pela caixa que o envolve e o círculo/seta saem deslocados.
