@@ -13,3 +13,10 @@ Para atualizar: `npx skills add <origem> -g -a claude-code -y` e copiar de
 
 O hook SessionStart do `claude-video` NÃO foi adotado: ele só emite um aviso.
 O hook do projeto é `.claude/hooks/session-start.sh`.
+
+## Adicionados em 18/11/2026
+| Item | Origem | Licença | Onde |
+|---|---|---|---|
+| 15 efeitos sonoros `sfx_*.mp3` + `make-sfx.py` | artemisln/edit-reel | código MIT, sons CC0 | `assets/sfx/` |
+| Detector de rostos `yunet.onnx` | opencv/opencv_zoo, copiado de adamgodigital/claude-reel-effects | MIT | `assets/models/` |
+Ideias (sem copiar código) de `pycodebr/heditor` (MIT): regras de layout e legenda em `docs/gta6/guia-de-layout.md`.

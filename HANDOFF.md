@@ -291,3 +291,16 @@ monetizar. Pesquisa feita:
   no rosto, 4 SFX, 2 zooms, fundo preto). NÃO postado.
 - Não ouvi o áudio (não consigo): conferi só que a faixa de SFX tem energia nos instantes certos.
 - Posicionamento ainda manual/guiado por quadros; automatizar com visão computacional fica pendente.
+
+## Registro 2026-11-18: posicionamento automático por visão + vetting do pacote de efeitos
+- Decisões do usuário (A,A,A): ele assiste o corte v3 e dá retorno; eu automatizo o posicionamento
+  por visão; eu vetto o claude-reel-effects.
+- `tools/gta6/vision.py`: `faces` (YuNet, rosto no quadro final), `arrow` (sugere a seta),
+  `grid` (quadro com grade de coordenadas para eu ler a posição de objetos), `check` (confere o
+  render). Modelo `assets/models/yunet.onnx` (MIT). Precisa de OpenCV < 5 (o OpenCV 5 tirou APIs;
+  o MediaPipe 1.2 novo também não tem `solutions`). Testado no clipe do Alanzoka: rosto 0,94 de frente
+  e 0,84 de perfil; objeto (máscara de Zelda) lido na grade com ~20 px de erro.
+- claude-reel-effects (MIT, 4 estrelas, 08/11/2026): código limpo (sem rede, só pip install); 55
+  efeitos para talking head: locked-on (colchetes no rosto), lean-in (punch-in), slow-push, pause-point
+  (frame congelado + seta desenhada), scribble, crayon-write. NÃO instalado (poucas estrelas). Só
+  aproveitei o modelo de rosto. Ideias para depois: pause-point e locked-on.

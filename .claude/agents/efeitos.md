@@ -14,3 +14,11 @@ Regras (do `edit-reel`, conferidas por nós):
 - Marcações e SFX entram NA palavra falada (use o tempo da palavra), nunca antes.
 - Coordenadas são do quadro 1080x1920 FINAL (não do vídeo-fonte).
 - Depois de montar, extraia quadros nos instantes das marcações e confirme que caíram no lugar; se não, corrija x/y.
+
+Fluxo automático de posicionamento (ferramenta `tools/gta6/vision.py`; rode com
+`uv run --no-project --python 3.11 --with "opencv-python-headless<5" --with numpy python tools/gta6/vision.py <comando> --config <json> --workdir <pasta> ...`):
+1. `faces --times t1,t2`: rosto no quadro FINAL (caixa e centro). Detector YuNet, sem baixar nada.
+2. `arrow --t T`: devolve pronto o bloco `annotations` de uma seta apontando para o rosto, vinda do lado com mais espaço.
+3. `grid --times t1,t2`: gera quadros finais com GRADE (x amarelo, y azul, a cada 100 px). OLHE o quadro (Read na imagem) e leia as coordenadas do objeto a circular; a precisão é de ~20 px.
+4. Preencha `sfx`, `zooms`, `annotations`, renderize e rode `check --video <mp4>`: extrai quadros nos instantes das marcações; confirme que o círculo envolve o objeto e a seta aponta certo. Se não, ajuste x/y e repita.
+Limites: o detector só acha rostos (objetos são lidos por você na grade); vale para fonte única com `crop`.
