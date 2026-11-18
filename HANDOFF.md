@@ -270,3 +270,13 @@ monetizar. Pesquisa feita:
   fechado no rosto (fonte 1440p aguenta) ou câmera em cima + chat embaixo.
 - NÃO criei a tarefa agendada ainda: faltam conta e chave do Upload-Post, TikTok e
   YouTube conectados lá, e 1 clipe postado de ponta a ponta com aprovação.
+
+## Registro 2026-11-18: busca de skills de layout/gancho/legenda
+- Candidatos avaliados (MIT): pycodebr/heditor 117 estrelas (49 estilos, HTML+GSAP, Chrome,
+  Node 22; pesado), kevinbadi/open-edits 65 (inclui `reverse-engineer` de referência;
+  feito para macOS), artemisln/edit-reel 42 (legenda karaokê com Pillow, Whisper medium),
+  pycaps (legenda CSS, alfa). Nenhum instalado: dependências pesadas e rede limitada.
+- Aproveitado: as REGRAS do heditor (zonas seguras, contraste, tamanho de legenda, gancho,
+  portões de volume) em `docs/gta6/guia-de-layout.md`; aplicadas no `render_video.py`
+  (gancho em faixa amarela, legenda com pop, palavras-chave amarelas).
+- Corte 01 refeito (v2) e enviado; ainda não postado.

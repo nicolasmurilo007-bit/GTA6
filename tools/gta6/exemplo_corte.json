@@ -4,7 +4,27 @@
   "hook": "Alanzoka: o GTA 6 consegue tirar o Zelda de jogo do ano?",
   "hook_seconds": 3.5,
   "sources": {
-    "live": { "path": "clip_gta6.mp4", "crop": [80, 240, 1668, 944] }
+    "live": {
+      "path": "clip_gta6.mp4",
+      "crop": [
+        80,
+        240,
+        1668,
+        944
+      ]
+    }
   },
-  "segments": [ { "src": "live", "start": 0.0, "end": 52.0 } ]
+  "segments": [
+    {
+      "src": "live",
+      "start": 0.0,
+      "end": 52.0
+    }
+  ],
+  "emphasis": [
+    "GTA",
+    "Zelda",
+    "Rockstar",
+    "Jason"
+  ]
 }

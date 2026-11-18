@@ -43,7 +43,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from render_clip import align_to_script, ass_time, duration, transcribe_words  # noqa: E402
+from render_clip import _norm, align_to_script, ass_time, duration, transcribe_words  # noqa: E402
 
 W, H, FPS = 1080, 1920, 30
 FONT_NAME = "Liberation Sans Narrow"
@@ -102,7 +102,7 @@ def layout_chain(layout: str, src_w: int, src_h: int) -> str:
     )
 
 
-def build_ass(path: Path, words: list[dict]) -> None:
+def build_ass(path: Path, words: list[dict], emphasis: set[str] | None = None) -> None:
     header = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {W}
@@ -112,6 +112,7 @@ WrapStyle: 2
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Word,{FONT_NAME},120,&H00FFFFFF,&H000000FF,&H00000000,&H64000000,-1,-1,0,0,100,100,0,0,1,9,3,5,40,40,0,1
+Style: Hook,{FONT_NAME},84,&H00000000,&H000000FF,&H004DD8FF,&H00000000,-1,-1,0,0,100,100,0,0,3,18,0,5,60,60,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -122,7 +123,13 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         nxt = words[i + 1]["start"] if i + 1 < len(words) else w["end"] + 0.4
         end = max(min(nxt, w["end"] + 0.5), start + 0.18)
         text = w["text"].upper().replace("\\", "").replace("{", "").replace("}", "")
-        lines.append(f"Dialogue: 0,{ass_time(start)},{ass_time(end)},Word,,0,0,0,,{{\\an5\\pos({W // 2},{CAPTION_Y})}}{text}\n")
+        norm = _norm(w["text"])
+        # destaque (amarelo #ffd84d): números, ênfase pedida no config, palavras com ! ou ?
+        hot = bool(emphasis and norm in emphasis) or any(c.isdigit() for c in norm) or w["text"].rstrip().endswith(("!", "?"))
+        color = "\\c&H004DD8FF&" if hot else ""
+        # "pop": a palavra entra 118% e assenta em 100% em 110 ms
+        pop = "\\fscx118\\fscy118\\t(0,110,\\fscx100\\fscy100)"
+        lines.append(f"Dialogue: 0,{ass_time(start)},{ass_time(end)},Word,,0,0,0,,{{\\an5\\pos({W // 2},{CAPTION_Y}){pop}{color}}}{text}\n")
     path.write_text("".join(lines), encoding="utf-8")
 
 
@@ -143,7 +150,7 @@ def wrap_hook(text: str, width: int = 20) -> str:
 def add_hook_to_ass(path: Path, hook: str, seconds: float) -> None:
     """Acrescenta o gancho (texto no topo, primeiros segundos) a um .ass já criado."""
     text = wrap_hook(hook.upper().replace("\\", "").replace("{", "").replace("}", ""))
-    line = f"Dialogue: 1,{ass_time(0.0)},{ass_time(seconds)},Word,,0,0,0,,{{\\an5\\pos({W // 2},360)\\fs88}}{text}\n"
+    line = f"Dialogue: 1,{ass_time(0.0)},{ass_time(seconds)},Hook,,0,0,0,,{{\\an5\\pos({W // 2},400)}}{text}\n"
     path.write_text(path.read_text(encoding="utf-8") + line, encoding="utf-8")
 
 
@@ -190,7 +197,7 @@ def render(cfg: dict, workdir: Path, out: Path, whisper_model: str) -> None:
     if cfg.get("text"):
         words = align_to_script(cfg["text"], words)
     ass = workdir / (out.stem + ".ass")
-    build_ass(ass, words)
+    build_ass(ass, words, {_norm(x) for x in cfg.get("emphasis", [])})
     if cfg.get("hook"):
         add_hook_to_ass(ass, cfg["hook"], float(cfg.get("hook_seconds", 3.5)))
 

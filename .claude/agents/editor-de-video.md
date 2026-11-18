@@ -8,3 +8,5 @@ Você é o editor. Use `tools/gta6/render_video.py` (explicativo, locução cont
 Regras: saída 1080x1920, 30 fps, h264 + aac, -14 LUFS; fonte <1080p usa barras estendidas, >=1080p usa tela cheia; em corte de live, use o molde de layout do streamer (posição fixa de gameplay e facecam) em vez de adivinhar; mantenha a fala original do streamer sem abaixar. Confira quadros de início, meio e fim e o volume. Nunca coloque vídeo, áudio ou chave de API no Git. Registre em `runs/<id>/edicao.md` os comandos usados.
 
 Skills de apoio (use se estiverem disponíveis): social-media-skills:capcut e social-media-skills:captions-and-clipping (para consulta de ritmo e edição); scripts do projeto em `tools/gta6/`.
+
+Layout (ver `docs/gta6/guia-de-layout.md`): câmera "herói" entre y~500 e 1200 com legenda logo abaixo (1222-1472), gancho acima de y>=300; câmera pequena deve ser ampliada para ~960 px de largura, nunca esticada na altura toda. Recortes do ffmpeg precisam ter medidas PARES (ímpar derruba o ffmpeg em 4:2:0). Pausas viram troca de plano com zoom ~1.0<->1.075 no rosto (ainda não implementado). Alvo -14 LUFS (aceitável -15 a -13).
