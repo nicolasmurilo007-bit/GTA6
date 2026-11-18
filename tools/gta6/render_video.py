@@ -234,6 +234,29 @@ def zoom_filter(zooms: list[dict], offset: float, w: int, h: int) -> str:
     return f"zoompan=z='{expr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={w}x{h}:fps={FPS},"
 
 
+def freeze_filter(freezes: list[dict], offset: float, idx: int) -> str:
+    """Quadro congelado ("pause-point"): a imagem pára por `dur` s e o áudio segue; depois a imagem volta
+    já sincronizada (a duração total não muda). Tempos em tempo de SAÍDA. Feito com trim + loop + concat
+    (o filtro `freezeframes` travou o ffmpeg com fonte 1440p)."""
+    out = ""
+    for k, z in enumerate(freezes):
+        t0 = float(z["t"]) - offset
+        dur = float(z.get("dur", 1.0))
+        if t0 < 0:
+            continue
+        n = max(int(round(dur * FPS)), 1)
+        t1 = t0 + dur
+        u = f"fz{idx}_{k}"
+        out += (
+            f"split=3[{u}a][{u}b][{u}c];"
+            f"[{u}a]trim=end={t0:.3f},setpts=PTS-STARTPTS[{u}p];"
+            f"[{u}b]trim=start={t0:.3f}:end={t0 + 1.5 / FPS:.3f},setpts=PTS-STARTPTS,trim=end_frame=1,loop=loop={n}:size=1:start=0,setpts=N/({FPS}*TB)[{u}h];"
+            f"[{u}c]trim=start={t1:.3f},setpts=PTS-STARTPTS[{u}n];"
+            f"[{u}p][{u}h][{u}n]concat=n=3:v=1:a=0,"
+        )
+    return out
+
+
 def wrap_hook(text: str, width: int = 20) -> str:
     """Quebra o gancho em linhas curtas (\\N do ASS)."""
     words, lines, cur = text.split(), [], ""
@@ -251,7 +274,7 @@ def wrap_hook(text: str, width: int = 20) -> str:
 def add_hook_to_ass(path: Path, hook: str, seconds: float) -> None:
     """Acrescenta o gancho (texto no topo, primeiros segundos) a um .ass já criado."""
     text = wrap_hook(hook.upper().replace("\\", "").replace("{", "").replace("}", ""))
-    line = f"Dialogue: 1,{ass_time(0.0)},{ass_time(seconds)},Hook,,0,0,0,,{{\\an5\\pos({W // 2},400)}}{text}\n"
+    line = f"Dialogue: 1,{ass_time(0.0)},{ass_time(seconds)},Hook,,0,0,0,,{{\\an8\\pos({W // 2},300)}}{text}\n"
     path.write_text(path.read_text(encoding="utf-8") + line, encoding="utf-8")
 
 
@@ -315,7 +338,7 @@ def render(cfg: dict, workdir: Path, out: Path, whisper_model: str) -> None:
         cr = src_crop[sh["src"]]
         crop = f"crop={cr[2]}:{cr[3]}:{cr[0]}:{cr[1]}," if cr else ""
         s, e = sh["start"], sh["start"] + sh["dur"]
-        zoom = zoom_filter(cfg.get("zooms", []), shot_off, sw, shh)
+        zoom = freeze_filter(cfg.get("freezes", []), shot_off, i) + zoom_filter(cfg.get("zooms", []), shot_off, sw, shh)
         shot_off += sh["dur"]
         vparts.append(f"[{k}:v]trim=start={s:.3f}:end={e:.3f},setpts=PTS-STARTPTS,fps={FPS},{crop}{zoom}{chain}[v{i}]")
         aparts.append(
@@ -328,7 +351,7 @@ def render(cfg: dict, workdir: Path, out: Path, whisper_model: str) -> None:
         # voz original do streamer: volume cheio, só normaliza
         base = "".join(f"[a{i}]" for i in range(n)) + f"concat=n={n}:v=0:a=1"
         if sfx_track:
-            amix = base + f"[orig];[orig][{len(src_names)}:a]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11[a]"
+            amix = base + f"[orig];[orig][{len(src_names)}:a]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-12.8:TP=-1.5:LRA=11[a]"
             extra_inputs = ["-i", str(sfx_track)]
         else:
             amix = base + ",loudnorm=I=-14:TP=-1.5:LRA=11[a]"

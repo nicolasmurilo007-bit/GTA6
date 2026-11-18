@@ -12,3 +12,5 @@ Método: transcreva com faster-whisper (word_timestamps, idioma pt) e, se existi
 Skills de apoio (use se estiverem disponíveis): social-media-skills:captions-and-clipping; skill `video-to-shorts-skill` (legenda palavra por palavra).
 
 Regras medidas (ver `docs/gta6/guia-de-layout.md`): letra >= 60 px (usamos 120 px), 1 palavra por vez (ou 1-3 palavras, <= 17 caracteres, no máximo 2 linhas), contraste mandatório (branco ou preto sobre amarelo #ffd84d; nunca contorno escuro em letra escura), sem cobrir o rosto, nada acima de y=270 nem abaixo de y=1570, nem na borda direita (x > 960) entre y=1000 e 1700. Use o campo `emphasis` do config para as palavras-chave (nomes, números); o script já destaca números, "!" e "?" e aplica o "pop" de entrada.
+
+Eficiência: no modo corte a legenda sai AUTOMÁTICA do render (Whisper em cache). Seu trabalho é só revisar `contexto.json` e devolver (a) correções de grafia/nomes em `text` e (b) a lista `emphasis` (nomes e palavras-chave) para o `clipe.json`. Não rode o Whisper de novo.

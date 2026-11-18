@@ -304,3 +304,17 @@ monetizar. Pesquisa feita:
   efeitos para talking head: locked-on (colchetes no rosto), lean-in (punch-in), slow-push, pause-point
   (frame congelado + seta desenhada), scribble, crayon-write. NÃO instalado (poucas estrelas). Só
   aproveitei o modelo de rosto. Ideias para depois: pause-point e locked-on.
+
+## Registro 2026-11-18: eficiência dos agentes e quadro congelado
+- `tools/gta6/prepare.py` (um comando: baixa, transcreve com cache, rostos, volume, quadros, esqueleto
+  `clipe.json`), `tools/gta6/qa.py` (checagem automática: resolução, duração, LUFS, pico, tela preta,
+  silêncio, topo, decodificação), `tools/gta6/layouts.json` (recorte por streamer).
+- Transcrição em cache (`render_clip.transcribe_words`): re-render rápido.
+- OpenCV <5 agora no ambiente do mpt (hook atualizado) para um único Python fazer tudo.
+- Agentes: `qualidade`, `capa`, `descricao-hashtags` com `model: haiku`; todos leem `contexto.json`;
+  roteiro "modo rápido" na skill `produzir-clipe` com etapas em paralelo.
+- Novo efeito `freezes` (pause-point): quadro congelado com áudio seguindo. O filtro `freezeframes`
+  TRAVOU o ffmpeg (>10 min); trocado por trim+loop+concat (18 s). Validado por PSNR (42-73 dB parado
+  vs 16-20 dB em movimento).
+- O QA automático pegou dois defeitos meus: gancho começando em y=225 (<270) e volume -15,3 LUFS.
+  Corrigidos (gancho `\an8` em y=300; loudnorm alvo -12,8 no modo corte).

@@ -30,7 +30,7 @@ tool_dir="$(uv tool dir)/mpt"
 hashes="$tool_dir/.session-start.sha256"
 if ! sha256sum --check --status "$hashes" 2>/dev/null; then
   rm -f "$hashes"
-  uv tool install --force --editable . --python 3.11
+  uv tool install --force --editable . --python 3.11 --with "opencv-python-headless<5"
   sha256sum .claude/hooks/session-start.sh pyproject.toml uv.lock > "$hashes" || rm -f "$hashes"
 fi
 

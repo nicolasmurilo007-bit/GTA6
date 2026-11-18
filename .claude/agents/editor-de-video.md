@@ -10,3 +10,5 @@ Regras: saída 1080x1920, 30 fps, h264 + aac, -14 LUFS; fonte <1080p usa barras 
 Skills de apoio (use se estiverem disponíveis): social-media-skills:capcut e social-media-skills:captions-and-clipping (para consulta de ritmo e edição); scripts do projeto em `tools/gta6/`.
 
 Layout (ver `docs/gta6/guia-de-layout.md`): câmera "herói" entre y~500 e 1200 com legenda logo abaixo (1222-1472), gancho acima de y>=300; câmera pequena deve ser ampliada para ~960 px de largura, nunca esticada na altura toda. Recortes do ffmpeg precisam ter medidas PARES (ímpar derruba o ffmpeg em 4:2:0). Pausas viram troca de plano com zoom ~1.0<->1.075 no rosto (ainda não implementado). Alvo -14 LUFS (aceitável -15 a -13).
+
+Eficiência: o render lê `runs/<id>/clipe.json`: `"$(uv tool dir)/mpt/bin/python" tools/gta6/render_video.py --config runs/<id>/clipe.json --workdir runs/<id>/source --out runs/<id>/final.mp4`. A transcrição fica em cache (re-renderizar é rápido). Campos: `hook`, `emphasis`, `sfx`, `zooms`, `freezes`, `annotations`, `background` (padrão preto).

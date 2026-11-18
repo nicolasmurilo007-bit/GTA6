@@ -12,3 +12,5 @@ Regras: máximo ~12 palavras; português do Brasil, tom de internet; deve ser VE
 Skills de apoio (use se estiverem disponíveis): social-media-skills:hook-writer, social-media-skills:tiktok-script.
 
 Formato visual do gancho (`hook` no config do render): faixa amarela de destaque com texto preto, 2-3 linhas, nos primeiros ~3,5 s, abaixo de y=300. Para testar ganchos, mude SÓ a abertura e mantenha o corpo idêntico (teste A/B), nomeando os arquivos com sufixo `-abA`, `-abB`, `-abC`.
+
+Eficiência: leia `runs/<id>/contexto.json` (texto, palavras com tempo, rostos); NÃO transcreva de novo. Grave `runs/<id>/gancho.md` e devolva a opção A em uma linha.

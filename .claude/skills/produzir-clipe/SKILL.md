@@ -30,3 +30,15 @@ Regras do roteiro:
 - Se `qualidade` ou `creditos-e-direitos` bloquear, voltar ao agente indicado; nunca pular a checagem.
 - Postar só com a confirmação do usuário para aquele clipe (modo inicial). A autonomia só aumenta depois de N clipes aprovados seguidos, decisão registrada em `docs/gta6/automacao.md`.
 - Terminar sempre com o resumo A/B/C da regra global do `CLAUDE.md`.
+
+
+## Modo rápido (scripts + agentes em paralelo)
+Python do mpt: `PY="$(uv tool dir)/mpt/bin/python"`.
+1. `cacador-de-momentos` lista os clipes recentes e escolhe (devolve a URL).
+2. `"$PY" tools/gta6/prepare.py --source <URL> --streamer <nome> --run-dir runs/<AAAA-MM-DD_slug>`: baixa, transcreve (cache), mede rosto/volume, gera `contexto.json`, `clipe.json` e quadros. **Um comando, nada repetido.**
+3. **Em paralelo (uma mensagem, 3 chamadas):** `gancho`, `legendas` (correções + `emphasis`) e `efeitos` (sfx/zooms/freezes/annotations). Todos leem `contexto.json`.
+4. Montar o `clipe.json` com as respostas -> `editor-de-video` renderiza `final.mp4`.
+5. `python tools/gta6/qa.py final.mp4` (agente `qualidade`, modelo leve). Reprovou: corrigir e repetir.
+6. **Em paralelo:** `titulo`, `descricao-hashtags`, `capa`. Depois `creditos-e-direitos`.
+7. Mostrar ao usuário o vídeo + checklist e esperar a aprovação antes do `publicador`.
+Tempos medidos (CPU, sem placa de vídeo): `prepare` ~50 s para um clipe de 52 s; render ~20-30 s; re-render com transcrição em cache bem mais rápido.

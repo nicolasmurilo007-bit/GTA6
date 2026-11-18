@@ -51,6 +51,22 @@ def ass_time(t: float) -> str:
 
 
 def transcribe_words(audio: Path, language: str, model_name: str) -> list[dict]:
+    """Palavras com tempo (faster-whisper). Resultado em cache ao lado do áudio: re-renderizar é rápido."""
+    cache = audio.with_name(f"{audio.name}.{model_name}.{language}.words.json")
+    size = audio.stat().st_size
+    if cache.exists():
+        try:
+            data = json.loads(cache.read_text(encoding="utf-8"))
+            if data.get("size") == size:
+                return data["words"]
+        except (OSError, ValueError, KeyError):
+            pass
+    words = _transcribe_uncached(audio, language, model_name)
+    cache.write_text(json.dumps({"size": size, "words": words}, ensure_ascii=False), encoding="utf-8")
+    return words
+
+
+def _transcribe_uncached(audio: Path, language: str, model_name: str) -> list[dict]:
     from faster_whisper import WhisperModel
 
     model = WhisperModel(model_name, device="cpu", compute_type="int8")

@@ -22,3 +22,6 @@ Fluxo automático de posicionamento (ferramenta `tools/gta6/vision.py`; rode com
 3. `grid --times t1,t2`: gera quadros finais com GRADE (x amarelo, y azul, a cada 100 px). OLHE o quadro (Read na imagem) e leia as coordenadas do objeto a circular; a precisão é de ~20 px.
 4. Preencha `sfx`, `zooms`, `annotations`, renderize e rode `check --video <mp4>`: extrai quadros nos instantes das marcações; confirme que o círculo envolve o objeto e a seta aponta certo. Se não, ajuste x/y e repita.
 Limites: o detector só acha rostos (objetos são lidos por você na grade); vale para fonte única com `crop`.
+
+Eficiência: use `contexto.json` (palavras com tempo e `rostos`) e os quadros em `runs/<id>/frames/`; só chame `vision.py grid` para objetos que precisem de coordenada. Entregue os campos `sfx`, `zooms`, `freezes` e `annotations` prontos para colar no `clipe.json`.
+Quadro congelado ("pause-point"): campo `freezes: [{"t": 34.8, "dur": 1.0}]` (a imagem pára, o áudio segue; combine com seta/círculo e um SFX no mesmo instante). Use no máximo 1 por vídeo e em frase-chave.
