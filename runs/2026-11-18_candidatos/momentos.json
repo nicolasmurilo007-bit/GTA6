@@ -1,0 +1,41 @@
+{
+  "fonte": "clipes de espectadores do Alanzoka (Twitch), filtro range=7d, listados em 2026-11-18 via yt-dlp",
+  "excluidos": ["2342744512 (gta 6 vs Zelda, ja produzido)", "239410594 (11do11 no Kabum, 55s, publi de patrocinador)", "2875848205 (Isso e Mario msm, 8s, curto demais)"],
+  "escolha_final": {
+    "id": "4264051111",
+    "url": "https://www.twitch.tv/alanzoka/clip/FlaccidEagerHamburgerTinyFace-4-Xn62LbMR9A2GtI"
+  },
+  "candidatos": [
+    {
+      "id": "4264051111",
+      "url": "https://www.twitch.tv/alanzoka/clip/FlaccidEagerHamburgerTinyFace-4-Xn62LbMR9A2GtI",
+      "titulo": "QUE ISSO ROCKSTAR ? KKKKKKKKKKKKKKKKKKK",
+      "duracao_s": 29.96,
+      "views": 210,
+      "resolucao": "2560x1440",
+      "inicio_s": 0,
+      "fim_s": 29,
+      "por_que": "Gameplay de GTA 6 (NPC de biquini e cachorro, dialogo do jogo) e Alan caindo na risada; punchline 'Que isso Rockstar?' perto dos 18-21 s; se entende sozinho e e do nicho.",
+      "nota": 72,
+      "tem_fala_do_streamer": "sim",
+      "risco": "baixo/medio: o clipe ja vem com legenda queimada da Twitch (conferir se atrapalha a legenda nova); uma palavra aparece censurada ('********') na legenda; dialogo do jogo (Rockstar) em boa parte do audio; camera pequena no canto direito.",
+      "camera": "sobreposicao pequena no canto direito, aprox x 1988-2548, y 360-772 em 2560x1440 (estimado dos quadros). O crop 'conversa' de tools/gta6/layouts.json NAO serve para este clipe."
+    },
+    {
+      "id": "4286759981",
+      "url": "https://www.twitch.tv/alanzoka/clip/CalmSuccessfulParrotTBTacoRight-ZwIhk9cg2KEXL4zX",
+      "titulo": "é xerio",
+      "duracao_s": 23.1,
+      "views": 3724,
+      "resolucao": "2560x1440",
+      "inicio_s": 0,
+      "fim_s": 23,
+      "por_que": "Mais views da lista no formato ideal; Alan na tela de morte de um jogo tipo Deadlock reagindo ('fake total mano'). Fora do nicho GTA 6.",
+      "nota": 55,
+      "tem_fala_do_streamer": "sim",
+      "risco": "medio: entendimento depende de conhecer o jogo; legenda queimada na tela; contexto da jogada pouco claro; conteudo nao foi transcrito.",
+      "camera": "canto superior esquerdo, aprox x 0-570, y 0-420 em 2560x1440 (estimado)."
+    }
+  ],
+  "nao_verificados": "Os demais clipes da lista nao foram baixados nem assistidos; so titulo/duracao/views. A transcricao (faster-whisper small) do finalista pegou o dialogo do jogo (0.9-20.7 s); a fala do Alan ('Que isso Rockstar?') foi lida na legenda queimada dos quadros, sem tempo exato por palavra. Os tempos do punchline sao aproximados (amostragem a cada 3 s)."
+}

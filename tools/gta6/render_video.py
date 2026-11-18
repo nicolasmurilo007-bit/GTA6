@@ -317,9 +317,17 @@ def render(cfg: dict, workdir: Path, out: Path, whisper_model: str) -> None:
     print(f"{len(shots)} planos para {total:.1f}s de vídeo (modo {mode})")
 
     # legenda: palavras do roteiro (ou do Whisper) com tempos do Whisper
-    words = transcribe_words(narr, cfg.get("language", "pt"), whisper_model)
+    if cfg.get("words_from"):  # reaproveita a transcrição do prepare.py (contexto.json)
+        words = json.loads((workdir / cfg["words_from"]).read_text(encoding="utf-8"))["palavras"]
+    else:
+        words = transcribe_words(narr, cfg.get("language", "pt"), whisper_model)
     if cfg.get("text"):
         words = align_to_script(cfg["text"], words)
+    manual = cfg.get("words_manual") or []
+    if manual:  # falas que o Whisper não pegou (ex.: o streamer por cima do áudio do jogo): têm prioridade
+        lo, hi = min(m["start"] for m in manual), max(m["end"] for m in manual)
+        words = [w for w in words if not (lo - 0.05 <= w["start"] <= hi)] + [dict(m) for m in manual]
+        words.sort(key=lambda w: w["start"])
     ass = workdir / (out.stem + ".ass")
     build_ass(ass, words, {_norm(x) for x in cfg.get("emphasis", [])})
     if cfg.get("hook"):
@@ -351,10 +359,10 @@ def render(cfg: dict, workdir: Path, out: Path, whisper_model: str) -> None:
         # voz original do streamer: volume cheio, só normaliza
         base = "".join(f"[a{i}]" for i in range(n)) + f"concat=n={n}:v=0:a=1"
         if sfx_track:
-            amix = base + f"[orig];[orig][{len(src_names)}:a]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-12.8:TP=-1.5:LRA=11[a]"
+            amix = base + f"[orig];[orig][{len(src_names)}:a]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-12.8:TP=-1.5:LRA=11,alimiter=limit=0.82:level=disabled:attack=2:release=40[a]"
             extra_inputs = ["-i", str(sfx_track)]
         else:
-            amix = base + ",loudnorm=I=-14:TP=-1.5:LRA=11[a]"
+            amix = base + ",loudnorm=I=-14:TP=-1.5:LRA=11,alimiter=limit=0.82:level=disabled:attack=2:release=40[a]"
             extra_inputs = []
         graph = ";".join(vparts + aparts + [vconcat, amix])
     else:
@@ -364,7 +372,7 @@ def render(cfg: dict, workdir: Path, out: Path, whisper_model: str) -> None:
             f"[{nar_idx}:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,apad,atrim=end={total:.3f},asplit=2[nsc][nmix];"
             "[game][nsc]sidechaincompress=threshold=0.012:ratio=10:attack=15:release=400:makeup=1[duck];"
             "[duck][nmix]amix=inputs=2:normalize=0:duration=first[m];"
-            + (f"[m][{nar_idx + 1}:a]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11[a]" if sfx_track else "[m]loudnorm=I=-14:TP=-1.5:LRA=11[a]")
+            + (f"[m][{nar_idx + 1}:a]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11,alimiter=limit=0.82:level=disabled:attack=2:release=40[a]" if sfx_track else "[m]loudnorm=I=-14:TP=-1.5:LRA=11,alimiter=limit=0.82:level=disabled:attack=2:release=40[a]")
         )
         graph = ";".join(vparts + aparts + [vconcat, aconcat, mix])
         extra_inputs = ["-i", str(narr)] + (["-i", str(sfx_track)] if sfx_track else [])

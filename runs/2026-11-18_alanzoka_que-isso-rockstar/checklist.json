@@ -1,0 +1,17 @@
+{
+  "id": "2026-11-18_alanzoka_que-isso-rockstar",
+  "veredito": "APROVADO",
+  "autorizacao": "desconhecida",
+  "aviso": "Crédito na legenda NÃO é autorização do streamer. Risco assumido pelo usuário (opção B, 18/11/2026).",
+  "duracao_s": 30.0,
+  "itens": [
+    {"item": "bloco de créditos", "estado": "ok", "detalhe": "Créditos: @alanzoka (twitch.tv/alanzoka)"},
+    {"item": "origem registrada", "estado": "atencao", "detalhe": "link do clipe presente; faltam data e minuto do VOD"},
+    {"item": "rótulo de IA", "estado": "ok", "detalhe": "ligado por decisão do usuário; não obrigatório (sem voz sintética); descricao.md linha 4 contradiz o rótulo se publicada"},
+    {"item": "sem monetização/afiliado/patrocínio/venda", "estado": "ok", "detalhe": ""},
+    {"item": "música e logos", "estado": "atencao", "detalhe": "sem música; confirmar ausência de logo da Twitch no final.mp4; widget de sub mostra nome de terceiro"},
+    {"item": "conteúdo sensível", "estado": "ok", "detalhe": "sem xingamento pesado, discriminação, menores ou política"},
+    {"item": "duração", "estado": "ok", "detalhe": "30,0 s (só registro)"},
+    {"item": "diversidade", "estado": "ok", "detalhe": "primeiro clipe da série; sem repetição"}
+  ]
+}

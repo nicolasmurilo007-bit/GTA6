@@ -1,0 +1,22 @@
+{
+  "sfx": [
+    {"name": "swish", "t": 0.9, "vol": 0.18},
+    {"name": "pop", "t": 2.74, "vol": 0.18},
+    {"name": "undo", "t": 9.02, "vol": 0.16},
+    {"name": "rise", "t": 17.6, "vol": 0.15},
+    {"name": "thud", "t": 19.0, "vol": 0.22}
+  ],
+  "zooms": [
+    {"t": 3.24, "dur": 0.4, "factor": 1.08},
+    {"t": 9.02, "dur": 0.4, "factor": 1.09},
+    {"t": 19.0, "dur": 0.45, "factor": 1.1}
+  ],
+  "freezes": [
+    {"t": 19.0, "dur": 1.0}
+  ],
+  "annotations": [
+    {"type": "circle", "t": 9.02, "dur": 2.2, "x": 932, "y": 905, "rx": 80, "ry": 95},
+    {"type": "arrow", "t": 19.0, "dur": 2.8, "x": 870, "y": 880, "angle": 315, "scale": 1.0}
+  ],
+  "justificativa": "Humor: SFX leves e curtos (swish na 1a palavra, pop em 'arugula', undo em 'isso?'); rise 1,4 s antes da virada e thud no freeze de 1 s em 19,0 s com zoom 1,10 e seta no Alan rindo (punchline). Circulo no Alan em 'isso?' (rosto em cx~930, cy~905, conferido na grade); seta vem de cima-esquerda sobre o jogo, longe da legenda (y~1270)."
+}

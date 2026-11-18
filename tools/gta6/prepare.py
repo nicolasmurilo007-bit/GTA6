@@ -51,6 +51,7 @@ def main() -> None:
     ap.add_argument("--source", required=True)
     ap.add_argument("--streamer", default="alanzoka")
     ap.add_argument("--run-dir", required=True, type=Path)
+    ap.add_argument("--source-url", default=None, help="URL de origem a registrar (quando --source é um arquivo)")
     ap.add_argument("--whisper-model", default="small")
     ap.add_argument("--face-step", type=float, default=4.0, help="a cada quantos segundos medir o rosto")
     a = ap.parse_args()
@@ -68,7 +69,7 @@ def main() -> None:
             found = [f for f in src_dir.glob("clip.*") if f.suffix in (".mp4", ".mkv", ".webm")]
             if found and found[0] != clip:
                 found[0].rename(clip)
-    else:
+    elif Path(a.source).resolve() != clip.resolve():
         shutil.copy(a.source, clip)
 
     layouts = json.loads((HERE / "layouts.json").read_text(encoding="utf-8"))
@@ -96,11 +97,11 @@ def main() -> None:
              f"crop={w}:{h}:{x}:{y},scale=1080:{src['fg_h']}:flags=lanczos,pad=1080:1920:0:{src['bar']}:color=black,scale=360:640",
              rd / "frames" / f"amostra_{k}_{tt}.jpg"])
 
-    handle = a.streamer
+    handle = a.streamer.split("_")[0]  # "alanzoka_jogo" -> "alanzoka"
     ctx = {
         "id": rd.name,
         "streamer": a.streamer,
-        "fonte": a.source if a.source.startswith("http") else str(a.source),
+        "fonte": a.source_url or (a.source if a.source.startswith("http") else str(a.source)),
         "duracao_s": round(dur, 2),
         "recorte": crop,
         "volume": loudness(clip),

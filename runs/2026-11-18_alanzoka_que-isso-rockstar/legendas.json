@@ -1,0 +1,5 @@
+{
+  "text": "Ela não tá errada, a Rúcula é insuportável. Jason, ela é inofensiva! E ela te adora! Como pode dizer uma coisa dessas? Eu já tô bem, Jason. Vai aproveitar seu dia. Eu só preciso me sentar um pouco. Só isso.",
+  "emphasis": ["rucula", "insuportavel", "jason", "inofensiva", "adora"],
+  "observacoes": "Fonte da verdade: legenda do jogo nos quadros (2,3 s; 6,5 s; 8,8 s; 12,3 s; 17,8 s; 18,6 s). Whisper ouviu o audio em ingles do jogo como se fosse portugues, entao so os tempos foram aproveitados. Contagem: 38 palavras no texto contra 42 do Whisper (frase 1: 8 vs 9; frase 3: 6 vs 5; frase 4: 8 vs 10; frase 5: 9 vs 10), entao o alinhamento interpola tempos em alguns trechos; em 'pode dizer uma coisa dessas' (8,9-9,5 s) as palavras podem ficar curtas (<0,18 s), conferir no render. O 'Ah,' inicial da legenda do jogo (antes de 'Jason', ~5,0 s) foi omitido porque o Whisper nao o captou. A legenda do jogo da fala de 1 a 4 foi confirmada, mas nao ha quadro em 4 s nem 10-11 s (pausa), e nada foi checado apos 20,3 s. 'Rucula' e nome do cachorro/personagem, grafia 'Rúcula' conforme a legenda do jogo."
+}

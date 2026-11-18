@@ -1,0 +1,167 @@
+{
+  "mode": "corte",
+  "language": "pt",
+  "background": "black",
+  "hook": "Que NPC é essa do GTA 6? Espera a reação do Alan",
+  "hook_seconds": 3.5,
+  "emphasis": [
+    "rucula",
+    "insuportavel",
+    "jason",
+    "inofensiva",
+    "adora",
+    "rockstar"
+  ],
+  "sources": {
+    "live": {
+      "path": "clip.mp4",
+      "crop": [
+        0,
+        0,
+        2560,
+        1320
+      ]
+    }
+  },
+  "segments": [
+    {
+      "src": "live",
+      "start": 0.0,
+      "end": 30.0
+    }
+  ],
+  "sfx": [
+    {
+      "name": "swish",
+      "t": 0.9,
+      "vol": 0.18
+    },
+    {
+      "name": "pop",
+      "t": 2.74,
+      "vol": 0.18
+    },
+    {
+      "name": "undo",
+      "t": 9.02,
+      "vol": 0.16
+    },
+    {
+      "name": "rise",
+      "t": 17.0,
+      "vol": 0.15
+    },
+    {
+      "name": "thud",
+      "t": 18.4,
+      "vol": 0.22
+    }
+  ],
+  "zooms": [
+    {
+      "t": 3.24,
+      "dur": 0.4,
+      "factor": 1.08
+    },
+    {
+      "t": 9.02,
+      "dur": 0.4,
+      "factor": 1.09
+    },
+    {
+      "t": 18.4,
+      "dur": 0.45,
+      "factor": 1.1
+    }
+  ],
+  "freezes": [
+    {
+      "t": 18.4,
+      "dur": 1.0
+    }
+  ],
+  "annotations": [
+    {
+      "type": "circle",
+      "t": 9.02,
+      "dur": 2.2,
+      "x": 975,
+      "y": 1340,
+      "rx": 105,
+      "ry": 120
+    },
+    {
+      "type": "arrow",
+      "t": 18.4,
+      "dur": 2.8,
+      "x": 690,
+      "y": 1275,
+      "angle": 315,
+      "scale": 1.0
+    }
+  ],
+  "text": "Ela não tá errada, a Rúcula é insuportável. Jason, ela é inofensiva! E ela te adora! Como pode dizer uma coisa dessas? Eu já tô bem, Jason. Vai aproveitar seu dia. Eu só preciso me sentar um pouco. Só isso.",
+  "words_from": "../contexto.json",
+  "words_manual": [
+    {
+      "text": "Viajei",
+      "start": 16.1,
+      "end": 16.6
+    },
+    {
+      "text": "pô",
+      "start": 16.6,
+      "end": 17.1
+    },
+    {
+      "text": "Ué?",
+      "start": 18.0,
+      "end": 18.4
+    },
+    {
+      "text": "Que",
+      "start": 18.45,
+      "end": 18.8
+    },
+    {
+      "text": "isso",
+      "start": 18.8,
+      "end": 19.3
+    },
+    {
+      "text": "Rockstar?",
+      "start": 19.3,
+      "end": 20.4
+    },
+    {
+      "text": "O",
+      "start": 21.0,
+      "end": 21.15
+    },
+    {
+      "text": "cachorro",
+      "start": 21.15,
+      "end": 21.7
+    },
+    {
+      "text": "deu",
+      "start": 21.7,
+      "end": 22.0
+    },
+    {
+      "text": "uns",
+      "start": 22.0,
+      "end": 22.4
+    },
+    {
+      "text": "pulos",
+      "start": 22.4,
+      "end": 22.9
+    },
+    {
+      "text": "mano",
+      "start": 22.9,
+      "end": 23.5
+    }
+  ]
+}

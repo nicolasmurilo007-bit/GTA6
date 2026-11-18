@@ -1,0 +1,317 @@
+{
+  "id": "2026-11-18_alanzoka_que-isso-rockstar",
+  "streamer": "alanzoka_jogo",
+  "fonte": "https://www.twitch.tv/alanzoka/clip/FlaccidEagerHamburgerTinyFace-4-Xn62LbMR9A2GtI",
+  "duracao_s": 30.0,
+  "recorte": [
+    0,
+    0,
+    2560,
+    1320
+  ],
+  "volume": {
+    "lufs": -18.6,
+    "true_peak_db": -0.0
+  },
+  "texto": "Ela não é rara, a arugula é a pior. Jason, ela é difícil e ela ama você. Como você pode fazer isso? Eu estou bem agora, Jason. Ok? Aproveite o seu dia. Eu só preciso ter um bom dia. E é isso.",
+  "palavras": [
+    {
+      "text": "Ela",
+      "start": 0.8999999999999977,
+      "end": 1.46
+    },
+    {
+      "text": "não",
+      "start": 1.46,
+      "end": 1.7
+    },
+    {
+      "text": "é",
+      "start": 1.7,
+      "end": 1.7
+    },
+    {
+      "text": "rara,",
+      "start": 1.7,
+      "end": 2.04
+    },
+    {
+      "text": "a",
+      "start": 2.58,
+      "end": 2.74
+    },
+    {
+      "text": "arugula",
+      "start": 2.74,
+      "end": 3.02
+    },
+    {
+      "text": "é",
+      "start": 3.02,
+      "end": 3.14
+    },
+    {
+      "text": "a",
+      "start": 3.14,
+      "end": 3.24
+    },
+    {
+      "text": "pior.",
+      "start": 3.24,
+      "end": 3.6
+    },
+    {
+      "text": "Jason,",
+      "start": 5.0,
+      "end": 5.24
+    },
+    {
+      "text": "ela",
+      "start": 5.82,
+      "end": 5.82
+    },
+    {
+      "text": "é",
+      "start": 5.82,
+      "end": 5.82
+    },
+    {
+      "text": "difícil",
+      "start": 5.82,
+      "end": 6.18
+    },
+    {
+      "text": "e",
+      "start": 6.18,
+      "end": 6.52
+    },
+    {
+      "text": "ela",
+      "start": 6.52,
+      "end": 6.98
+    },
+    {
+      "text": "ama",
+      "start": 6.98,
+      "end": 7.26
+    },
+    {
+      "text": "você.",
+      "start": 7.26,
+      "end": 7.9
+    },
+    {
+      "text": "Como",
+      "start": 8.14,
+      "end": 8.3
+    },
+    {
+      "text": "você",
+      "start": 8.3,
+      "end": 8.92
+    },
+    {
+      "text": "pode",
+      "start": 8.92,
+      "end": 8.98
+    },
+    {
+      "text": "fazer",
+      "start": 8.98,
+      "end": 9.02
+    },
+    {
+      "text": "isso?",
+      "start": 9.02,
+      "end": 9.5
+    },
+    {
+      "text": "Eu",
+      "start": 11.44,
+      "end": 12.0
+    },
+    {
+      "text": "estou",
+      "start": 12.0,
+      "end": 12.18
+    },
+    {
+      "text": "bem",
+      "start": 12.18,
+      "end": 12.42
+    },
+    {
+      "text": "agora,",
+      "start": 12.42,
+      "end": 12.74
+    },
+    {
+      "text": "Jason.",
+      "start": 12.98,
+      "end": 13.260000000000002
+    },
+    {
+      "text": "Ok?",
+      "start": 13.8,
+      "end": 14.36
+    },
+    {
+      "text": "Aproveite",
+      "start": 14.52,
+      "end": 15.08
+    },
+    {
+      "text": "o",
+      "start": 15.08,
+      "end": 15.2
+    },
+    {
+      "text": "seu",
+      "start": 15.2,
+      "end": 15.48
+    },
+    {
+      "text": "dia.",
+      "start": 15.48,
+      "end": 15.74
+    },
+    {
+      "text": "Eu",
+      "start": 17.34,
+      "end": 17.62
+    },
+    {
+      "text": "só",
+      "start": 17.62,
+      "end": 17.88
+    },
+    {
+      "text": "preciso",
+      "start": 17.88,
+      "end": 18.04
+    },
+    {
+      "text": "ter",
+      "start": 18.04,
+      "end": 18.32
+    },
+    {
+      "text": "um",
+      "start": 18.32,
+      "end": 18.46
+    },
+    {
+      "text": "bom",
+      "start": 18.46,
+      "end": 18.68
+    },
+    {
+      "text": "dia.",
+      "start": 18.68,
+      "end": 18.94
+    },
+    {
+      "text": "E",
+      "start": 19.66,
+      "end": 19.7
+    },
+    {
+      "text": "é",
+      "start": 19.7,
+      "end": 20.06
+    },
+    {
+      "text": "isso.",
+      "start": 20.06,
+      "end": 20.28
+    }
+  ],
+  "rostos": [
+    {
+      "t": 0.5,
+      "score": 0.64,
+      "x": 539,
+      "y": 950,
+      "w": 90,
+      "h": 176,
+      "cx": 583,
+      "cy": 1038
+    },
+    {
+      "t": 4.5,
+      "score": 0.93,
+      "x": 450,
+      "y": 835,
+      "w": 104,
+      "h": 131,
+      "cx": 502,
+      "cy": 900
+    },
+    {
+      "t": 8.5,
+      "score": 0.66,
+      "x": 498,
+      "y": 962,
+      "w": 104,
+      "h": 194,
+      "cx": 550,
+      "cy": 1059
+    },
+    {
+      "t": 12.5,
+      "score": 0.65,
+      "x": 621,
+      "y": 1111,
+      "w": 67,
+      "h": 79,
+      "cx": 654,
+      "cy": 1150
+    },
+    {
+      "t": 16.5,
+      "score": 0.93,
+      "x": 897,
+      "y": 866,
+      "w": 63,
+      "h": 84,
+      "cx": 928,
+      "cy": 908
+    },
+    {
+      "t": 20.5,
+      "score": 0.93,
+      "x": 900,
+      "y": 872,
+      "w": 64,
+      "h": 81,
+      "cx": 932,
+      "cy": 913
+    },
+    {
+      "t": 24.5,
+      "score": 0.93,
+      "x": 897,
+      "y": 869,
+      "w": 60,
+      "h": 78,
+      "cx": 927,
+      "cy": 907
+    },
+    {
+      "t": 28.5,
+      "score": 0.93,
+      "x": 899,
+      "y": 866,
+      "w": 61,
+      "h": 82,
+      "cx": 929,
+      "cy": 907
+    }
+  ],
+  "bloco_de_creditos": "Créditos: @alanzoka (twitch.tv/alanzoka)",
+  "arquivos": {
+    "video": "source/clip.mp4",
+    "config_render": "clipe.json",
+    "quadros": "frames/"
+  }
+}

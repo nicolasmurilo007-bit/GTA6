@@ -318,3 +318,15 @@ monetizar. Pesquisa feita:
   vs 16-20 dB em movimento).
 - O QA automático pegou dois defeitos meus: gancho começando em y=225 (<270) e volume -15,3 LUFS.
   Corrigidos (gancho `\an8` em y=300; loudnorm alvo -12,8 no modo corte).
+
+## Registro 2026-11-18: segundo clipe pelo fluxo completo de agentes (sem postar)
+- Clipe 2: Twitch 4264051111 "QUE ISSO ROCKSTAR?" (Alan reage a uma NPC do GTA 6), pasta
+  `runs/2026-11-18_alanzoka_que-isso-rockstar/`. Layout `alanzoka_jogo` (gameplay tela cheia + câmera pequena).
+- Tempos: prepare ~31-56 s, render ~44 s, agentes ~30-60 s cada em paralelo.
+- QA pegou: pico real -1,2 dBTP → `alimiter` (limit 0.82) depois do loudnorm nos dois modos; agora -1,5 dBTP, -13,7 LUFS, APROVADO.
+- Aviso "topo livre" no qa.py é falso alarme neste layout (imagem do jogo ocupa a tela toda); o gancho já fica abaixo de 270 px.
+- Lições dos agentes: o `cacador` errou o instante da piada em ~0,6 s (19,0 vs 18,4) e o `efeitos` posicionou
+  círculo/seta em chão vazio; conferir sempre com quadros (`vision.py check` ou extrair quadro) antes de aprovar.
+  Fala real do Alan (sob o áudio do jogo) o Whisper não pega: usar `words_manual` lendo as legendas queimadas da Twitch.
+- Render: workdir é a pasta `source/` (caminhos de `sources` são relativos a ela).
+- Pendente: título/descrição/capa (agentes), `creditos-e-direitos`, aprovação do usuário. NÃO postado.

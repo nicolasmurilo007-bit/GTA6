@@ -1,6 +1,20 @@
 {
   "alanzoka": {
-    "crop": [80, 240, 1668, 944],
+    "crop": [
+      80,
+      240,
+      1668,
+      944
+    ],
     "nota": "Cena 'conversa' (câmera à esquerda + chat à direita), medida em 18/11/2026 num clipe 2560x1440. Cenas de jogo ainda não mapeadas: conferir o quadro antes de confiar."
+  },
+  "alanzoka_jogo": {
+    "crop": [
+      0,
+      0,
+      2560,
+      1320
+    ],
+    "nota": "Cena de JOGO: gameplay em tela cheia + câmera pequena no canto direito (x~1988-2548, y~360-772). O recorte corta os 120 px de baixo para esconder a legenda automática queimada da Twitch (começa em y~1340). Medido em 18/11/2026 num clipe 2560x1440."
   }
 }
