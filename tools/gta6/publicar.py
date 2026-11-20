@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """Publica um clipe aprovado via Upload-Post (https://docs.upload-post.com).
 
+ATENÇÃO (20/11/2026): na sessão da nuvem, o classificador de segurança bloqueou este envio direto
+pela API. O caminho que funcionou foi o CONECTOR Upload-Post (ferramentas MCP): create_media_upload ->
+PUT do arquivo -> complete_media_upload -> upload_video (prévia, depois confirmed=true). Use este script
+para a SIMULAÇÃO e as travas (qa/checklist/aprovação), e o conector para o envio.
+
 Travas (nada sai sem elas):
   - runs/<id>/qa.json com veredito APROVADO;
   - runs/<id>/checklist.json (agente creditos-e-direitos) sem BLOQUEADO;

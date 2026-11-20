@@ -1,0 +1,10 @@
+{
+  "quando": "2026-11-20T23:15Z",
+  "via": "conector Upload-Post (MCP): create_media_upload -> PUT -> complete_media_upload -> upload_video (prévia, depois confirmed)",
+  "perfil": "default",
+  "canal": "shorts gta6 (@shortsgta6-f3v)",
+  "plataformas": {"youtube": {"url": "https://www.youtube.com/watch?v=nzu5er3oKXI", "privacidade": "public", "rotulo_ia": true, "infantil": false}},
+  "tiktok": "manual (plano grátis do Upload-Post não posta no TikTok)",
+  "aprovado_pelo_usuario": "sim, 20/11 (opção B: público)",
+  "uso_upload_post": "1/10 no mês"
+}
