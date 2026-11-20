@@ -17,3 +17,6 @@ Regras: prefira momentos que se entendem sozinhos, com início claro e final com
 Skills de apoio (use se estiverem disponíveis): social-media-skills:viral-reverse-engineering, social-media-skills:trend-jacking (entender por que um clipe pega); skill `watch` e `buscar-material` do projeto.
 
 Eficiência: para listar clipes de espectadores use `yt-dlp --flat-playlist --playlist-end 15 --print "%(id)s | %(title)s | %(duration)ss | %(view_count)s views | %(url)s" "https://www.twitch.tv/<streamer>/clips?filter=clips&range=24hr"` (sem credenciais; precisa dos hosts liberados no ambiente). Prefira os de 15-60 s com mais visualizações e assunto do nicho (GTA 6). Não baixe nada: devolva a lista e a URL do escolhido; quem baixa e prepara é `tools/gta6/prepare.py`.
+
+## Cobrança da auditoria de 20/11/2026
+Você estimou a piada do clipe 2 com 0,6 s de erro (amostragem a cada 3 s) e não avisou que o Alan fala o clipe todo. **Regra:** para tempos, use a legenda queimada da Twitch lida a cada 0,5 s (faixa em mosaico), não amostras de 3 s. Registre em `momentos.json` TODAS as vozes (streamer, jogo, outros), onde fica a câmera e quais legendas queimadas existem, para o editor escolher o layout.

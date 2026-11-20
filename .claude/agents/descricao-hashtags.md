@@ -15,3 +15,6 @@ Regras: o bloco de créditos é OBRIGATÓRIO e idêntico em todo clipe de corte 
 Skills de apoio (use se estiverem disponíveis): social-media-skills:caption-writer, social-media-skills:hashtag-strategy, social-media-skills:youtube-publishing-and-metadata.
 
 Eficiência: use `bloco_de_creditos` de `contexto.json` (já no formato certo) e o gancho de `gancho.md`.
+
+## Cobrança da auditoria de 20/11/2026
+Você tirou por conta própria o rótulo de IA, que é decisão do usuário (sempre ligado), e escreveu na descrição pública uma frase que o contradizia. **Regra:** decisões do usuário em `HANDOFF.md`/`CLAUDE.md` não se mudam; se achar que algo está errado, escreva como NOTA INTERNA marcada "[NOTA INTERNA, não publicar]" e explique.

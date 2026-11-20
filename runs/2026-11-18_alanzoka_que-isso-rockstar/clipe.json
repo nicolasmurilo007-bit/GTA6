@@ -4,164 +4,198 @@
   "background": "black",
   "hook": "Que NPC é essa do GTA 6? Espera a reação do Alan",
   "hook_seconds": 3.5,
+  "hook_y": 700,
   "emphasis": [
-    "rucula",
-    "insuportavel",
-    "jason",
-    "inofensiva",
-    "adora",
-    "rockstar"
+    "Rockstar",
+    "cachorro",
+    "pulos"
   ],
   "sources": {
-    "live": {
-      "path": "clip.mp4",
-      "crop": [
-        0,
-        0,
-        2560,
-        1320
-      ]
-    }
+    "live": "clip.mp4"
   },
+  "stack": [
+    {
+      "crop": [
+        1990,
+        362,
+        556,
+        344
+      ],
+      "h": 668,
+      "zoom": true
+    },
+    {
+      "crop": [
+        840,
+        0,
+        1018,
+        1180
+      ],
+      "h": 1252,
+      "zoom": true
+    }
+  ],
   "segments": [
     {
       "src": "live",
       "start": 0.0,
-      "end": 30.0
+      "end": 29.9
+    }
+  ],
+  "words_mode": "manual",
+  "speech_manual": [
+    {
+      "text": "Cara, por que",
+      "start": 3.6,
+      "end": 4.5
+    },
+    {
+      "text": "que eu falei isso?",
+      "start": 4.5,
+      "end": 5.4
+    },
+    {
+      "text": "Não, viajei.",
+      "start": 5.4,
+      "end": 6.3
+    },
+    {
+      "text": "Viajei, mano.",
+      "start": 8.1,
+      "end": 9.0
+    },
+    {
+      "text": "Viajei, pô.",
+      "start": 14.1,
+      "end": 15.0
+    },
+    {
+      "text": "Ué?",
+      "start": 16.6,
+      "end": 17.2
+    },
+    {
+      "text": "Que isso, Rockstar?",
+      "start": 18.1,
+      "end": 19.4
+    },
+    {
+      "text": "O cachorro deu",
+      "start": 20.1,
+      "end": 20.8
+    },
+    {
+      "text": "uns pulos, mano.",
+      "start": 20.8,
+      "end": 21.9
+    }
+  ],
+  "subs_y": 1180,
+  "subs": [
+    {
+      "text": "Ela não tá errada. A Rúcula é insuportável.",
+      "start": 1.0,
+      "end": 3.9
+    },
+    {
+      "text": "Ah, Jason, ela é inofensiva! E ela te adora.",
+      "start": 4.0,
+      "end": 7.0
+    },
+    {
+      "text": "Como pode dizer uma coisa dessas?",
+      "start": 7.0,
+      "end": 11.0
+    },
+    {
+      "text": "Eu já tô bem, Jason. Vai aproveitar seu dia.",
+      "start": 11.8,
+      "end": 16.0
+    },
+    {
+      "text": "Eu só preciso me sentar um pouco. Só isso.",
+      "start": 17.0,
+      "end": 21.0
     }
   ],
   "sfx": [
     {
       "name": "swish",
-      "t": 0.9,
-      "vol": 0.18
+      "t": 0.05
     },
     {
       "name": "pop",
-      "t": 2.74,
-      "vol": 0.18
-    },
-    {
-      "name": "undo",
-      "t": 9.02,
-      "vol": 0.16
+      "t": 1.0
     },
     {
       "name": "rise",
-      "t": 17.0,
-      "vol": 0.15
+      "t": 16.6
     },
     {
       "name": "thud",
-      "t": 18.4,
-      "vol": 0.22
+      "t": 18.1
     }
   ],
   "zooms": [
     {
-      "t": 3.24,
-      "dur": 0.4,
-      "factor": 1.08
-    },
-    {
-      "t": 9.02,
-      "dur": 0.4,
-      "factor": 1.09
-    },
-    {
-      "t": 18.4,
-      "dur": 0.45,
+      "t": 18.1,
+      "dur": 0.6,
       "factor": 1.1
     }
   ],
-  "freezes": [
-    {
-      "t": 18.4,
-      "dur": 1.0
-    }
-  ],
+  "freezes": [],
   "annotations": [
     {
-      "type": "circle",
-      "t": 9.02,
-      "dur": 2.2,
-      "x": 975,
-      "y": 1340,
-      "rx": 105,
-      "ry": 120
-    },
-    {
       "type": "arrow",
-      "t": 18.4,
-      "dur": 2.8,
-      "x": 690,
-      "y": 1275,
+      "t": 18.0,
+      "dur": 3.6,
+      "x": 558,
+      "y": 1629,
       "angle": 315,
-      "scale": 1.0
+      "scale": 0.85,
+      "path": [
+        [
+          18.0,
+          558,
+          1629
+        ],
+        [
+          18.5,
+          537,
+          1608
+        ],
+        [
+          19.0,
+          516,
+          1587
+        ],
+        [
+          19.5,
+          600,
+          1587
+        ],
+        [
+          20.0,
+          663,
+          1587
+        ],
+        [
+          20.5,
+          726,
+          1503
+        ],
+        [
+          21.0,
+          684,
+          1545
+        ],
+        [
+          21.5,
+          684,
+          1545
+        ]
+      ]
     }
   ],
-  "text": "Ela não tá errada, a Rúcula é insuportável. Jason, ela é inofensiva! E ela te adora! Como pode dizer uma coisa dessas? Eu já tô bem, Jason. Vai aproveitar seu dia. Eu só preciso me sentar um pouco. Só isso.",
-  "words_from": "../contexto.json",
-  "words_manual": [
-    {
-      "text": "Viajei",
-      "start": 16.1,
-      "end": 16.6
-    },
-    {
-      "text": "pô",
-      "start": 16.6,
-      "end": 17.1
-    },
-    {
-      "text": "Ué?",
-      "start": 18.0,
-      "end": 18.4
-    },
-    {
-      "text": "Que",
-      "start": 18.45,
-      "end": 18.8
-    },
-    {
-      "text": "isso",
-      "start": 18.8,
-      "end": 19.3
-    },
-    {
-      "text": "Rockstar?",
-      "start": 19.3,
-      "end": 20.4
-    },
-    {
-      "text": "O",
-      "start": 21.0,
-      "end": 21.15
-    },
-    {
-      "text": "cachorro",
-      "start": 21.15,
-      "end": 21.7
-    },
-    {
-      "text": "deu",
-      "start": 21.7,
-      "end": 22.0
-    },
-    {
-      "text": "uns",
-      "start": 22.0,
-      "end": 22.4
-    },
-    {
-      "text": "pulos",
-      "start": 22.4,
-      "end": 22.9
-    },
-    {
-      "text": "mano",
-      "start": 22.9,
-      "end": 23.5
-    }
-  ]
+  "caption_y": 1000
 }

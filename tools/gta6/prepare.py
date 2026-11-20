@@ -52,7 +52,7 @@ def main() -> None:
     ap.add_argument("--streamer", default="alanzoka")
     ap.add_argument("--run-dir", required=True, type=Path)
     ap.add_argument("--source-url", default=None, help="URL de origem a registrar (quando --source é um arquivo)")
-    ap.add_argument("--whisper-model", default="small")
+    ap.add_argument("--whisper-model", default="medium")
     ap.add_argument("--face-step", type=float, default=4.0, help="a cada quantos segundos medir o rosto")
     a = ap.parse_args()
 

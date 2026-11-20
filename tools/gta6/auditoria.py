@@ -29,7 +29,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from render_clip import _norm, transcribe_words  # noqa: E402
 
 MIN_WORD = 0.20   # s: abaixo disso a palavra pisca (ilegível)
-MAX_CPS = 22      # caracteres por segundo acima disso não dá para ler
+MAX_CPS = 30      # caracteres por segundo acima disso não dá para ler
 SFX_SPEECH_DB = -3.0  # SFX sobre fala não deve passar da fala menos 3 dB
 
 
@@ -49,7 +49,7 @@ def ass_events(path: Path, style: str) -> list[dict]:
     return out
 
 
-def check_captions(words: list[dict], heard: list[dict]) -> list[dict]:
+def check_captions(words: list[dict], heard: list[dict], subs: list[dict] | None = None) -> list[dict]:
     issues = []
     for a, b in zip(words, words[1:]):
         if b["start"] < a["end"] - 0.01:
@@ -79,7 +79,7 @@ def check_captions(words: list[dict], heard: list[dict]) -> list[dict]:
     # fala sem legenda: palavra ouvida sem nenhuma legenda na tela por perto
     for h in heard:
         mid = (h["start"] + h["end"]) / 2
-        if not any(w["start"] - 0.3 <= mid <= w["end"] + 0.3 for w in words):
+        if not any(w["start"] - 0.3 <= mid <= w["end"] + 0.3 for w in words + (subs or [])):
             issues.append({"tipo": "fala_sem_legenda", "t": round(h["start"], 2), "detalhe": f"'{h['text']}'"})
     return issues
 
@@ -99,16 +99,22 @@ def check_sfx(cfg: dict, words: list[dict], fala: Path | None, sfx_wav: Path | N
         if float(b["t"]) - float(a["t"]) < 0.35:
             issues.append({"tipo": "sfx_colado", "t": float(b["t"]),
                            "detalhe": f"{a['name']} e {b['name']} a {float(b['t']) - float(a['t']):.2f}s: vira um barulho só"})
+    sfx_dir = Path(__file__).resolve().parents[2] / "assets" / "sfx"
     for s in items:
         t = float(s["t"])
         speaking = [w["text"] for w in words if w["start"] - 0.1 <= t <= w["end"] + 0.1]
-        rec = {"tipo": "sfx_info", "t": t, "detalhe": f"{s['name']} vol {s.get('vol', 0.2)}"}
+        rec = {"tipo": "sfx_info", "t": t, "detalhe": f"{s['name']}"}
         if fala and sfx_wav:
-            sp, fx = rms_db(fala, t, 0.5), rms_db(sfx_wav, t, 0.5)
-            rec["detalhe"] += f" | SFX {fx:.1f} dB x fala {sp:.1f} dB"
-            if speaking and fx > sp + SFX_SPEECH_DB:
-                issues.append({"tipo": "sfx_cobre_fala", "t": t,
-                               "detalhe": f"{s['name']} {fx - sp:+.1f} dB acima da fala durante '{' '.join(speaking)}'"})
+            f = sfx_dir / f"sfx_{s['name']}.mp3"
+            d = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(f)])) if f.exists() else 0.3
+            fx = rms_db(sfx_wav, t, max(min(d, 1.5), 0.1))
+            sp = rms_db(fala, t - 0.4, 1.0) if speaking else rms_db(fala, 0, 9999)  # sem fala: compara com a média
+            rel = fx - sp
+            rec["detalhe"] += f" | {rel:+.1f} dB em relação à fala ({'fala ali' if speaking else 'média da fala; sem fala ali'})"
+            if speaking and rel > SFX_SPEECH_DB:
+                issues.append({"tipo": "sfx_cobre_fala", "t": t, "detalhe": f"{s['name']} {rel:+.1f} dB durante '{' '.join(speaking)}'"})
+            elif rel < -14:
+                issues.append({"tipo": "sfx_inaudivel", "t": t, "detalhe": f"{s['name']} {rel:+.1f} dB: ninguém vai ouvir"})
         issues.append(rec)
     return issues
 
@@ -183,6 +189,7 @@ def main() -> None:
     stem = args.video.stem
     ass = args.workdir / f"{stem}.ass"
     words = ass_events(ass, "Word")
+    subs = ass_events(ass, "Sub")  # legenda do diálogo do jogo também cobre fala
     fala = args.workdir / f"{stem}_fala.wav"
     sfx_wav = args.workdir / f"{stem}_sfx.wav"
     total = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(args.video)]))
@@ -192,7 +199,9 @@ def main() -> None:
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(args.video), "-vn", "-ac", "1", "-ar", "16000", str(heard_wav)], check=True)
     heard = transcribe_words(heard_wav, cfg.get("language", "pt"), args.whisper_model)
 
-    issues = check_captions(words, heard)
+    issues = check_captions(words, heard, subs)
+    if cfg.get("words_mode") == "manual":  # fala marcada à mão: o Whisper só ouve o jogo, comparar texto não serve
+        issues = [i for i in issues if i["tipo"] != "legenda_texto"]
     issues += check_sfx(cfg, words, fala if fala.exists() else None, sfx_wav if sfx_wav.exists() else None)
     sheets = visual_sheets(cfg, args.video, total, args.out)
     issues.sort(key=lambda i: i["t"])

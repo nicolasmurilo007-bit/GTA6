@@ -39,6 +39,8 @@ Python do mpt: `PY="$(uv tool dir)/mpt/bin/python"`.
 3. **Em paralelo (uma mensagem, 3 chamadas):** `gancho`, `legendas` (correções + `emphasis`) e `efeitos` (sfx/zooms/freezes/annotations). Todos leem `contexto.json`.
 4. Montar o `clipe.json` com as respostas -> `editor-de-video` renderiza `final.mp4`.
 5. `python tools/gta6/qa.py final.mp4` (agente `qualidade`, modelo leve). Reprovou: corrigir e repetir.
+   Depois `python tools/gta6/auditoria.py --config clipe.json --workdir source --video final.mp4 --out auditoria` (legenda x áudio, volume dos SFX, marcações em 4 instantes) e OLHAR as 3 folhas. Erro encontrado: voltar ao agente que o causou e registrar a lição no arquivo dele (`.claude/agents/<agente>.md`, seção "Cobrança").
 6. **Em paralelo:** `titulo`, `descricao-hashtags`, `capa`. Depois `creditos-e-direitos`.
 7. Mostrar ao usuário o vídeo + checklist e esperar a aprovação antes do `publicador`.
+Layouts: conversa = recorte quadrado no streamer; gameplay com câmera sobreposta = `stack` (câmera em cima, gameplay embaixo, `caption_y` 1000, `subs_y` 1180, `hook_y` 700). Base pronta: `runs/2026-11-18_alanzoka_que-isso-rockstar/clipe.json` e `runs/2026-11-18_alanzoka_gta6-vs-zelda/clipe.json`.
 Tempos medidos (CPU, sem placa de vídeo): `prepare` ~50 s para um clipe de 52 s; render ~20-30 s; re-render com transcrição em cache bem mais rápido.

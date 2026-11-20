@@ -2,17 +2,26 @@
   "mode": "corte",
   "language": "pt",
   "background": "black",
-  "hook": "",
+  "hook": "O GTA 6 consegue tirar o Zelda de jogo do ano?",
   "hook_seconds": 3.5,
-  "emphasis": [],
+  "emphasis": [
+    "GTA",
+    "Zelda",
+    "Rockstar",
+    "Jason",
+    "Ocarina",
+    "Time"
+  ],
+  "words_from": "../contexto.json",
+  "text": "Boa tarde, nextage, existe algo que o GTA possa fazer pra tirar Zelda do seu favorito do ano? Existe, se o saco do Jason diminuir mano, já ganhou o melhor jogo do ano. Cara, que Zelda, pô! Zelda eu tenho um carinho diferente, né, irmão? Eu ainda prefiro o original, cara. Mas, né? Mas, pô, meu favorito do ano, eu quero um jogo que eu nunca joguei na minha vida, né? Não é um jogo que eu já zerei 37 vezes. Zelda é Zelda, pô, é o melhor jogo já feito na história, né? Ocarina of Time, no caso. Mas, cara, GTA 6 vai vir forte aí pro mundo, legal, cara. Eu quero, vai ser legal ver a tecnologia que a Rockstar vai empregar neste mundo. Eu estou curioso, mano. Nossa, mano, cara, não sei nem o que imaginar quando eu abrir GTA 6. Irmão, sei lá, velho.",
   "sources": {
     "live": {
       "path": "clip.mp4",
       "crop": [
-        80,
-        240,
-        1668,
-        944
+        500,
+        270,
+        900,
+        900
       ]
     }
   },
@@ -20,11 +29,63 @@
     {
       "src": "live",
       "start": 0.0,
-      "end": 52.02
+      "end": 52.0
     }
   ],
-  "sfx": [],
-  "zooms": [],
-  "freezes": [],
-  "annotations": []
+  "sfx": [
+    {
+      "name": "swish",
+      "t": 0.05
+    },
+    {
+      "name": "pop",
+      "t": 9.86
+    },
+    {
+      "name": "ding",
+      "t": 23.52
+    },
+    {
+      "name": "thud",
+      "t": 28.76
+    },
+    {
+      "name": "swoop_up",
+      "t": 34.16
+    }
+  ],
+  "zooms": [
+    {
+      "t": 9.86,
+      "dur": 0.45,
+      "factor": 1.09
+    },
+    {
+      "t": 23.52,
+      "dur": 0.5,
+      "factor": 1.1
+    },
+    {
+      "t": 34.16,
+      "dur": 0.5,
+      "factor": 1.08
+    }
+  ],
+  "freezes": [
+    {
+      "t": 28.76,
+      "dur": 1.0
+    }
+  ],
+  "annotations": [
+    {
+      "type": "circle",
+      "t": 9.86,
+      "dur": 2.4,
+      "x": 851,
+      "y": 555,
+      "rx": 115,
+      "ry": 120
+    }
+  ]
 }

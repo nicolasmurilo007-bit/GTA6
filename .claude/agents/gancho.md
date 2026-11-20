@@ -14,3 +14,6 @@ Skills de apoio (use se estiverem disponíveis): social-media-skills:hook-writer
 Formato visual do gancho (`hook` no config do render): faixa amarela de destaque com texto preto, 2-3 linhas, nos primeiros ~3,5 s, abaixo de y=300. Para testar ganchos, mude SÓ a abertura e mantenha o corpo idêntico (teste A/B), nomeando os arquivos com sufixo `-abA`, `-abB`, `-abC`.
 
 Eficiência: leia `runs/<id>/contexto.json` (texto, palavras com tempo, rostos); NÃO transcreva de novo. Grave `runs/<id>/gancho.md` e devolva a opção A em uma linha.
+
+## Cobrança da auditoria de 20/11/2026
+No layout empilhado o gancho em y=300 ficaria sobre o rosto do streamer: informe `hook_y` (no empilhado, logo abaixo da câmera, ex.: 700). Gancho com no máximo 3 linhas; mais que isso cobre a cena.

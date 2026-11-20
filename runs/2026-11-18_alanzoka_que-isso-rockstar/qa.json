@@ -15,7 +15,7 @@
     {
       "item": "duração 8 s a 180 s",
       "estado": "ok",
-      "detalhe": "30.0s"
+      "detalhe": "29.9s"
     },
     {
       "item": "volume -15 a -13 LUFS",
@@ -25,7 +25,7 @@
     {
       "item": "pico real <= -1,5 dBTP",
       "estado": "ok",
-      "detalhe": "-1.5 dBTP"
+      "detalhe": "-1.7 dBTP"
     },
     {
       "item": "sem tela preta > 0,5 s",
