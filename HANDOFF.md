@@ -330,3 +330,27 @@ monetizar. Pesquisa feita:
   Fala real do Alan (sob o áudio do jogo) o Whisper não pega: usar `words_manual` lendo as legendas queimadas da Twitch.
 - Render: workdir é a pasta `source/` (caminhos de `sources` são relativos a ela).
 - Pendente: título/descrição/capa (agentes), `creditos-e-direitos`, aprovação do usuário. NÃO postado.
+
+## Registro 2026-11-20: auditoria geral, cobrança dos agentes e clipe 3 (molde)
+- Novo `tools/gta6/auditoria.py`: confere o vídeo CONTRA o config (legenda x o que se ouve no final, sobreposição,
+  velocidade; volume de cada SFX em relação à fala; folhas de quadros: marcações em 4 instantes, efeitos, geral).
+- Erros achados e corrigidos:
+  - corte 01: 65 palavras de legenda sobrepostas; "BOA TARDE NO TIME" era "Ocarina of Time"; cena de conversa ocupava
+    só 1/3 da tela (agora recorte quadrado 900x900 -> 1080x1080); SFX inaudíveis.
+  - clipe 2: a câmera do Alan nunca aparecia (o vídeo é a reação dele) -> layout `stack`; a fala do Alan (o clipe todo)
+    não tinha legenda -> `speech_manual` lido da legenda queimada da Twitch + diálogo da NPC em `subs`; círculo no
+    peito da NPC e seta apontando para o nada -> seta com `path` seguindo o cachorro; sobras da legenda queimada do jogo.
+- Render (`render_video.py`): `caption_timeline` (sem sobreposição, pares de palavras rápidas, mínimo 0,22 s, atraso
+  máx. 0,3 s); SFX com volume automático contra a fala (sem `vol`); `stack`; `path` nas marcações; `speech_manual`,
+  `words_mode: manual`, `subs`; `caption_y`/`hook_y`/`subs_y`; aresample antes do limitador (pico real ok).
+- prepare.py: Whisper `medium` por padrão (small errava nomes).
+- Cobrança: cada agente que errou ganhou seção "Cobrança" no seu `.claude/agents/*.md`. ATENÇÃO: a definição do agente
+  é carregada no INÍCIO da sessão; mudanças valem na próxima sessão (nesta, passei as regras no pedido).
+- Clipe 3 `runs/2026-11-20_alanzoka_primeiro-roubo/` = MOLDE para os próximos (layout stack, legenda do Alan em y=1000,
+  jogo em 1180, gancho em 700, círculo com path no policial, congelamento na pausa). QA e auditoria aprovados;
+  direitos APROVADO com aviso (violência de jogo e palavrão no áudio: precisa do OK do usuário). NÃO postado.
+- `tools/gta6/publicar.py` (Upload-Post): simula por padrão; só envia com qa APROVADO + checklist sem BLOQUEADO +
+  `--aprovado-pelo-usuario --enviar`. Chave via segredo do ambiente (host api.upload-post.com), nunca no repositório.
+- Upload-Post (pesquisado 20/11): plano grátis = 10 envios/mês, 2 perfis, API, MAS SEM TikTok; TikTok só no Basic
+  (US$ 24/mês ou US$ 16/mês no anual).
+- Pedidos pendentes do usuário: foto de perfil e banner do canal do YouTube.

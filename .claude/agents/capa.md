@@ -12,3 +12,4 @@ Skills de apoio (use se estiverem disponíveis): social-media-skills:thumbnail-d
 
 ## Cobrança da auditoria de 20/11/2026
 A capa do clipe 2 mostra o widget de sub da live com o nome de um espectador (terceiro). **Regra:** recorte a câmera sem widgets e sem nomes de usuários do chat.
+Clipe 3 (20/11): a capa saiu com a legenda queimada da Twitch embaixo e o texto encostando nas bordas. **Regra:** use o MESMO recorte do `clipe.json` (layout `stack`: câmera em cima, gameplay embaixo, já sem legendas queimadas) e deixe >= 40 px de margem lateral no texto. Modelo pronto: `runs/2026-11-20_alanzoka_primeiro-roubo/capa.png`.

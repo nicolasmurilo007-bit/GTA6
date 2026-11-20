@@ -38,8 +38,11 @@ def first_title(run: Path) -> str:
 
 
 def public_description(run: Path) -> str:
-    lines = (run / "descricao.md").read_text(encoding="utf-8").splitlines()
-    return "\n".join(l for l in lines if l.strip() and "NOTA INTERNA" not in l).strip()
+    """Texto público: o bloco sob "## Texto para publicar" (até a linha ---), sem notas internas."""
+    s = (run / "descricao.md").read_text(encoding="utf-8")
+    m = re.search(r"##\s*Texto para publicar\s*\n(.*?)(?:\n---|\Z)", s, re.S)
+    body = m.group(1) if m else s
+    return "\n".join(l for l in body.splitlines() if l.strip() and "NOTA INTERNA" not in l and not l.startswith("#")).strip()
 
 
 def gates(run: Path) -> list[str]:

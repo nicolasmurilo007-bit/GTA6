@@ -1,0 +1,18 @@
+{
+  "id": "2026-11-20_alanzoka_primeiro-roubo",
+  "veredito": "APROVADO",
+  "condicao": "item 6 (conteúdo sensível) em atencao: exige OK humano antes de publicar",
+  "autorizacao": "desconhecida",
+  "aviso": "Crédito na legenda NÃO é autorização do streamer. Nenhuma autorização por escrito registrada. Risco assumido pelo usuário (18/11/2026); não bloqueia, mas o streamer ou a Take-Two podem pedir remoção.",
+  "duracao_s": 30.0,
+  "itens": [
+    {"item": "bloco de créditos", "estado": "ok", "detalhe": "'Créditos: @alanzoka (twitch.tv/alanzoka)' idêntico ao padrão no bloco 'Texto para publicar' de descricao.md. Atenção: a linha TikTok de titulo.md não traz o crédito; no TikTok publicar o texto de descricao.md como legenda"},
+    {"item": "origem registrada", "estado": "atencao", "detalhe": "link do clipe presente (twitch.tv/alanzoka/clip/TrustworthyRacyTruffleSoonerLater-8ijiN0R2E6tupKKx); clipe usado inteiro (0-30 s); faltam data e minuto do VOD"},
+    {"item": "rótulo de IA", "estado": "ok", "detalhe": "sem voz sintética (áudio original do Alan); rótulo ligado no envio por decisão do usuário; texto público não afirma narração de IA (nota interna fica fora do bloco público)"},
+    {"item": "sem monetização/afiliado/patrocínio/venda", "estado": "ok", "detalhe": "nada em descrição, título, gancho ou capa"},
+    {"item": "música e logos", "estado": "ok", "detalhe": "sem música, só SFX curtos; nenhum logo de plataforma visível em folha_geral.png e capa.png (marcas do jogo apenas)"},
+    {"item": "conteúdo sensível", "estado": "atencao", "detalhe": "violência de jogo (assalto, homem derrubado ~5 s, ameaça 'não me faz começar a atirar', arma no chão); palavrões abrandados na legenda (p*rra x2, m*rda x2) e audíveis sem censura no áudio. Sem sangue visível, discriminação, menores ou política. Exige aprovação humana"},
+    {"item": "duração", "estado": "ok", "detalhe": "30,0 s (só registro; abaixo de 1 min, irrelevante sem monetização)"},
+    {"item": "diversidade", "estado": "ok", "detalhe": "título e gancho diferentes de 2026-11-18_alanzoka_que-isso-rockstar; layout empilhado igual (padrão da série, 2 vídeos): variar layout/gancho se a série crescer"}
+  ]
+}

@@ -18,3 +18,5 @@ Eficiência: use `bloco_de_creditos` de `contexto.json` (já no formato certo) e
 
 ## Cobrança da auditoria de 20/11/2026
 Você tirou por conta própria o rótulo de IA, que é decisão do usuário (sempre ligado), e escreveu na descrição pública uma frase que o contradizia. **Regra:** decisões do usuário em `HANDOFF.md`/`CLAUDE.md` não se mudam; se achar que algo está errado, escreva como NOTA INTERNA marcada "[NOTA INTERNA, não publicar]" e explique.
+
+Formato do arquivo `descricao.md` (o `tools/gta6/publicar.py` lê assim): título `# Descrição: <id>`, depois `## Texto para publicar` com SÓ o texto público, depois uma linha `---` e as notas internas. "Narração gerada por IA" só entra no texto quando o clipe TEM narração de IA (ElevenLabs); o rótulo de IA da plataforma é ligado no envio, não escrito na descrição (clipe 3: você escreveu a frase sem haver narração).
