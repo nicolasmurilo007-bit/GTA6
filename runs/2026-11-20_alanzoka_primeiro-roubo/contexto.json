@@ -1,0 +1,289 @@
+{
+  "id": "2026-11-20_alanzoka_primeiro-roubo",
+  "streamer": "alanzoka",
+  "fonte": "https://www.twitch.tv/alanzoka/clip/TrustworthyRacyTruffleSoonerLater-8ijiN0R2E6tupKKx",
+  "duracao_s": 30.0,
+  "recorte": [
+    80,
+    240,
+    1668,
+    944
+  ],
+  "volume": {
+    "lufs": -18.2,
+    "true_peak_db": -0.2
+  },
+  "texto": "Aí cara, ele não viu o quadrado, eu estava prestando atenção no cabelo Nossa, ela roubou bem com a polícia na frente meu quadro, eu vou usar esse jogo sem matar ninguém tá, 100 % good ending dropo o ar",
+  "palavras": [
+    {
+      "text": "Aí",
+      "start": 2.3000000000000007,
+      "end": 2.74
+    },
+    {
+      "text": "cara,",
+      "start": 2.74,
+      "end": 2.96
+    },
+    {
+      "text": "ele",
+      "start": 3.08,
+      "end": 3.08
+    },
+    {
+      "text": "não",
+      "start": 3.08,
+      "end": 3.22
+    },
+    {
+      "text": "viu",
+      "start": 3.22,
+      "end": 3.28
+    },
+    {
+      "text": "o",
+      "start": 3.28,
+      "end": 3.76
+    },
+    {
+      "text": "quadrado,",
+      "start": 3.76,
+      "end": 4.08
+    },
+    {
+      "text": "eu",
+      "start": 4.16,
+      "end": 4.18
+    },
+    {
+      "text": "estava",
+      "start": 4.18,
+      "end": 4.6
+    },
+    {
+      "text": "prestando",
+      "start": 4.6,
+      "end": 4.86
+    },
+    {
+      "text": "atenção",
+      "start": 4.86,
+      "end": 5.14
+    },
+    {
+      "text": "no",
+      "start": 5.14,
+      "end": 5.26
+    },
+    {
+      "text": "cabelo",
+      "start": 5.26,
+      "end": 5.72
+    },
+    {
+      "text": "Nossa,",
+      "start": 17.240000000000002,
+      "end": 17.68
+    },
+    {
+      "text": "ela",
+      "start": 17.74,
+      "end": 17.88
+    },
+    {
+      "text": "roubou",
+      "start": 17.88,
+      "end": 18.12
+    },
+    {
+      "text": "bem",
+      "start": 18.12,
+      "end": 18.26
+    },
+    {
+      "text": "com",
+      "start": 18.26,
+      "end": 18.38
+    },
+    {
+      "text": "a",
+      "start": 18.38,
+      "end": 18.54
+    },
+    {
+      "text": "polícia",
+      "start": 18.54,
+      "end": 18.72
+    },
+    {
+      "text": "na",
+      "start": 18.72,
+      "end": 19.02
+    },
+    {
+      "text": "frente",
+      "start": 19.02,
+      "end": 19.56
+    },
+    {
+      "text": "meu",
+      "start": 19.56,
+      "end": 19.779999999999998
+    },
+    {
+      "text": "quadro,",
+      "start": 21.48,
+      "end": 21.96
+    },
+    {
+      "text": "eu",
+      "start": 21.96,
+      "end": 21.96
+    },
+    {
+      "text": "vou",
+      "start": 21.96,
+      "end": 22.06
+    },
+    {
+      "text": "usar",
+      "start": 22.06,
+      "end": 22.16
+    },
+    {
+      "text": "esse",
+      "start": 22.16,
+      "end": 22.28
+    },
+    {
+      "text": "jogo",
+      "start": 22.28,
+      "end": 22.44
+    },
+    {
+      "text": "sem",
+      "start": 22.44,
+      "end": 22.62
+    },
+    {
+      "text": "matar",
+      "start": 22.62,
+      "end": 22.92
+    },
+    {
+      "text": "ninguém",
+      "start": 22.92,
+      "end": 23.3
+    },
+    {
+      "text": "tá,",
+      "start": 23.3,
+      "end": 23.86
+    },
+    {
+      "text": "100",
+      "start": 24.08,
+      "end": 24.08
+    },
+    {
+      "text": "%",
+      "start": 24.08,
+      "end": 24.5
+    },
+    {
+      "text": "good",
+      "start": 24.5,
+      "end": 24.76
+    },
+    {
+      "text": "ending",
+      "start": 24.76,
+      "end": 25.3
+    },
+    {
+      "text": "dropo",
+      "start": 28.32,
+      "end": 28.8
+    },
+    {
+      "text": "o",
+      "start": 28.8,
+      "end": 28.86
+    },
+    {
+      "text": "ar",
+      "start": 28.86,
+      "end": 29.0
+    }
+  ],
+  "rostos": [
+    {
+      "t": 0.5,
+      "score": 0.72,
+      "x": 747,
+      "y": 1134,
+      "w": 151,
+      "h": 133,
+      "cx": 823,
+      "cy": 1200
+    },
+    {
+      "t": 4.5,
+      "score": 0.89,
+      "x": 853,
+      "y": 743,
+      "w": 116,
+      "h": 152,
+      "cx": 911,
+      "cy": 819
+    },
+    {
+      "t": 8.5,
+      "score": 0.91,
+      "x": 608,
+      "y": 658,
+      "w": 143,
+      "h": 151,
+      "cx": 679,
+      "cy": 733
+    },
+    {
+      "t": 12.5,
+      "score": 0.83,
+      "x": 700,
+      "y": 920,
+      "w": 51,
+      "h": 66,
+      "cx": 725,
+      "cy": 953
+    },
+    {
+      "t": 16.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 20.5,
+      "score": 0.92,
+      "x": 694,
+      "y": 672,
+      "w": 136,
+      "h": 179,
+      "cx": 762,
+      "cy": 761
+    },
+    {
+      "t": 24.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 28.5,
+      "sem_rosto": true
+    }
+  ],
+  "bloco_de_creditos": "Créditos: @alanzoka (twitch.tv/alanzoka)",
+  "arquivos": {
+    "video": "source/clip.mp4",
+    "config_render": "clipe.json",
+    "quadros": "frames/"
+  }
+}

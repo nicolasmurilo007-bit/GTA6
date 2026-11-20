@@ -1,0 +1,85 @@
+{
+  "video": "final.mp4",
+  "duracao": 30.0,
+  "palavras_legenda": 20,
+  "palavras_ouvidas": 41,
+  "problemas": [
+    {
+      "tipo": "legenda_texto",
+      "t": 3.08,
+      "detalhe": "escrito '' | ouvido 'Aí cara, ele'"
+    },
+    {
+      "tipo": "legenda_texto",
+      "t": 3.08,
+      "detalhe": "escrito 'VI' | ouvido 'viu o triângulo,'"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 21.96,
+      "detalhe": "'EU VOU JOGAR' 30 car/s"
+    },
+    {
+      "tipo": "legenda_texto",
+      "t": 21.96,
+      "detalhe": "escrito '' | ouvido 'Cade,'"
+    },
+    {
+      "tipo": "legenda_texto",
+      "t": 21.96,
+      "detalhe": "escrito 'JOGAR' | ouvido 'dar'"
+    },
+    {
+      "tipo": "legenda_texto",
+      "t": 24.08,
+      "detalhe": "escrito '' | ouvido '%'"
+    },
+    {
+      "tipo": "legenda_texto",
+      "t": 26.26,
+      "detalhe": "escrito '' | ouvido 'Shit! Droflá'"
+    },
+    {
+      "tipo": "fala_sem_legenda",
+      "t": 28.46,
+      "detalhe": "'Droflá'"
+    }
+  ],
+  "sfx": [
+    {
+      "tipo": "sfx_info",
+      "t": 0.05,
+      "detalhe": "swish | -6.6 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 4.86,
+      "detalhe": "thud | -9.5 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 17.24,
+      "detalhe": "shimmer | -9.4 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 18.54,
+      "detalhe": "alert | -9.6 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 22.92,
+      "detalhe": "pop | -10.8 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 24.08,
+      "detalhe": "ding | -9.7 dB em relação à fala (fala ali)"
+    }
+  ],
+  "folhas": {
+    "marcacoes": "auditoria/folha_marcacoes.png",
+    "efeitos": "auditoria/folha_efeitos.png",
+    "geral": "auditoria/folha_geral.png"
+  }
+}

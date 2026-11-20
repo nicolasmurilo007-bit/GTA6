@@ -1,0 +1,13 @@
+{
+  "text": "Não vi o quadrado, eu tava prestando atenção no cabelo. Nossa, ela roubou bem com a polícia na frente, meu! Eu vou jogar esse jogo sem matar ninguém, tá? 100% good ending.",
+  "subs": [
+    {"text": "Argh! Que porra é essa?", "start": 1.2, "end": 2.9},
+    {"text": "Acabou, acabou! Se acalma, porra.", "start": 3.2, "end": 3.9},
+    {"text": "Fica aí!", "start": 7.5, "end": 8.4},
+    {"text": "Argh, merda.", "start": 9.0, "end": 9.9},
+    {"text": "Pra trás! Não me faz começar a atirar!", "start": 10.5, "end": 12.9},
+    {"text": "Ei, você. Não se mexe!", "start": 20.5, "end": 21.9},
+    {"text": "Merda.", "start": 27.0, "end": 27.4}
+  ],
+  "emphasis": ["quadrado", "polícia", "ninguém", "good", "ending"]
+}

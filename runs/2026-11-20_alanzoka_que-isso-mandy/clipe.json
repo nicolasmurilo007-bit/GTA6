@@ -1,0 +1,30 @@
+{
+  "mode": "corte",
+  "language": "pt",
+  "background": "black",
+  "hook": "",
+  "hook_seconds": 3.5,
+  "emphasis": [],
+  "sources": {
+    "live": {
+      "path": "clip.mp4",
+      "crop": [
+        80,
+        240,
+        1668,
+        944
+      ]
+    }
+  },
+  "segments": [
+    {
+      "src": "live",
+      "start": 0.0,
+      "end": 47.32
+    }
+  ],
+  "sfx": [],
+  "zooms": [],
+  "freezes": [],
+  "annotations": []
+}

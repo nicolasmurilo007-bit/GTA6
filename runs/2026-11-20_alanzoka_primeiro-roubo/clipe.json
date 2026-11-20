@@ -1,0 +1,175 @@
+{
+  "mode": "corte",
+  "language": "pt",
+  "background": "black",
+  "hook": "Roubou na frente da polícia? E o plano do Alan...",
+  "hook_seconds": 3.5,
+  "hook_y": 700,
+  "caption_y": 1000,
+  "subs_y": 1180,
+  "emphasis": [
+    "quadrado",
+    "polícia",
+    "ninguém",
+    "good",
+    "ending"
+  ],
+  "sources": {
+    "live": "clip.mp4"
+  },
+  "stack": [
+    {
+      "crop": [
+        1986,
+        22,
+        556,
+        344
+      ],
+      "h": 668,
+      "zoom": true
+    },
+    {
+      "crop": [
+        700,
+        0,
+        1078,
+        1250
+      ],
+      "h": 1252,
+      "zoom": true
+    }
+  ],
+  "segments": [
+    {
+      "src": "live",
+      "start": 0.0,
+      "end": 30.0
+    }
+  ],
+  "words_from": "../contexto.json",
+  "sfx": [
+    {
+      "name": "swish",
+      "t": 0.05
+    },
+    {
+      "name": "thud",
+      "t": 4.86
+    },
+    {
+      "name": "shimmer",
+      "t": 17.24
+    },
+    {
+      "name": "alert",
+      "t": 18.54
+    },
+    {
+      "name": "pop",
+      "t": 22.92
+    },
+    {
+      "name": "ding",
+      "t": 24.08
+    }
+  ],
+  "zooms": [
+    {
+      "t": 4.86,
+      "dur": 0.4,
+      "factor": 1.08
+    },
+    {
+      "t": 18.54,
+      "dur": 0.4,
+      "factor": 1.1
+    },
+    {
+      "t": 24.08,
+      "dur": 0.4,
+      "factor": 1.09
+    }
+  ],
+  "freezes": [
+    {
+      "t": 19.6,
+      "dur": 1.0
+    }
+  ],
+  "annotations": [
+    {
+      "type": "circle",
+      "t": 18.54,
+      "dur": 2.0,
+      "x": 410,
+      "y": 1200,
+      "rx": 120,
+      "ry": 120,
+      "path": [
+        [
+          18.54,
+          410,
+          1200
+        ],
+        [
+          18.9,
+          400,
+          1180
+        ],
+        [
+          19.2,
+          500,
+          1180
+        ],
+        [
+          19.6,
+          565,
+          1180
+        ],
+        [
+          20.54,
+          565,
+          1180
+        ]
+      ]
+    }
+  ],
+  "text": "Não vi o quadrado, eu tava prestando atenção no cabelo. Nossa, ela roubou bem com a polícia na frente, meu! Eu vou jogar esse jogo sem matar ninguém, tá? 100% good ending.",
+  "subs": [
+    {
+      "text": "Argh! Que p*rra é essa?",
+      "start": 1.2,
+      "end": 2.9
+    },
+    {
+      "text": "Acabou, acabou! Se acalma, p*rra.",
+      "start": 3.2,
+      "end": 3.9
+    },
+    {
+      "text": "Fica aí!",
+      "start": 7.5,
+      "end": 8.4
+    },
+    {
+      "text": "Argh, m*rda.",
+      "start": 9.0,
+      "end": 9.9
+    },
+    {
+      "text": "Pra trás! Não me faz começar a atirar!",
+      "start": 10.5,
+      "end": 12.9
+    },
+    {
+      "text": "Ei, você. Não se mexe!",
+      "start": 20.5,
+      "end": 21.9
+    },
+    {
+      "text": "M*rda.",
+      "start": 27.0,
+      "end": 27.4
+    }
+  ]
+}
