@@ -77,6 +77,8 @@ def main() -> None:
     ap.add_argument("--perfil", required=True, help="nome do perfil (user) no Upload-Post")
     ap.add_argument("--plataformas", default="youtube")
     ap.add_argument("--agendar", help="data/hora ISO 8601 (ex.: 2026-11-21T18:00:00Z); vazio = agora")
+    ap.add_argument("--privacidade", default="public", choices=["public", "unlisted", "private"],
+                    help="YouTube: public, unlisted (só com o link) ou private")
     ap.add_argument("--aprovado-pelo-usuario", action="store_true")
     ap.add_argument("--enviar", action="store_true", help="sem isto, só simula")
     a = ap.parse_args()
@@ -87,6 +89,10 @@ def main() -> None:
     titulo, desc = first_title(a.run), public_description(a.run)
     fields = [("user", a.perfil), ("title", titulo), ("description", desc)]
     fields += [("platform[]", p.strip()) for p in a.plataformas.split(",") if p.strip()]
+    # rótulo de IA SEMPRE ligado (decisão do usuário) e conteúdo não infantil
+    fields += [("is_ai_generated", "true"), ("containsSyntheticMedia", "true"),
+               ("selfDeclaredMadeForKids", "false"), ("privacyStatus", a.privacidade)]
+    fields += [("tags[]", t.lstrip("#")) for t in re.findall(r"#\w+", desc)]
     if a.agendar:
         fields.append(("scheduled_date", a.agendar))
     print(json.dumps({"campos": fields, "video": str(a.run / "final.mp4"), "travas": erros or "ok"}, ensure_ascii=False, indent=2))
