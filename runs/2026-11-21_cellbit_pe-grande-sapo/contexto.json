@@ -1,0 +1,307 @@
+{
+  "id": "2026-11-21_cellbit_pe-grande-sapo",
+  "streamer": "cellbit",
+  "fonte": "https://www.twitch.tv/cellbit/clip/BlueRelentlessNigiriHeyGuys-i-iZxDUWEvmxcU8p",
+  "duracao_s": 60.0,
+  "recorte": null,
+  "volume": {
+    "lufs": -25.3,
+    "true_peak_db": -4.9
+  },
+  "texto": "O que é isso? O que? Eu virei um sapo? Procure moscas para comer? Eu transferi a minha consciência para um sapo? Ele está se comunicando comigo?",
+  "palavras": [
+    {
+      "text": "O",
+      "start": 0.0,
+      "end": 1.08
+    },
+    {
+      "text": "que",
+      "start": 1.08,
+      "end": 11.92
+    },
+    {
+      "text": "é",
+      "start": 11.92,
+      "end": 14.18
+    },
+    {
+      "text": "isso?",
+      "start": 14.18,
+      "end": 14.88
+    },
+    {
+      "text": "O",
+      "start": 35.30000000000001,
+      "end": 35.82000000000001
+    },
+    {
+      "text": "que?",
+      "start": 35.82000000000001,
+      "end": 36.34
+    },
+    {
+      "text": "Eu",
+      "start": 41.64,
+      "end": 41.8
+    },
+    {
+      "text": "virei",
+      "start": 41.8,
+      "end": 42.02
+    },
+    {
+      "text": "um",
+      "start": 42.02,
+      "end": 42.22
+    },
+    {
+      "text": "sapo?",
+      "start": 42.22,
+      "end": 43.0
+    },
+    {
+      "text": "Procure",
+      "start": 46.96,
+      "end": 47.16
+    },
+    {
+      "text": "moscas",
+      "start": 47.16,
+      "end": 47.56
+    },
+    {
+      "text": "para",
+      "start": 47.56,
+      "end": 47.74
+    },
+    {
+      "text": "comer?",
+      "start": 47.74,
+      "end": 48.2
+    },
+    {
+      "text": "Eu",
+      "start": 50.48,
+      "end": 50.64
+    },
+    {
+      "text": "transferi",
+      "start": 50.64,
+      "end": 50.94
+    },
+    {
+      "text": "a",
+      "start": 50.94,
+      "end": 50.96
+    },
+    {
+      "text": "minha",
+      "start": 50.96,
+      "end": 51.1
+    },
+    {
+      "text": "consciência",
+      "start": 51.1,
+      "end": 51.4
+    },
+    {
+      "text": "para",
+      "start": 51.4,
+      "end": 51.54
+    },
+    {
+      "text": "um",
+      "start": 51.54,
+      "end": 51.74
+    },
+    {
+      "text": "sapo?",
+      "start": 51.74,
+      "end": 52.0
+    },
+    {
+      "text": "Ele",
+      "start": 55.42,
+      "end": 55.56
+    },
+    {
+      "text": "está",
+      "start": 55.56,
+      "end": 55.68
+    },
+    {
+      "text": "se",
+      "start": 55.68,
+      "end": 55.82
+    },
+    {
+      "text": "comunicando",
+      "start": 55.82,
+      "end": 56.08
+    },
+    {
+      "text": "comigo?",
+      "start": 56.08,
+      "end": 56.4
+    }
+  ],
+  "rostos": [
+    {
+      "t": 0.5,
+      "score": 0.93,
+      "x": 952,
+      "y": 809,
+      "w": 55,
+      "h": 75,
+      "cx": 979,
+      "cy": 846
+    },
+    {
+      "t": 4.5,
+      "score": 0.93,
+      "x": 78,
+      "y": 684,
+      "w": 38,
+      "h": 55,
+      "cx": 97,
+      "cy": 712
+    },
+    {
+      "t": 8.5,
+      "score": 0.65,
+      "x": 585,
+      "y": 776,
+      "w": 43,
+      "h": 61,
+      "cx": 606,
+      "cy": 806
+    },
+    {
+      "t": 12.5,
+      "score": 0.91,
+      "x": 70,
+      "y": 695,
+      "w": 42,
+      "h": 60,
+      "cx": 91,
+      "cy": 725
+    },
+    {
+      "t": 16.5,
+      "score": 0.91,
+      "x": 387,
+      "y": 707,
+      "w": 162,
+      "h": 244,
+      "cx": 468,
+      "cy": 830
+    },
+    {
+      "t": 20.5,
+      "score": 0.93,
+      "x": 94,
+      "y": 685,
+      "w": 35,
+      "h": 47,
+      "cx": 111,
+      "cy": 708
+    },
+    {
+      "t": 24.5,
+      "score": 0.93,
+      "x": 85,
+      "y": 684,
+      "w": 35,
+      "h": 49,
+      "cx": 102,
+      "cy": 708
+    },
+    {
+      "t": 28.5,
+      "score": 0.93,
+      "x": 77,
+      "y": 695,
+      "w": 52,
+      "h": 73,
+      "cx": 103,
+      "cy": 731
+    },
+    {
+      "t": 32.5,
+      "score": 0.92,
+      "x": 76,
+      "y": 696,
+      "w": 51,
+      "h": 72,
+      "cx": 102,
+      "cy": 732
+    },
+    {
+      "t": 36.5,
+      "score": 0.91,
+      "x": 83,
+      "y": 687,
+      "w": 47,
+      "h": 67,
+      "cx": 106,
+      "cy": 720
+    },
+    {
+      "t": 40.5,
+      "score": 0.92,
+      "x": 73,
+      "y": 697,
+      "w": 49,
+      "h": 67,
+      "cx": 98,
+      "cy": 731
+    },
+    {
+      "t": 44.5,
+      "score": 0.91,
+      "x": 79,
+      "y": 695,
+      "w": 48,
+      "h": 69,
+      "cx": 103,
+      "cy": 730
+    },
+    {
+      "t": 48.5,
+      "score": 0.91,
+      "x": 75,
+      "y": 697,
+      "w": 49,
+      "h": 65,
+      "cx": 99,
+      "cy": 729
+    },
+    {
+      "t": 52.5,
+      "score": 0.9,
+      "x": 78,
+      "y": 699,
+      "w": 46,
+      "h": 65,
+      "cx": 101,
+      "cy": 732
+    },
+    {
+      "t": 56.5,
+      "score": 0.9,
+      "x": 72,
+      "y": 693,
+      "w": 49,
+      "h": 68,
+      "cx": 97,
+      "cy": 727
+    }
+  ],
+  "bloco_de_creditos": "Créditos: @cellbit (twitch.tv/cellbit)",
+  "arquivos": {
+    "video": "source/clip.mp4",
+    "config_render": "clipe.json",
+    "quadros": "frames/"
+  }
+}

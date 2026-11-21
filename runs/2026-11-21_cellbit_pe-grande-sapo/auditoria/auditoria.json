@@ -1,0 +1,65 @@
+{
+  "video": "runs/2026-11-21_cellbit_pe-grande-sapo/final.mp4",
+  "duracao": 55.5,
+  "palavras_legenda": 38,
+  "palavras_ouvidas": 62,
+  "problemas": [
+    {
+      "tipo": "legenda_rapida",
+      "t": 9.74,
+      "detalhe": "'O QUE ESTÁ' 30 car/s"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 42.46,
+      "detalhe": "'PROCURE' 30 car/s"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 46.46,
+      "detalhe": "'A MINHA' 30 car/s"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 47.06,
+      "detalhe": "'PARA UM' 30 car/s"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 51.35,
+      "detalhe": "'COMUNICANDO' 31 car/s"
+    }
+  ],
+  "sfx": [
+    {
+      "tipo": "sfx_info",
+      "t": 0.05,
+      "detalhe": "swish | -6.6 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 6.5,
+      "detalhe": "thud | -6.5 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 22.0,
+      "detalhe": "subdrop | -5.1 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 37.72,
+      "detalhe": "ding | -9.7 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 46.6,
+      "detalhe": "shimmer | -9.4 dB em relação à fala (fala ali)"
+    }
+  ],
+  "folhas": {
+    "marcacoes": "runs/2026-11-21_cellbit_pe-grande-sapo/auditoria/folha_marcacoes.png",
+    "efeitos": "runs/2026-11-21_cellbit_pe-grande-sapo/auditoria/folha_efeitos.png",
+    "geral": "runs/2026-11-21_cellbit_pe-grande-sapo/auditoria/folha_geral.png"
+  }
+}

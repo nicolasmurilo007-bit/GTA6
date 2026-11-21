@@ -1,0 +1,16 @@
+{
+  "id": "2026-11-21_cellbit_pe-grande-sapo",
+  "veredito": "APROVADO",
+  "autorizacao": "desconhecida",
+  "aviso": "Crédito na legenda NÃO é autorização do streamer. Risco assumido pelo usuário (18/11/2026); o streamer ou a Take-Two podem pedir remoção.",
+  "duracao_s": 55.5,
+  "itens": [
+    {"item": "bloco de créditos", "estado": "ok", "detalhe": "'Créditos: @cellbit (twitch.tv/cellbit)' e #cellbit no bloco 'Texto para publicar'"},
+    {"item": "origem registrada", "estado": "ok", "detalhe": "https://www.twitch.tv/cellbit/clip/BlueRelentlessNigiriHeyGuys-i-iZxDUWEvmxcU8p (usado 4,5-60 s)"},
+    {"item": "rótulo de IA", "estado": "ok", "detalhe": "sem voz sintética; rótulo ligado no envio por decisão do usuário"},
+    {"item": "sem monetização/afiliado/patrocínio", "estado": "ok", "detalhe": "nada"},
+    {"item": "música e logos", "estado": "ok", "detalhe": "sem música; só SFX curtos; chat, nomes de usuários e widgets fora do recorte"},
+    {"item": "conteúdo sensível", "estado": "atencao", "detalhe": "terror leve (corpo do Pé Grande, personagem envenenado/desmaiado); 'esporrou' abrandado na legenda (esp*rrou), audível no áudio. Sem sangue, sem conteúdo sugestivo"},
+    {"item": "diversidade", "estado": "ok", "detalhe": "primeiro clipe do Cellbit; título e gancho novos"}
+  ]
+}
