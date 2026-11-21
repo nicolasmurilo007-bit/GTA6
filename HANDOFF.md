@@ -354,3 +354,12 @@ monetizar. Pesquisa feita:
 - Upload-Post (pesquisado 20/11): plano grátis = 10 envios/mês, 2 perfis, API, MAS SEM TikTok; TikTok só no Basic
   (US$ 24/mês ou US$ 16/mês no anual).
 - Pedidos pendentes do usuário: foto de perfil e banner do canal do YouTube.
+
+## Registro 2026-11-21: rotina automática ligada (Alanzoka + Cellbit)
+- Primeiro post no YouTube (clipe 3): https://www.youtube.com/watch?v=nzu5er3oKXI (canal "shorts gta6", perfil Upload-Post `default`).
+- Rotina "Clipe GTA 6 de streamers" (trig_012Xpgcymkf9rXKDzwgEq9Uz): 10h17-22h17 Brasília, de hora em hora; busca clipes de alanzoka e cellbit,
+  produz 1, pede aprovação, posta no YouTube pelo conector Upload-Post. O usuário editou a rotina no claude.ai: repositório GTA6 anexado e só o
+  conector Upload-Post. A rotina salva numa branch própria (claude/inspiring-hopper) e tenta a main.
+- Execução de 11h17 (21/11) fez o clipe "CARRO VOADOR" mas não conseguiu push (rotina ainda sem repositório) — deve ser refeito.
+- Crédito sempre do streamer do clipe; cada streamer tem a câmera num lugar: medir e salvar em tools/gta6/layouts.json.
+- Plano grátis Upload-Post: 10 envios/mês, 2 perfis, sem TikTok (TikTok à mão com tiktok.txt).
