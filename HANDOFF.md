@@ -363,3 +363,6 @@ monetizar. Pesquisa feita:
 - Execução de 11h17 (21/11) fez o clipe "CARRO VOADOR" mas não conseguiu push (rotina ainda sem repositório) — deve ser refeito.
 - Crédito sempre do streamer do clipe; cada streamer tem a câmera num lugar: medir e salvar em tools/gta6/layouts.json.
 - Plano grátis Upload-Post: 10 envios/mês, 2 perfis, sem TikTok (TikTok à mão com tiktok.txt).
+- Decisões 21/11 (A,A,A): ficar 1 semana com alanzoka + cellbit; no máximo 1 clipe/post por dia (a rotina encerra se já existe
+  runs/<hoje>_* em qualquer branch); eu junto as branches da rotina na main de vez em quando.
+- Atenção: 1 post/dia = ~30/mês, mas o plano grátis do Upload-Post só tem 10 envios/mês (acaba por volta do dia 10).
