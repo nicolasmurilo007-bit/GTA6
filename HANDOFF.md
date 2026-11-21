@@ -366,3 +366,6 @@ monetizar. Pesquisa feita:
 - Decisões 21/11 (A,A,A): ficar 1 semana com alanzoka + cellbit; no máximo 1 clipe/post por dia (a rotina encerra se já existe
   runs/<hoje>_* em qualquer branch); eu junto as branches da rotina na main de vez em quando.
 - Atenção: 1 post/dia = ~30/mês, mas o plano grátis do Upload-Post só tem 10 envios/mês (acaba por volta do dia 10).
+- Decisões 21/11 (A,A,B): quando os 10 envios grátis acabarem, a rotina entrega o vídeo e o usuário posta à mão no YouTube Studio;
+  revisão semanal às sextas 19h23 (rotina trig_0149K6XvpNE8D4j6CjeGQEDM: junta branches na main, compara views por streamer);
+  TikTok fora por enquanto (a rotina não prepara mais tiktok.txt).
