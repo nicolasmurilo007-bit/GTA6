@@ -16,5 +16,28 @@
       1320
     ],
     "nota": "Cena de JOGO: gameplay em tela cheia + câmera pequena no canto direito (x~1988-2548, y~360-772). O recorte corta os 120 px de baixo para esconder a legenda automática queimada da Twitch (começa em y~1340). Medido em 18/11/2026 num clipe 2560x1440."
+  },
+  "cellbit_jogo": {
+    "stack": [
+      {
+        "crop": [
+          6,
+          120,
+          448,
+          250
+        ],
+        "h": 604
+      },
+      {
+        "crop": [
+          572,
+          0,
+          780,
+          950
+        ],
+        "h": 1316
+      }
+    ],
+    "nota": "Cena de JOGO, clipe 1920x1080: câmera no canto superior esquerdo (x~4-456, y~118-372); chat logo abaixo (y>=375) fica de fora. Gameplay recortada no centro (personagem em x~960) e acima da legenda queimada da Twitch (começa em y~975); evita câmera e minimapa. Medido em 22/11/2026."
   }
 }

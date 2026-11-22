@@ -1,0 +1,102 @@
+{
+  "mode": "corte",
+  "language": "pt",
+  "background": "black",
+  "hook": "Ele transformou Vice City em Silent Hill?",
+  "hook_seconds": 3.5,
+  "hook_y": 700,
+  "caption_y": 1000,
+  "subs_y": 1180,
+  "emphasis": [
+    "socorro",
+    "silent",
+    "hill",
+    "lanterna",
+    "fog",
+    "nada",
+    "transformei"
+  ],
+  "sources": {
+    "live": "clip.mp4"
+  },
+  "stack": [
+    {
+      "crop": [
+        6,
+        120,
+        448,
+        250
+      ],
+      "h": 604,
+      "zoom": true
+    },
+    {
+      "crop": [
+        572,
+        0,
+        780,
+        950
+      ],
+      "h": 1316,
+      "zoom": true
+    }
+  ],
+  "segments": [
+    {
+      "src": "live",
+      "start": 0.0,
+      "end": 50.4
+    }
+  ],
+  "words_from": "../legendas.json",
+  "sfx": [
+    {
+      "name": "swish",
+      "t": 0.05
+    },
+    {
+      "name": "alert",
+      "t": 8.18
+    },
+    {
+      "name": "thud",
+      "t": 12.0
+    },
+    {
+      "name": "subdrop",
+      "t": 21.14
+    },
+    {
+      "name": "tick",
+      "t": 23.3
+    },
+    {
+      "name": "rise",
+      "t": 46.6
+    },
+    {
+      "name": "thud",
+      "t": 48.0
+    }
+  ],
+  "zooms": [
+    {
+      "t": 8.18,
+      "dur": 0.4,
+      "factor": 1.08
+    },
+    {
+      "t": 21.14,
+      "dur": 0.4,
+      "factor": 1.1
+    },
+    {
+      "t": 48.0,
+      "dur": 0.4,
+      "factor": 1.09
+    }
+  ],
+  "freezes": [],
+  "annotations": [],
+  "subs": []
+}

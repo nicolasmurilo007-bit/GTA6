@@ -1,0 +1,84 @@
+{
+  "video": "runs/2026-11-22_cellbit_membrana-vice-city/final.mp4",
+  "duracao": 50.4,
+  "palavras_legenda": 45,
+  "palavras_ouvidas": 72,
+  "problemas": [
+    {
+      "tipo": "legenda_texto",
+      "t": 12.82,
+      "detalhe": "escrito 'P*RRA' | ouvido 'porra'"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 22.94,
+      "detalhe": "'MEU DEUS,' 30 car/s"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 26.19,
+      "detalhe": "'ACONTECENDO?' 30 car/s"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 26.59,
+      "detalhe": "'POR QUE TÁ' 30 car/s"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 26.92,
+      "detalhe": "'TODO MUNDO' 30 car/s"
+    },
+    {
+      "tipo": "legenda_texto",
+      "t": 47.54,
+      "detalhe": "escrito 'EM' | ouvido 'pra'"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 48.56,
+      "detalhe": "'EU CONSIGO' 30 car/s"
+    }
+  ],
+  "sfx": [
+    {
+      "tipo": "sfx_info",
+      "t": 0.05,
+      "detalhe": "swish | -6.6 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 8.18,
+      "detalhe": "alert | -9.6 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 12.0,
+      "detalhe": "thud | -9.5 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 21.14,
+      "detalhe": "subdrop | -9.2 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 23.3,
+      "detalhe": "tick | -12.0 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 46.6,
+      "detalhe": "rise | -8.8 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 48.0,
+      "detalhe": "thud | -9.5 dB em relação à fala (fala ali)"
+    }
+  ],
+  "folhas": {
+    "efeitos": "runs/2026-11-22_cellbit_membrana-vice-city/auditoria/folha_efeitos.png",
+    "geral": "runs/2026-11-22_cellbit_membrana-vice-city/auditoria/folha_geral.png"
+  }
+}
