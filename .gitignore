@@ -53,3 +53,4 @@ runs/**/*.mkv
 runs/**/*.mp3
 runs/**/*.wav
 runs/**/source/
+runs/**/auditoria/_q/
