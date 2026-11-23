@@ -1,0 +1,197 @@
+{
+  "id": "2026-11-23_cellbit_padre-exorcista",
+  "streamer": "cellbit",
+  "fonte": "https://www.twitch.tv/cellbit/clip/AbstruseHumbleElkCurseLit-pAR5yfJn4PuVNaMR",
+  "duracao_s": 30.0,
+  "recorte": null,
+  "volume": {
+    "lufs": -15.0,
+    "true_peak_db": 0.0
+  },
+  "texto": "Aaaaaah! Aaaaaah! Aaaaaah! Aaaaaah! Eles mandaram alguma coisa em Morse, tá? Eles me literalmente mandaram alguma coisa em Morse.",
+  "palavras": [
+    {
+      "text": "Aaaaaah!",
+      "start": 4.200000000000001,
+      "end": 4.6
+    },
+    {
+      "text": "Aaaaaah!",
+      "start": 10.72,
+      "end": 11.12
+    },
+    {
+      "text": "Aaaaaah!",
+      "start": 14.540000000000001,
+      "end": 14.94
+    },
+    {
+      "text": "Aaaaaah!",
+      "start": 22.720000000000002,
+      "end": 23.12
+    },
+    {
+      "text": "Eles",
+      "start": 24.040000000000003,
+      "end": 24.44
+    },
+    {
+      "text": "mandaram",
+      "start": 24.44,
+      "end": 24.72
+    },
+    {
+      "text": "alguma",
+      "start": 24.72,
+      "end": 24.9
+    },
+    {
+      "text": "coisa",
+      "start": 24.9,
+      "end": 25.08
+    },
+    {
+      "text": "em",
+      "start": 25.08,
+      "end": 25.22
+    },
+    {
+      "text": "Morse,",
+      "start": 25.22,
+      "end": 25.4
+    },
+    {
+      "text": "tá?",
+      "start": 25.58,
+      "end": 25.58
+    },
+    {
+      "text": "Eles",
+      "start": 25.64,
+      "end": 25.82
+    },
+    {
+      "text": "me",
+      "start": 25.82,
+      "end": 25.94
+    },
+    {
+      "text": "literalmente",
+      "start": 25.94,
+      "end": 26.3
+    },
+    {
+      "text": "mandaram",
+      "start": 26.3,
+      "end": 26.5
+    },
+    {
+      "text": "alguma",
+      "start": 26.5,
+      "end": 26.72
+    },
+    {
+      "text": "coisa",
+      "start": 26.72,
+      "end": 26.84
+    },
+    {
+      "text": "em",
+      "start": 26.84,
+      "end": 26.98
+    },
+    {
+      "text": "Morse.",
+      "start": 26.98,
+      "end": 27.24
+    }
+  ],
+  "rostos": [
+    {
+      "t": 0.5,
+      "score": 0.91,
+      "x": 75,
+      "y": 754,
+      "w": 41,
+      "h": 58,
+      "cx": 95,
+      "cy": 783
+    },
+    {
+      "t": 4.5,
+      "score": 0.91,
+      "x": 79,
+      "y": 755,
+      "w": 42,
+      "h": 57,
+      "cx": 100,
+      "cy": 784
+    },
+    {
+      "t": 8.5,
+      "score": 0.91,
+      "x": 75,
+      "y": 756,
+      "w": 42,
+      "h": 58,
+      "cx": 96,
+      "cy": 785
+    },
+    {
+      "t": 12.5,
+      "score": 0.67,
+      "x": 675,
+      "y": 728,
+      "w": 73,
+      "h": 109,
+      "cx": 711,
+      "cy": 783
+    },
+    {
+      "t": 16.5,
+      "score": 0.92,
+      "x": 73,
+      "y": 754,
+      "w": 42,
+      "h": 60,
+      "cx": 94,
+      "cy": 784
+    },
+    {
+      "t": 20.5,
+      "score": 0.91,
+      "x": 69,
+      "y": 751,
+      "w": 44,
+      "h": 58,
+      "cx": 91,
+      "cy": 780
+    },
+    {
+      "t": 24.5,
+      "score": 0.93,
+      "x": 58,
+      "y": 753,
+      "w": 43,
+      "h": 58,
+      "cx": 80,
+      "cy": 781
+    },
+    {
+      "t": 28.5,
+      "score": 0.9,
+      "x": 69,
+      "y": 753,
+      "w": 43,
+      "h": 63,
+      "cx": 91,
+      "cy": 785
+    }
+  ],
+  "bloco_de_creditos": "Créditos: @cellbit (twitch.tv/cellbit)",
+  "arquivos": {
+    "video": "source/clip.mp4",
+    "config_render": "clipe.json",
+    "quadros": "frames/"
+  }
+}
