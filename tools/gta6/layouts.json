@@ -16,5 +16,20 @@
       1320
     ],
     "nota": "Cena de JOGO: gameplay em tela cheia + câmera pequena no canto direito (x~1988-2548, y~360-772). O recorte corta os 120 px de baixo para esconder a legenda automática queimada da Twitch (começa em y~1340). Medido em 18/11/2026 num clipe 2560x1440."
+  },
+  "alanzoka_jogo_stack": {
+    "camera": [
+      1986,
+      652,
+      556,
+      348
+    ],
+    "gameplay": [
+      760,
+      0,
+      1121,
+      1300
+    ],
+    "nota": "Cena de JOGO em 24/11/2026 (2560x1440): câmera mudou para x 1986-2542, y 652-1000 (widget 'último sub' começa em y~1005, fora). Gameplay x 760-1881 (antes da câmera), y 0-1300 (acima da legenda queimada da Twitch, y~1340). Câmera muda entre dias: medir sempre."
   }
 }

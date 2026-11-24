@@ -1,0 +1,51 @@
+{
+  "video": "runs/2026-11-24_alanzoka_coitada-da-lucia/final.mp4",
+  "veredito": "APROVADO",
+  "itens": [
+    {
+      "item": "resolução 1080x1920",
+      "estado": "ok",
+      "detalhe": "1080x1920"
+    },
+    {
+      "item": "áudio presente",
+      "estado": "ok",
+      "detalhe": ""
+    },
+    {
+      "item": "duração 8 s a 180 s",
+      "estado": "ok",
+      "detalhe": "53.7s"
+    },
+    {
+      "item": "volume -15 a -13 LUFS",
+      "estado": "ok",
+      "detalhe": "-13.5 LUFS"
+    },
+    {
+      "item": "pico real <= -1,5 dBTP",
+      "estado": "ok",
+      "detalhe": "-3.1 dBTP"
+    },
+    {
+      "item": "sem tela preta > 0,5 s",
+      "estado": "ok",
+      "detalhe": ""
+    },
+    {
+      "item": "sem silêncio > 2 s",
+      "estado": "ok",
+      "detalhe": ""
+    },
+    {
+      "item": "topo (0-270 px) livre de texto/gráfico",
+      "estado": "atencao",
+      "detalhe": "brilho máx. 255"
+    },
+    {
+      "item": "sem erro de decodificação",
+      "estado": "ok",
+      "detalhe": ""
+    }
+  ]
+}

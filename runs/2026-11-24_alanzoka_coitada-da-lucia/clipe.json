@@ -1,0 +1,34 @@
+{
+  "mode": "corte",
+  "language": "pt",
+  "background": "black",
+  "hook": "Subiu o farol inteiro... pra cair lá de cima?",
+  "hook_seconds": 3.5,
+  "hook_y": 620,
+  "caption_y": 1000,
+  "subs_y": 1180,
+  "emphasis": ["caiu", "morrido", "DEUS", "rolo", "perigo"],
+  "sources": {"live": "clip.mp4"},
+  "stack": [
+    {"crop": [1986, 652, 556, 348], "h": 668, "zoom": true},
+    {"crop": [760, 0, 1121, 1300], "h": 1252, "zoom": true}
+  ],
+  "segments": [{"src": "live", "start": 0.0, "end": 53.7}],
+  "words_from": "../contexto.json",
+  "sfx": [
+    {"name": "swish", "t": 0.05},
+    {"name": "subdrop", "t": 16.6},
+    {"name": "alert", "t": 18.0},
+    {"name": "thud", "t": 32.1},
+    {"name": "pop", "t": 37.6},
+    {"name": "thock", "t": 42.4},
+    {"name": "ding", "t": 48.1}
+  ],
+  "zooms": [
+    {"t": 16.6, "dur": 0.4, "factor": 1.1},
+    {"t": 37.6, "dur": 0.4, "factor": 1.1},
+    {"t": 42.4, "dur": 0.4, "factor": 1.08}
+  ],
+  "text": "Ali, eu não trouxe navio, eu só vim de avião. Ai, cara, eu subi tudo pra nada, mano. Parabéns aí, mano. Ela caiu! Ela caiu lá embaixo! Ai, meu Deus! Ela caiu. Ainda bem que não era eu, mano, se não eu tinha morrido. Bebê, você caiu? Você tá bem? MEU DEUS! MEU DEUS! Bebê, pelo amor de Deus, você tomou um rolo lá de cima! Que perigo, que perigo! Tem que tomar cuidado.",
+  "subs": []
+}

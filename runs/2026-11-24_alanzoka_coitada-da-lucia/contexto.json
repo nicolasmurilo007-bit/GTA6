@@ -1,0 +1,477 @@
+{
+  "id": "2026-11-24_alanzoka_coitada-da-lucia",
+  "streamer": "alanzoka",
+  "fonte": "https://www.twitch.tv/alanzoka/clip/DaintyDreamyWalrusOpieOP-mVob-LlM8ej7QB7-",
+  "duracao_s": 53.78,
+  "recorte": [
+    80,
+    240,
+    1668,
+    944
+  ],
+  "volume": {
+    "lufs": -15.8,
+    "true_peak_db": 1.8
+  },
+  "texto": "ali, eu não trouxe navio, eu só vim de avião ai cara, eu subi tudo pra nada, mano, parabéns aí mano, ela caiu, ela caiu lá embaixo ai, meu deus ela caiu ainda bem que não era eu, mano se não eu tinha morrido bebê, você caiu, você tá bem... MEU DEUS MEU DEUS bebê, pelo amor de deus, você tomou um rolo lá de cima que perigo que perigo tem que tomar cuidado",
+  "palavras": [
+    {
+      "text": "ali,",
+      "start": 0.0,
+      "end": 0.18
+    },
+    {
+      "text": "eu",
+      "start": 0.18,
+      "end": 0.36
+    },
+    {
+      "text": "não",
+      "start": 0.36,
+      "end": 0.52
+    },
+    {
+      "text": "trouxe",
+      "start": 0.52,
+      "end": 0.76
+    },
+    {
+      "text": "navio,",
+      "start": 0.76,
+      "end": 1.0
+    },
+    {
+      "text": "eu",
+      "start": 1.02,
+      "end": 1.12
+    },
+    {
+      "text": "só",
+      "start": 1.12,
+      "end": 1.2
+    },
+    {
+      "text": "vim",
+      "start": 1.2,
+      "end": 1.26
+    },
+    {
+      "text": "de",
+      "start": 1.26,
+      "end": 1.44
+    },
+    {
+      "text": "avião",
+      "start": 1.44,
+      "end": 1.98
+    },
+    {
+      "text": "ai",
+      "start": 6.460000000000002,
+      "end": 6.88
+    },
+    {
+      "text": "cara,",
+      "start": 6.88,
+      "end": 7.22
+    },
+    {
+      "text": "eu",
+      "start": 7.3,
+      "end": 7.32
+    },
+    {
+      "text": "subi",
+      "start": 7.32,
+      "end": 7.54
+    },
+    {
+      "text": "tudo",
+      "start": 7.54,
+      "end": 7.68
+    },
+    {
+      "text": "pra",
+      "start": 7.68,
+      "end": 7.92
+    },
+    {
+      "text": "nada,",
+      "start": 7.92,
+      "end": 8.12
+    },
+    {
+      "text": "mano,",
+      "start": 8.28,
+      "end": 8.4
+    },
+    {
+      "text": "parabéns",
+      "start": 8.54,
+      "end": 8.9
+    },
+    {
+      "text": "aí",
+      "start": 8.9,
+      "end": 9.26
+    },
+    {
+      "text": "mano,",
+      "start": 12.480000000000002,
+      "end": 12.9
+    },
+    {
+      "text": "ela",
+      "start": 16.62,
+      "end": 16.84
+    },
+    {
+      "text": "caiu,",
+      "start": 16.84,
+      "end": 17.78
+    },
+    {
+      "text": "ela",
+      "start": 18.0,
+      "end": 18.14
+    },
+    {
+      "text": "caiu",
+      "start": 18.14,
+      "end": 18.4
+    },
+    {
+      "text": "lá",
+      "start": 18.4,
+      "end": 18.56
+    },
+    {
+      "text": "embaixo",
+      "start": 18.56,
+      "end": 19.18
+    },
+    {
+      "text": "ai,",
+      "start": 19.18,
+      "end": 19.98
+    },
+    {
+      "text": "meu",
+      "start": 20.0,
+      "end": 20.16
+    },
+    {
+      "text": "deus",
+      "start": 20.16,
+      "end": 21.26
+    },
+    {
+      "text": "ela",
+      "start": 27.220000000000002,
+      "end": 27.64
+    },
+    {
+      "text": "caiu",
+      "start": 27.64,
+      "end": 28.06
+    },
+    {
+      "text": "ainda",
+      "start": 28.700000000000003,
+      "end": 29.1
+    },
+    {
+      "text": "bem",
+      "start": 29.1,
+      "end": 29.2
+    },
+    {
+      "text": "que",
+      "start": 29.2,
+      "end": 29.36
+    },
+    {
+      "text": "não",
+      "start": 29.36,
+      "end": 29.48
+    },
+    {
+      "text": "era",
+      "start": 29.48,
+      "end": 29.64
+    },
+    {
+      "text": "eu,",
+      "start": 29.64,
+      "end": 29.94
+    },
+    {
+      "text": "mano",
+      "start": 30.08,
+      "end": 30.92
+    },
+    {
+      "text": "se",
+      "start": 31.48,
+      "end": 31.88
+    },
+    {
+      "text": "não",
+      "start": 31.88,
+      "end": 31.96
+    },
+    {
+      "text": "eu",
+      "start": 31.96,
+      "end": 32.0
+    },
+    {
+      "text": "tinha",
+      "start": 32.0,
+      "end": 32.14
+    },
+    {
+      "text": "morrido",
+      "start": 32.14,
+      "end": 33.080000000000005
+    },
+    {
+      "text": "bebê,",
+      "start": 36.06,
+      "end": 36.46
+    },
+    {
+      "text": "você",
+      "start": 36.6,
+      "end": 36.6
+    },
+    {
+      "text": "caiu,",
+      "start": 36.6,
+      "end": 37.1
+    },
+    {
+      "text": "você",
+      "start": 37.12,
+      "end": 37.22
+    },
+    {
+      "text": "tá",
+      "start": 37.22,
+      "end": 37.38
+    },
+    {
+      "text": "bem...",
+      "start": 37.38,
+      "end": 37.58
+    },
+    {
+      "text": "MEU",
+      "start": 37.58,
+      "end": 37.88
+    },
+    {
+      "text": "DEUS",
+      "start": 37.88,
+      "end": 38.86
+    },
+    {
+      "text": "MEU",
+      "start": 38.86,
+      "end": 39.28
+    },
+    {
+      "text": "DEUS",
+      "start": 39.28,
+      "end": 39.7
+    },
+    {
+      "text": "bebê,",
+      "start": 40.78,
+      "end": 41.18
+    },
+    {
+      "text": "pelo",
+      "start": 41.32,
+      "end": 41.34
+    },
+    {
+      "text": "amor",
+      "start": 41.34,
+      "end": 41.54
+    },
+    {
+      "text": "de",
+      "start": 41.54,
+      "end": 41.72
+    },
+    {
+      "text": "deus,",
+      "start": 41.72,
+      "end": 41.92
+    },
+    {
+      "text": "você",
+      "start": 42.0,
+      "end": 42.12
+    },
+    {
+      "text": "tomou",
+      "start": 42.12,
+      "end": 42.24
+    },
+    {
+      "text": "um",
+      "start": 42.24,
+      "end": 42.42
+    },
+    {
+      "text": "rolo",
+      "start": 42.42,
+      "end": 42.52
+    },
+    {
+      "text": "lá",
+      "start": 42.52,
+      "end": 42.74
+    },
+    {
+      "text": "de",
+      "start": 42.74,
+      "end": 43.0
+    },
+    {
+      "text": "cima",
+      "start": 43.0,
+      "end": 43.32
+    },
+    {
+      "text": "que",
+      "start": 43.32,
+      "end": 43.6
+    },
+    {
+      "text": "perigo",
+      "start": 43.6,
+      "end": 44.74
+    },
+    {
+      "text": "que",
+      "start": 46.400000000000006,
+      "end": 46.800000000000004
+    },
+    {
+      "text": "perigo",
+      "start": 46.800000000000004,
+      "end": 47.2
+    },
+    {
+      "text": "tem",
+      "start": 47.2,
+      "end": 47.9
+    },
+    {
+      "text": "que",
+      "start": 47.9,
+      "end": 47.96
+    },
+    {
+      "text": "tomar",
+      "start": 47.96,
+      "end": 48.14
+    },
+    {
+      "text": "cuidado",
+      "start": 48.14,
+      "end": 48.94
+    }
+  ],
+  "rostos": [
+    {
+      "t": 0.5,
+      "score": 0.81,
+      "x": 756,
+      "y": 882,
+      "w": 59,
+      "h": 105,
+      "cx": 786,
+      "cy": 935
+    },
+    {
+      "t": 4.5,
+      "score": 0.88,
+      "x": 748,
+      "y": 907,
+      "w": 56,
+      "h": 71,
+      "cx": 776,
+      "cy": 943
+    },
+    {
+      "t": 8.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 12.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 16.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 20.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 24.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 28.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 32.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 36.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 40.5,
+      "score": 0.79,
+      "x": 922,
+      "y": 620,
+      "w": 172,
+      "h": 311,
+      "cx": 1008,
+      "cy": 776
+    },
+    {
+      "t": 44.5,
+      "score": 0.87,
+      "x": 559,
+      "y": 647,
+      "w": 271,
+      "h": 316,
+      "cx": 695,
+      "cy": 805
+    },
+    {
+      "t": 48.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 52.5,
+      "sem_rosto": true
+    }
+  ],
+  "bloco_de_creditos": "Créditos: @alanzoka (twitch.tv/alanzoka)",
+  "arquivos": {
+    "video": "source/clip.mp4",
+    "config_render": "clipe.json",
+    "quadros": "frames/"
+  }
+}

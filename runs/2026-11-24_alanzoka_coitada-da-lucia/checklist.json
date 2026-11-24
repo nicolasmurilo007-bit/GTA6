@@ -1,0 +1,18 @@
+{
+  "id": "2026-11-24_alanzoka_coitada-da-lucia",
+  "veredito": "APROVADO",
+  "condicao": "item conteúdo sensível em atenção (ferimento de jogo): OK humano antes de publicar",
+  "autorizacao": "desconhecida",
+  "aviso": "Crédito na descrição NÃO é autorização do streamer. Nenhuma autorização por escrito registrada; risco assumido pelo usuário (18/11/2026). O streamer ou a Take-Two podem pedir remoção.",
+  "duracao_s": 53.7,
+  "itens": [
+    {"item": "bloco de créditos", "estado": "ok", "detalhe": "'Créditos: @alanzoka (twitch.tv/alanzoka)' + #alanzoka no 'Texto para publicar'"},
+    {"item": "origem registrada", "estado": "ok", "detalhe": "https://www.twitch.tv/alanzoka/clip/DaintyDreamyWalrusOpieOP-mVob-LlM8ej7QB7-, clipe usado inteiro (0-53,7 s)"},
+    {"item": "rótulo de IA", "estado": "ok", "detalhe": "sem voz sintética; rótulo ligado no envio por decisão do usuário"},
+    {"item": "sem monetização/afiliado/patrocínio", "estado": "ok", "detalhe": "nada no texto, título, gancho ou capa"},
+    {"item": "música e logos", "estado": "ok", "detalhe": "sem música, só SFX próprios; sem widgets/chat/logos de plataforma no recorte (conferido em folha_geral.png e capa.png)"},
+    {"item": "conteúdo sensível", "estado": "atencao", "detalhe": "personagem com sangue no rosto após queda (40-46 s, violência leve de jogo). Sem palavrões, sem conteúdo sugestivo"},
+    {"item": "qualidade", "estado": "ok", "detalhe": "qa.py APROVADO (-13,5 LUFS, -3,1 dBTP); auditoria: 4 trechos gritados não reconhecidos na 2ª transcrição (MEU DEUS, QUE PERIGO) e 'PELO AMOR DE' rápido — conferidos, texto correto"},
+    {"item": "diversidade", "estado": "atencao", "detalhe": "5º clipe seguido do alanzoka em layout stack; Cellbit sem clipes nas últimas 24 h"}
+  ]
+}
