@@ -369,3 +369,6 @@ monetizar. Pesquisa feita:
 - Decisões 21/11 (A,A,B): quando os 10 envios grátis acabarem, a rotina entrega o vídeo e o usuário posta à mão no YouTube Studio;
   revisão semanal às sextas 19h23 (rotina trig_0149K6XvpNE8D4j6CjeGQEDM: junta branches na main, compara views por streamer);
   TikTok fora por enquanto (a rotina não prepara mais tiktok.txt).
+- Decisão 25/11: a rotina diária posta SOZINHA, sem pedir permissão, mas só se as travas passarem (qa APROVADO, auditoria
+  sem falhas, creditos-e-direitos APROVADO sem pedido de aprovação humana). Se alguma falhar, não posta e avisa o usuário.
+  Depois de postar, avisa com o link. Mantidos: 1 clipe/dia, só YouTube, 10 envios/mês do plano grátis.
