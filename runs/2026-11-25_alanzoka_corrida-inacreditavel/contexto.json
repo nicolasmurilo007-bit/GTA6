@@ -1,0 +1,77 @@
+{
+  "id": "2026-11-25_alanzoka_corrida-inacreditavel",
+  "streamer": "alanzoka",
+  "fonte": "https://www.twitch.tv/alanzoka/clip/FamousRoughScorpionCclamChamp-sFi5a6p_q7GVQ7TY",
+  "duracao_s": 18.13,
+  "recorte": [
+    80,
+    240,
+    1668,
+    944
+  ],
+  "volume": {
+    "lufs": -23.3,
+    "true_peak_db": -2.4
+  },
+  "texto": "e aí eu não vai ganhar",
+  "palavras": [
+    {
+      "text": "e",
+      "start": 0.0,
+      "end": 0.04
+    },
+    {
+      "text": "aí",
+      "start": 0.04,
+      "end": 3.0
+    },
+    {
+      "text": "eu",
+      "start": 13.8,
+      "end": 14.14
+    },
+    {
+      "text": "não",
+      "start": 14.14,
+      "end": 14.26
+    },
+    {
+      "text": "vai",
+      "start": 14.26,
+      "end": 14.34
+    },
+    {
+      "text": "ganhar",
+      "start": 14.34,
+      "end": 14.56
+    }
+  ],
+  "rostos": [
+    {
+      "t": 0.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 4.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 8.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 12.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 16.5,
+      "sem_rosto": true
+    }
+  ],
+  "bloco_de_creditos": "Créditos: @alanzoka (twitch.tv/alanzoka)",
+  "arquivos": {
+    "video": "source/clip.mp4",
+    "config_render": "clipe.json",
+    "quadros": "frames/"
+  }
+}

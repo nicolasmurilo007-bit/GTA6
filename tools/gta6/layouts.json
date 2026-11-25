@@ -35,5 +35,24 @@
       1160
     ],
     "nota": "Cena de JOGO do Cellbit, clipe 1920x1080 (21/11/2026): câmera no canto SUPERIOR ESQUERDO (x 0-456, y 0-255), chat embaixo dela (x<300, y 255-440) e logo (y 530-640). Jogo em letterbox y 60-1020; legenda do jogo em y~965 e legenda automática da Twitch em y~1000: gameplay recortada até y 926. Barra branca no topo direito (y<30) fora. Nos primeiros ~4 s do clipe a câmera estava em outro lugar (direita): conferir o quadro."
+  },
+  "alanzoka_jogo_corrida": {
+    "crop_camera": [
+      1984,
+      655,
+      556,
+      340
+    ],
+    "crop_gameplay": [
+      700,
+      0,
+      1078,
+      1250
+    ],
+    "stack_h": [
+      668,
+      1252
+    ],
+    "nota": "Cena de JOGO do Alanzoka (25/11/2026, clipe 2560x1440): câmera no lado DIREITO mais baixa (x 1980-2540, y 650-1000), widget 'Último sub/Combo' logo abaixo (y>1000, cortado). Legenda do jogo em y~1290 e legenda automática da Twitch em y~1335: gameplay recortada até y 1250. A câmera muda de lugar entre lives (em 20/11 estava em y 22-366): sempre medir."
   }
 }

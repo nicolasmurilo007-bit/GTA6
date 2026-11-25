@@ -1,0 +1,45 @@
+{
+  "video": "runs/2026-11-25_alanzoka_corrida-inacreditavel/final.mp4",
+  "duracao": 18.0,
+  "palavras_legenda": 4,
+  "palavras_ouvidas": 8,
+  "problemas": [
+    {
+      "tipo": "fala_sem_legenda",
+      "t": 6.82,
+      "detalhe": "'e'"
+    },
+    {
+      "tipo": "fala_sem_legenda",
+      "t": 10.16,
+      "detalhe": "'aí'"
+    }
+  ],
+  "sfx": [
+    {
+      "tipo": "sfx_info",
+      "t": 0.05,
+      "detalhe": "swish | -6.6 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 4.6,
+      "detalhe": "rise | -6.1 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 6.4,
+      "detalhe": "thud | -6.5 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 13.1,
+      "detalhe": "ding | -6.7 dB em relação à fala (média da fala; sem fala ali)"
+    }
+  ],
+  "folhas": {
+    "marcacoes": "runs/2026-11-25_alanzoka_corrida-inacreditavel/auditoria/folha_marcacoes.png",
+    "efeitos": "runs/2026-11-25_alanzoka_corrida-inacreditavel/auditoria/folha_efeitos.png",
+    "geral": "runs/2026-11-25_alanzoka_corrida-inacreditavel/auditoria/folha_geral.png"
+  }
+}

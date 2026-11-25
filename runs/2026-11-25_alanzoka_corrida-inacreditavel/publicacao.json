@@ -1,0 +1,10 @@
+{
+  "quando": "2026-11-25",
+  "status": "NAO_POSTADO",
+  "motivo": [
+    "auditoria.py: fala_sem_legenda 2 ('e' 6.82 s, 'aí' 10.16 s). Provável alucinação do Whisper no barulho da batida: com VAD ligado o Whisper não acha fala em 6-13 s e a legenda automática da Twitch também não mostra nada. Mesmo assim, é uma trava de postagem.",
+    "checklist.json: item 6 (conteúdo sensível) em 'atencao' pede OK humano (palavrões do diálogo do jogo sem censura no áudio; abrandados só na legenda)."
+  ],
+  "plataformas": {"youtube": null},
+  "tiktok": "fora por enquanto"
+}

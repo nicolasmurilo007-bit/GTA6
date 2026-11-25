@@ -1,0 +1,18 @@
+{
+  "id": "2026-11-25_alanzoka_corrida-inacreditavel",
+  "veredito": "APROVADO",
+  "condicao": "item 6 (conteúdo sensível) em atencao: exige OK humano antes de publicar",
+  "autorizacao": "desconhecida",
+  "aviso": "Crédito na legenda NÃO é autorização do streamer. Nenhuma autorização por escrito registrada. Risco assumido pelo usuário (18/11/2026); não bloqueia, mas o streamer ou a Take-Two podem pedir remoção.",
+  "duracao_s": 18.0,
+  "itens": [
+    {"item": "bloco de créditos", "estado": "ok", "detalhe": "'Créditos: @alanzoka (twitch.tv/alanzoka)' idêntico ao padrão no bloco 'Texto para publicar' de descricao.md (e em contexto.json). titulo.md só tem títulos de YouTube; o crédito vai na descrição"},
+    {"item": "origem registrada", "estado": "atencao", "detalhe": "link do clipe presente (twitch.tv/alanzoka/clip/FamousRoughScorpionCclamChamp-sFi5a6p_q7GVQ7TY) em descricao.md e contexto.json; clipe usado inteiro (0-18 s); faltam data e minuto do VOD"},
+    {"item": "rótulo de IA", "estado": "ok", "detalhe": "sem voz sintética (sem narração; áudio original do Alan e do jogo); rótulo ligado no envio por decisão do usuário; nota interna fica fora do bloco público"},
+    {"item": "sem monetização/afiliado/patrocínio/venda", "estado": "ok", "detalhe": "nada em descrição, título, gancho ou capa"},
+    {"item": "música e logos", "estado": "ok", "detalhe": "sem música, só 4 SFX CC0 curtos (swish, rise, thud, ding); nenhum logo de plataforma visível em folha_geral.png e capa.png (placas e outdoors do jogo apenas)"},
+    {"item": "conteúdo sensível", "estado": "atencao", "detalhe": "palavrões do diálogo do jogo abrandados na legenda (C*ralho ~8 s, P*rra ~15 s, C*cete ~17,3 s), provavelmente audíveis sem censura no áudio; acidente de carro sem sangue. Sem discriminação, menores ou política. Exige aprovação humana"},
+    {"item": "duração", "estado": "ok", "detalhe": "18,0 s (só registro; abaixo de 1 min, irrelevante sem monetização)"},
+    {"item": "diversidade", "estado": "ok", "detalhe": "título, gancho e tema (corrida/física) diferentes de que-isso-rockstar, primeiro-roubo e cellbit_pe-grande-sapo; layout empilhado (câmera em cima, gameplay embaixo) igual ao da série: variar layout/gancho se a série crescer"}
+  ]
+}

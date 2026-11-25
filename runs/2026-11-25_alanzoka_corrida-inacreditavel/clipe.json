@@ -1,0 +1,149 @@
+{
+ "mode": "corte",
+ "language": "pt",
+ "background": "black",
+ "hook": "Capotou no meio da corrida... e caiu de pé?",
+ "hook_seconds": 3.5,
+ "hook_y": 700,
+ "caption_y": 1000,
+ "subs_y": 1180,
+ "emphasis": [
+  "ganhar"
+ ],
+ "sources": {
+  "live": "clip.mp4"
+ },
+ "stack": [
+  {
+   "crop": [
+    1984,
+    655,
+    556,
+    340
+   ],
+   "h": 668,
+   "zoom": true
+  },
+  {
+   "crop": [
+    700,
+    0,
+    1078,
+    1250
+   ],
+   "h": 1252,
+   "zoom": true
+  }
+ ],
+ "segments": [
+  {
+   "src": "live",
+   "start": 0.0,
+   "end": 18.0
+  }
+ ],
+ "words_mode": "manual",
+ "words_manual": [
+  {
+   "text": "Você",
+   "start": 13.5,
+   "end": 13.8
+  },
+  {
+   "text": "não",
+   "start": 13.8,
+   "end": 14.05
+  },
+  {
+   "text": "vai",
+   "start": 14.05,
+   "end": 14.34
+  },
+  {
+   "text": "ganhar!",
+   "start": 14.34,
+   "end": 14.9
+  }
+ ],
+ "subs": [
+  {
+   "text": "O que cê tá tentando fazer, mano? Hã? Hã?",
+   "start": 4.5,
+   "end": 5.8
+  },
+  {
+   "text": "C*ralho!",
+   "start": 8.0,
+   "end": 8.9
+  },
+  {
+   "text": "P*rra! Cuidado!",
+   "start": 15.0,
+   "end": 16.0
+  },
+  {
+   "text": "C*cete... Anda, Jay!",
+   "start": 17.3,
+   "end": 18.0
+  }
+ ],
+ "sfx": [
+  {
+   "name": "swish",
+   "t": 0.05
+  },
+  {
+   "name": "rise",
+   "t": 4.6
+  },
+  {
+   "name": "thud",
+   "t": 6.4
+  },
+  {
+   "name": "ding",
+   "t": 13.1
+  }
+ ],
+ "zooms": [
+  {
+   "t": 6.4,
+   "dur": 0.4,
+   "factor": 1.08
+  },
+  {
+   "t": 13.1,
+   "dur": 0.4,
+   "factor": 1.1
+  }
+ ],
+ "freezes": [],
+ "annotations": [
+  {
+   "type": "circle",
+   "t": 13.2,
+   "dur": 1.8,
+   "x": 590,
+   "y": 1690,
+   "rx": 310,
+   "ry": 220,
+   "path": [
+    [
+     13.2,
+     600,
+     1695
+    ],
+    [
+     14.0,
+     575,
+     1660
+    ],
+    [
+     15.0,
+     610,
+     1668
+    ]
+   ]
+  }
+ ]
+}
