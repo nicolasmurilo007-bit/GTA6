@@ -1,0 +1,287 @@
+{
+  "id": "2026-11-26_cellbit_jason-rei-do-inferno",
+  "streamer": "cellbit",
+  "fonte": "https://www.twitch.tv/cellbit/clip/FuriousYawningOcelotDancingBanana-ToZV_oZcldH9-WMU",
+  "duracao_s": 32.23,
+  "recorte": null,
+  "volume": {
+    "lufs": -15.5,
+    "true_peak_db": -0.6
+  },
+  "texto": "Mata o Bode! Mata a Lúcifer! Mata o Impostor! Morre, Impostor! Filha da puta! Eu sentarei nesse trono! Eu sentarei no trono! Eu sou o novo Rei do Inferno! Yes! Vamos, Jason, caralho! Cadê a vó, não?",
+  "palavras": [
+    {
+      "text": "Mata",
+      "start": 0.0,
+      "end": 1.4
+    },
+    {
+      "text": "o",
+      "start": 1.4,
+      "end": 1.66
+    },
+    {
+      "text": "Bode!",
+      "start": 1.66,
+      "end": 1.94
+    },
+    {
+      "text": "Mata",
+      "start": 2.36,
+      "end": 2.56
+    },
+    {
+      "text": "a",
+      "start": 2.56,
+      "end": 2.76
+    },
+    {
+      "text": "Lúcifer!",
+      "start": 2.76,
+      "end": 3.1
+    },
+    {
+      "text": "Mata",
+      "start": 3.48,
+      "end": 3.66
+    },
+    {
+      "text": "o",
+      "start": 3.66,
+      "end": 3.82
+    },
+    {
+      "text": "Impostor!",
+      "start": 3.82,
+      "end": 4.4
+    },
+    {
+      "text": "Morre,",
+      "start": 6.18,
+      "end": 6.46
+    },
+    {
+      "text": "Impostor!",
+      "start": 6.46,
+      "end": 7.44
+    },
+    {
+      "text": "Filha",
+      "start": 8.06,
+      "end": 8.68
+    },
+    {
+      "text": "da",
+      "start": 8.68,
+      "end": 9.04
+    },
+    {
+      "text": "puta!",
+      "start": 9.04,
+      "end": 9.46
+    },
+    {
+      "text": "Eu",
+      "start": 19.34,
+      "end": 20.06
+    },
+    {
+      "text": "sentarei",
+      "start": 20.06,
+      "end": 20.68
+    },
+    {
+      "text": "nesse",
+      "start": 20.68,
+      "end": 20.9
+    },
+    {
+      "text": "trono!",
+      "start": 20.9,
+      "end": 21.38
+    },
+    {
+      "text": "Eu",
+      "start": 21.78,
+      "end": 22.02
+    },
+    {
+      "text": "sentarei",
+      "start": 22.02,
+      "end": 22.62
+    },
+    {
+      "text": "no",
+      "start": 22.62,
+      "end": 22.78
+    },
+    {
+      "text": "trono!",
+      "start": 22.78,
+      "end": 23.26
+    },
+    {
+      "text": "Eu",
+      "start": 24.24,
+      "end": 24.5
+    },
+    {
+      "text": "sou",
+      "start": 24.5,
+      "end": 24.68
+    },
+    {
+      "text": "o",
+      "start": 24.68,
+      "end": 24.74
+    },
+    {
+      "text": "novo",
+      "start": 24.74,
+      "end": 24.88
+    },
+    {
+      "text": "Rei",
+      "start": 24.88,
+      "end": 25.02
+    },
+    {
+      "text": "do",
+      "start": 25.02,
+      "end": 25.2
+    },
+    {
+      "text": "Inferno!",
+      "start": 25.2,
+      "end": 26.16
+    },
+    {
+      "text": "Yes!",
+      "start": 26.8,
+      "end": 27.22
+    },
+    {
+      "text": "Vamos,",
+      "start": 27.34,
+      "end": 27.7
+    },
+    {
+      "text": "Jason,",
+      "start": 27.96,
+      "end": 28.12
+    },
+    {
+      "text": "caralho!",
+      "start": 28.12,
+      "end": 28.78
+    },
+    {
+      "text": "Cadê",
+      "start": 30.7,
+      "end": 31.04
+    },
+    {
+      "text": "a",
+      "start": 31.04,
+      "end": 31.1
+    },
+    {
+      "text": "vó,",
+      "start": 31.1,
+      "end": 31.24
+    },
+    {
+      "text": "não?",
+      "start": 31.44,
+      "end": 31.56
+    }
+  ],
+  "rostos": [
+    {
+      "t": 0.5,
+      "score": 0.92,
+      "x": 95,
+      "y": 773,
+      "w": 43,
+      "h": 57,
+      "cx": 116,
+      "cy": 802
+    },
+    {
+      "t": 4.5,
+      "score": 0.93,
+      "x": 93,
+      "y": 766,
+      "w": 42,
+      "h": 53,
+      "cx": 115,
+      "cy": 793
+    },
+    {
+      "t": 8.5,
+      "score": 0.72,
+      "x": 201,
+      "y": 834,
+      "w": 148,
+      "h": 141,
+      "cx": 275,
+      "cy": 905
+    },
+    {
+      "t": 12.5,
+      "score": 0.93,
+      "x": 95,
+      "y": 752,
+      "w": 40,
+      "h": 51,
+      "cx": 115,
+      "cy": 778
+    },
+    {
+      "t": 16.5,
+      "score": 0.94,
+      "x": 99,
+      "y": 756,
+      "w": 39,
+      "h": 49,
+      "cx": 118,
+      "cy": 780
+    },
+    {
+      "t": 20.5,
+      "score": 0.93,
+      "x": 96,
+      "y": 757,
+      "w": 29,
+      "h": 39,
+      "cx": 111,
+      "cy": 776
+    },
+    {
+      "t": 24.5,
+      "score": 0.82,
+      "x": 335,
+      "y": 769,
+      "w": 226,
+      "h": 295,
+      "cx": 448,
+      "cy": 916
+    },
+    {
+      "t": 28.5,
+      "score": 0.92,
+      "x": 80,
+      "y": 748,
+      "w": 39,
+      "h": 57,
+      "cx": 99,
+      "cy": 777
+    }
+  ],
+  "bloco_de_creditos": "Créditos: @cellbit (twitch.tv/cellbit)",
+  "arquivos": {
+    "video": "source/clip.mp4",
+    "config_render": "clipe.json",
+    "quadros": "frames/"
+  }
+}
