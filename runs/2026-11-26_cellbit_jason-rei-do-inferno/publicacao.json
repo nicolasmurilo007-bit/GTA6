@@ -1,0 +1,10 @@
+{
+  "quando": "2026-11-26T13:27Z",
+  "via": "conector Upload-Post (MCP): create_media_upload -> PUT -> complete_media_upload -> upload_video (prévia, depois confirmed)",
+  "perfil": "default",
+  "titulo": "\"Eu sou o novo Rei do Inferno!\" | Cellbit no GTA 6",
+  "plataformas": {"youtube": {"url": "https://www.youtube.com/watch?v=hSOuwejg45E", "privacidade": "public", "rotulo_ia": true, "infantil": false, "categoria": "20"}},
+  "tiktok": "fora por enquanto",
+  "aprovado_pelo_usuario": "rotina automática (decisão de 25/11/2026), travas qa/auditoria/checklist aprovadas",
+  "uso_upload_post": "4/10 no ciclo (reset 20/11)"
+}
