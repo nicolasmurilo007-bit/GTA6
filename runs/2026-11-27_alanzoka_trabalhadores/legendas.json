@@ -1,0 +1,16 @@
+{
+  "text": "Gente, daquele jeito! Uma defesa... Cadê o carro? Me ajuda, polícia! Meu Deus! Polícia! Meu Deus, os trabalhadores se juntaram contra mim! Socorro! Socorro! Socorro! Polícia, a revolta dos trabalhadores! Pelo amor de Deus! Me tira daqui! Alguém me tira daqui! Abre o portão! Abre o portão! Socorro! Os trabalhadores... Quebra a janela, f*da-se! Sai da frente, gente! Meu Deus, mano! Que loucura esse lugar! Um lugar de psicopata!",
+  "emphasis": ["trabalhadores", "polícia", "revolta", "socorro", "portão", "psicopata"],
+  "words_from": "../contexto.json",
+  "subs": [
+    {"text": "Vamos nessa, babaca!", "start": 2.5, "end": 4.1},
+    {"text": "Mano!", "start": 20.0, "end": 20.6},
+    {"text": "299 no local.", "start": 24.5, "end": 27.1},
+    {"text": "Ah, qual é!", "start": 28.5, "end": 29.6},
+    {"text": "Beleza, pau no c*!", "start": 32.0, "end": 32.7},
+    {"text": "F*deu pro seu lado!", "start": 39.0, "end": 40.1},
+    {"text": "Mãos pra cima! Mãos pra cima!", "start": 50.0, "end": 51.6},
+    {"text": "Quê? F*da-se essa m*rda! Você não vale a dor!", "start": 56.2, "end": 57.6},
+    {"text": "Última chance, para o veículo!", "start": 57.6, "end": 59.8}
+  ]
+}
