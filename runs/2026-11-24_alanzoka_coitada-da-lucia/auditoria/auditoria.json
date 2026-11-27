@@ -1,0 +1,74 @@
+{
+  "video": "runs/2026-11-24_alanzoka_coitada-da-lucia/final.mp4",
+  "duracao": 53.717,
+  "palavras_legenda": 50,
+  "palavras_ouvidas": 69,
+  "problemas": [
+    {
+      "tipo": "legenda_texto",
+      "t": 6.88,
+      "detalhe": "escrito 'CARA,' | ouvido ''"
+    },
+    {
+      "tipo": "legenda_texto",
+      "t": 28.7,
+      "detalhe": "escrito 'AINDA' | ouvido 'tá'"
+    },
+    {
+      "tipo": "legenda_texto",
+      "t": 38.86,
+      "detalhe": "escrito 'MEU DEUS!' | ouvido ''"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 41.32,
+      "detalhe": "'PELO AMOR DE' 30 car/s"
+    },
+    {
+      "tipo": "legenda_texto",
+      "t": 46.4,
+      "detalhe": "escrito 'QUE PERIGO!' | ouvido ''"
+    }
+  ],
+  "sfx": [
+    {
+      "tipo": "sfx_info",
+      "t": 0.05,
+      "detalhe": "swish | -9.6 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 16.6,
+      "detalhe": "subdrop | -9.2 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 18.0,
+      "detalhe": "alert | -9.6 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 32.1,
+      "detalhe": "thud | -9.5 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 37.6,
+      "detalhe": "pop | -10.8 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 42.4,
+      "detalhe": "thock | -10.7 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 48.1,
+      "detalhe": "ding | -9.7 dB em relação à fala (fala ali)"
+    }
+  ],
+  "folhas": {
+    "efeitos": "runs/2026-11-24_alanzoka_coitada-da-lucia/auditoria/folha_efeitos.png",
+    "geral": "runs/2026-11-24_alanzoka_coitada-da-lucia/auditoria/folha_geral.png"
+  }
+}

@@ -121,5 +121,20 @@
       1252
     ],
     "nota": "Cena de JOGO do Alanzoka (clipe 2560x1440, medido 27/11/2026): câmera à direita x 1984-2540, y 652-992 (abaixo dela, y>1000, widget 'último sub' e combo: fora). Mini-mapa x<450 y>1180, HUD topo-esquerdo e topo-direito, aviso de missão à esquerda (y~920) e marca 'RENDER-SE' x>2290: todos fora do recorte da gameplay x 741-1819. Legenda do jogo queimada em y~1275-1310: gameplay recortada até y 1250. Em 20/11 a câmera estava mais alta (y 22-366): conferir o quadro a cada clipe."
+  },
+  "alanzoka_jogo_stack_2411": {
+    "camera": [
+      1986,
+      652,
+      556,
+      348
+    ],
+    "gameplay": [
+      760,
+      0,
+      1121,
+      1300
+    ],
+    "nota": "Cena de JOGO em 24/11/2026 (2560x1440): câmera mudou para x 1986-2542, y 652-1000 (widget 'último sub' começa em y~1005, fora). Gameplay x 760-1881 (antes da câmera), y 0-1300 (acima da legenda queimada da Twitch, y~1340). Câmera muda entre dias: medir sempre."
   }
 }
