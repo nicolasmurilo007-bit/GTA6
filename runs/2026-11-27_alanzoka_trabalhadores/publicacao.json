@@ -1,0 +1,8 @@
+{
+  "quando": "2026-11-27",
+  "status": "nao_postado",
+  "motivo": "trava creditos-e-direitos: checklist APROVADO mas com aprovacao_humana=true (item 6: palavrão 'foda-se' audível do Alan aos 45 s, palavrões do jogo audíveis, violência de jogo com sangue leve)",
+  "travas": {"qa": "APROVADO", "auditoria_bloqueantes": "nenhum (só legenda_texto 4 e legenda_rapida 5)", "creditos_e_direitos": "APROVADO com pedido de aprovação humana"},
+  "plataformas": {},
+  "proximo_passo": "usuário decide: aprovar este clipe (e, se quiser, a regra permanente) ou descartar"
+}
