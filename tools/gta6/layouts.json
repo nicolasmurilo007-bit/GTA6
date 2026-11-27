@@ -136,5 +136,24 @@
       1300
     ],
     "nota": "Cena de JOGO em 24/11/2026 (2560x1440): câmera mudou para x 1986-2542, y 652-1000 (widget 'último sub' começa em y~1005, fora). Gameplay x 760-1881 (antes da câmera), y 0-1300 (acima da legenda queimada da Twitch, y~1340). Câmera muda entre dias: medir sempre."
+  },
+  "cellbit_jogo_v2": {
+    "crop_camera": [
+      20,
+      122,
+      400,
+      248
+    ],
+    "crop_gameplay": [
+      560,
+      66,
+      730,
+      764
+    ],
+    "stack_h": [
+      760,
+      1160
+    ],
+    "nota": "Cena de JOGO do Cellbit, clipe 1920x1080 (26/11/2026): câmera mais BAIXA que em 21/11 (x 0-455, y 118-372), chat embaixo (y 380-460, x<410). Widget de palpite da Twitch no canto inferior direito (x>1290, y>835) e legenda automática da Twitch (y~990): gameplay recortada em x 560-1290, y 66-830. A posição da câmera muda entre lives: medir sempre."
   }
 }

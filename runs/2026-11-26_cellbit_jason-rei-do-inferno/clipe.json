@@ -1,0 +1,275 @@
+{
+ "mode": "corte",
+ "language": "pt",
+ "background": "black",
+ "hook": "Jason enfrentou o DIABO no GTA 6",
+ "hook_seconds": 3.5,
+ "hook_y": 700,
+ "caption_y": 1000,
+ "subs_y": 1180,
+ "emphasis": [
+  "Lúcifer",
+  "Impostor",
+  "trono",
+  "Rei",
+  "Inferno"
+ ],
+ "sources": {
+  "live": "cut.mp4"
+ },
+ "stack": [
+  {
+   "crop": [
+    20,
+    122,
+    420,
+    248
+   ],
+   "h": 760,
+   "zoom": true
+  },
+  {
+   "crop": [
+    560,
+    66,
+    730,
+    764
+   ],
+   "h": 1160,
+   "zoom": true
+  }
+ ],
+ "segments": [
+  {
+   "src": "live",
+   "start": 0.0,
+   "end": 29.6
+  }
+ ],
+ "words_mode": "manual",
+ "words_manual": [
+  {
+   "text": "Mata",
+   "start": 0.9,
+   "end": 1.4
+  },
+  {
+   "text": "o",
+   "start": 1.4,
+   "end": 1.66
+  },
+  {
+   "text": "Bode!",
+   "start": 1.66,
+   "end": 1.94
+  },
+  {
+   "text": "Mata",
+   "start": 2.36,
+   "end": 2.56
+  },
+  {
+   "text": "a",
+   "start": 2.56,
+   "end": 2.76
+  },
+  {
+   "text": "Lúcifer!",
+   "start": 2.76,
+   "end": 3.1
+  },
+  {
+   "text": "Mata",
+   "start": 3.48,
+   "end": 3.66
+  },
+  {
+   "text": "o",
+   "start": 3.66,
+   "end": 3.82
+  },
+  {
+   "text": "Impostor!",
+   "start": 3.82,
+   "end": 4.4
+  },
+  {
+   "text": "Morre,",
+   "start": 6.18,
+   "end": 6.46
+  },
+  {
+   "text": "Impostor!",
+   "start": 6.46,
+   "end": 7.44
+  },
+  {
+   "text": "Filha",
+   "start": 8.06,
+   "end": 8.68
+  },
+  {
+   "text": "da",
+   "start": 8.68,
+   "end": 9.04
+  },
+  {
+   "text": "p*ta!",
+   "start": 9.04,
+   "end": 9.46
+  },
+  {
+   "text": "Eu",
+   "start": 16.74,
+   "end": 17.46
+  },
+  {
+   "text": "sentarei",
+   "start": 17.46,
+   "end": 18.08
+  },
+  {
+   "text": "nesse",
+   "start": 18.08,
+   "end": 18.3
+  },
+  {
+   "text": "trono!",
+   "start": 18.3,
+   "end": 18.78
+  },
+  {
+   "text": "Eu",
+   "start": 19.18,
+   "end": 19.42
+  },
+  {
+   "text": "sentarei",
+   "start": 19.42,
+   "end": 20.02
+  },
+  {
+   "text": "no",
+   "start": 20.02,
+   "end": 20.18
+  },
+  {
+   "text": "trono!",
+   "start": 20.18,
+   "end": 20.66
+  },
+  {
+   "text": "Eu",
+   "start": 21.64,
+   "end": 21.9
+  },
+  {
+   "text": "sou",
+   "start": 21.9,
+   "end": 22.08
+  },
+  {
+   "text": "o",
+   "start": 22.08,
+   "end": 22.14
+  },
+  {
+   "text": "novo",
+   "start": 22.14,
+   "end": 22.28
+  },
+  {
+   "text": "Rei",
+   "start": 22.28,
+   "end": 22.42
+  },
+  {
+   "text": "do",
+   "start": 22.42,
+   "end": 22.6
+  },
+  {
+   "text": "Inferno!",
+   "start": 22.6,
+   "end": 23.56
+  },
+  {
+   "text": "Yes!",
+   "start": 24.2,
+   "end": 24.62
+  },
+  {
+   "text": "Vamos,",
+   "start": 24.74,
+   "end": 25.1
+  },
+  {
+   "text": "Jason,",
+   "start": 25.36,
+   "end": 25.52
+  },
+  {
+   "text": "c*ralho!",
+   "start": 25.52,
+   "end": 26.18
+  },
+  {
+   "text": "Cadê",
+   "start": 28.1,
+   "end": 28.44
+  },
+  {
+   "text": "a",
+   "start": 28.44,
+   "end": 28.5
+  },
+  {
+   "text": "vó,",
+   "start": 28.5,
+   "end": 28.64
+  },
+  {
+   "text": "não?",
+   "start": 28.84,
+   "end": 28.96
+  }
+ ],
+ "subs": [],
+ "sfx": [
+  {
+   "name": "swish",
+   "t": 0.05
+  },
+  {
+   "name": "thud",
+   "t": 10.2
+  },
+  {
+   "name": "subdrop",
+   "t": 16.0
+  },
+  {
+   "name": "shimmer",
+   "t": 23.6
+  }
+ ],
+ "zooms": [
+  {
+   "t": 6.2,
+   "dur": 0.4,
+   "factor": 1.08
+  },
+  {
+   "t": 16.74,
+   "dur": 0.4,
+   "factor": 1.08
+  },
+  {
+   "t": 22.28,
+   "dur": 0.4,
+   "factor": 1.1
+  }
+ ],
+ "freezes": [],
+ "annotations": []
+}

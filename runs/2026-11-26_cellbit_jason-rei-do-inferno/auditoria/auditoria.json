@@ -1,0 +1,33 @@
+{
+  "video": "runs/2026-11-26_cellbit_jason-rei-do-inferno/final.mp4",
+  "duracao": 29.6,
+  "palavras_legenda": 29,
+  "palavras_ouvidas": 38,
+  "problemas": [],
+  "sfx": [
+    {
+      "tipo": "sfx_info",
+      "t": 0.05,
+      "detalhe": "swish | -6.6 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 10.2,
+      "detalhe": "thud | -6.5 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 16.0,
+      "detalhe": "subdrop | -6.2 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 23.6,
+      "detalhe": "shimmer | -9.4 dB em relação à fala (fala ali)"
+    }
+  ],
+  "folhas": {
+    "efeitos": "runs/2026-11-26_cellbit_jason-rei-do-inferno/auditoria/folha_efeitos.png",
+    "geral": "runs/2026-11-26_cellbit_jason-rei-do-inferno/auditoria/folha_geral.png"
+  }
+}

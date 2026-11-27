@@ -1,0 +1,17 @@
+{
+  "id": "2026-11-26_cellbit_jason-rei-do-inferno",
+  "veredito": "APROVADO",
+  "autorizacao": "desconhecida",
+  "aviso": "Crédito na legenda NÃO é autorização do streamer. Risco assumido pelo usuário (18/11/2026); o streamer ou a Take-Two podem pedir remoção.",
+  "duracao_s": 29.6,
+  "itens": [
+    {"item": "bloco de créditos", "estado": "ok", "detalhe": "'Créditos: @cellbit (twitch.tv/cellbit)' e #cellbit no bloco 'Texto para publicar'"},
+    {"item": "origem registrada", "estado": "ok", "detalhe": "https://www.twitch.tv/cellbit/clip/FuriousYawningOcelotDancingBanana-ToZV_oZcldH9-WMU (clipe de 32,23 s; tela preta 16,7-19,3 s removida; final 0-29,6 s do corte)"},
+    {"item": "rótulo de IA", "estado": "ok", "detalhe": "sem voz sintética; rótulo ligado no envio por decisão do usuário"},
+    {"item": "sem monetização/afiliado/patrocínio", "estado": "ok", "detalhe": "nada"},
+    {"item": "música e logos", "estado": "ok", "detalhe": "sem música; só SFX curtos (swish, thud, subdrop, shimmer) de assets/sfx; chat, widgets, palpite e legenda da Twitch fora do recorte"},
+    {"item": "conteúdo sensível", "estado": "atencao", "detalhe": "violência de jogo contra criatura demoníaca, sem sangue real; tema 'Diabo/Lúcifer/Rei do Inferno' (ficção do jogo); 'filha da puta' e 'caralho' audíveis, abrandados na legenda (p*ta, c*ralho). Categorias já aceitas em clipes postados (25/11/2026)"},
+    {"item": "duração", "estado": "ok", "detalhe": "29,6 s (abaixo de 1 min do Creator Rewards; irrelevante, sem monetização)"},
+    {"item": "diversidade", "estado": "atencao", "detalhe": "título A repete a estrutura do clipe anterior do Cellbit ('Cellbit achou o Pé Grande no GTA 6 e virou SAPO 🐸' vs 'Cellbit matou o DIABO no GTA 6 e virou Rei do Inferno 🔥'), mesmo layout câmera+gameplay; tema e gancho diferentes. Sugestão: usar o título B ou C"}
+  ]
+}
