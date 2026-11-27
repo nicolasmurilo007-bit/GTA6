@@ -1,0 +1,115 @@
+{
+  "video": "runs/2026-11-27_alanzoka_trabalhadores/source/final.mp4",
+  "duracao": 60.0,
+  "palavras_legenda": 55,
+  "palavras_ouvidas": 69,
+  "problemas": [
+    {
+      "tipo": "legenda_texto",
+      "t": 0.9,
+      "detalhe": "escrito 'JEITO!' | ouvido 'Edith,'"
+    },
+    {
+      "tipo": "legenda_texto",
+      "t": 1.8,
+      "detalhe": "escrito 'CADÊ' | ouvido 'come'"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 22.92,
+      "detalhe": "'A REVOLTA' 30 car/s"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 31.14,
+      "detalhe": "'ME TIRA' 30 car/s"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 32.38,
+      "detalhe": "'ALGUÉM ME' 30 car/s"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 45.25,
+      "detalhe": "'JANELA,' 30 car/s"
+    },
+    {
+      "tipo": "legenda_texto",
+      "t": 45.48,
+      "detalhe": "escrito 'F*DA-SE!' | ouvido 'foda -se!'"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 53.68,
+      "detalhe": "'FRENTE,' 30 car/s"
+    },
+    {
+      "tipo": "legenda_texto",
+      "t": 57.44,
+      "detalhe": "escrito 'UM' | ouvido ''"
+    }
+  ],
+  "sfx": [
+    {
+      "tipo": "sfx_info",
+      "t": 0.0,
+      "detalhe": "swish | -9.6 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 7.88,
+      "detalhe": "alert | -9.6 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 13.68,
+      "detalhe": "thud | -9.5 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 15.7,
+      "detalhe": "shimmer | -9.4 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 19.26,
+      "detalhe": "pop | -10.8 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 22.98,
+      "detalhe": "subdrop | -9.2 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 36.3,
+      "detalhe": "buzzer | -9.2 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 45.24,
+      "detalhe": "thock | -10.7 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 53.36,
+      "detalhe": "swoop_up | -9.8 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 55.18,
+      "detalhe": "success | -9.3 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 56.46,
+      "detalhe": "rise | -9.1 dB em relação à fala (fala ali)"
+    }
+  ],
+  "folhas": {
+    "marcacoes": "runs/2026-11-27_alanzoka_trabalhadores/auditoria/folha_marcacoes.png",
+    "efeitos": "runs/2026-11-27_alanzoka_trabalhadores/auditoria/folha_efeitos.png",
+    "geral": "runs/2026-11-27_alanzoka_trabalhadores/auditoria/folha_geral.png"
+  }
+}
