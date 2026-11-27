@@ -1,0 +1,117 @@
+{
+  "mode": "corte",
+  "language": "pt",
+  "background": "black",
+  "hook": "Um OVNI no GTA 6? E ele mandou um recado...",
+  "hook_seconds": 3.5,
+  "hook_y": 700,
+  "caption_y": 1000,
+  "subs_y": 1180,
+  "emphasis": [
+    "Morse",
+    "literalmente",
+    "OVNI"
+  ],
+  "sources": {
+    "live": "clip.mp4"
+  },
+  "stack": [
+    {
+      "crop": [
+        4,
+        122,
+        448,
+        246
+      ],
+      "h": 594,
+      "zoom": true
+    },
+    {
+      "crop": [
+        562,
+        0,
+        716,
+        880
+      ],
+      "h": 1326,
+      "zoom": true
+    }
+  ],
+  "segments": [
+    {
+      "src": "live",
+      "start": 0.0,
+      "end": 30.0
+    }
+  ],
+  "words_from": "../palavras_legenda.json",
+  "sfx": [
+    {
+      "name": "swish",
+      "t": 0.05
+    },
+    {
+      "name": "thud",
+      "t": 4.2
+    },
+    {
+      "name": "alert",
+      "t": 10.72
+    },
+    {
+      "name": "shimmer",
+      "t": 16.0
+    },
+    {
+      "name": "ding",
+      "t": 25.22
+    }
+  ],
+  "zooms": [
+    {
+      "t": 4.2,
+      "dur": 0.4,
+      "factor": 1.08
+    },
+    {
+      "t": 22.72,
+      "dur": 0.4,
+      "factor": 1.1
+    },
+    {
+      "t": 25.22,
+      "dur": 0.4,
+      "factor": 1.08
+    }
+  ],
+  "freezes": [],
+  "annotations": [
+    {
+      "type": "circle",
+      "t": 16.6,
+      "dur": 2.0,
+      "x": 540,
+      "y": 1140,
+      "rx": 330,
+      "ry": 150
+    }
+  ],
+  "text": "Eles mandaram alguma coisa em Morse, tá? Eles literalmente me mandaram alguma coisa em Morse.",
+  "subs": [
+    {
+      "text": "Uou! Ah, p*rra!",
+      "start": 1.3,
+      "end": 2.3
+    },
+    {
+      "text": "Meu... Como assim?",
+      "start": 2.4,
+      "end": 3.6
+    },
+    {
+      "text": "Valeu!",
+      "start": 28.8,
+      "end": 30.0
+    }
+  ]
+}

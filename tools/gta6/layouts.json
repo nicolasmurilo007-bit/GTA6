@@ -77,5 +77,30 @@
       }
     ],
     "nota": "Cena de JOGO, clipe 1920x1080: câmera no canto superior esquerdo (x~4-456, y~118-372); chat logo abaixo (y>=375) fica de fora. Gameplay recortada no centro (personagem em x~960) e acima da legenda queimada da Twitch (começa em y~975); evita câmera e minimapa. Medido em 22/11/2026."
+  },
+  "cellbit_jogo_2311": {
+    "stack": [
+      {
+        "crop": [
+          4,
+          122,
+          448,
+          246
+        ],
+        "h": 594,
+        "zoom": true
+      },
+      {
+        "crop": [
+          562,
+          0,
+          716,
+          880
+        ],
+        "h": 1326,
+        "zoom": true
+      }
+    ],
+    "nota": "Cena de JOGO medida em 23/11/2026 num clipe 1920x1080 (quadro com grade). Câmera no canto superior esquerdo (x 0-457, y 117-372); logo abaixo dela ficam os nomes do chat (y ~375-450) e alertas de inscrição (x ~90-350, y ~675-800): fora do recorte. Legenda do jogo começa em y ~890: gameplay recortada até y 880. Crop no formato [x,y,w,h]."
   }
 }

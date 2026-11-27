@@ -1,0 +1,55 @@
+{
+  "video": "runs/2026-11-23_cellbit_padre-exorcista/final.mp4",
+  "duracao": 30.0,
+  "palavras_legenda": 10,
+  "palavras_ouvidas": 15,
+  "problemas": [
+    {
+      "tipo": "legenda_texto",
+      "t": 26.02,
+      "detalhe": "escrito '' | ouvido 'me'"
+    },
+    {
+      "tipo": "legenda_texto",
+      "t": 26.42,
+      "detalhe": "escrito 'ME' | ouvido ''"
+    },
+    {
+      "tipo": "legenda_rapida",
+      "t": 26.79,
+      "detalhe": "'ALGUMA COISA' 34 car/s"
+    }
+  ],
+  "sfx": [
+    {
+      "tipo": "sfx_info",
+      "t": 0.05,
+      "detalhe": "swish | -6.6 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 4.2,
+      "detalhe": "thud | -6.5 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 10.72,
+      "detalhe": "alert | -6.6 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 16.0,
+      "detalhe": "shimmer | -6.4 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 25.22,
+      "detalhe": "ding | -9.7 dB em relação à fala (fala ali)"
+    }
+  ],
+  "folhas": {
+    "marcacoes": "runs/2026-11-23_cellbit_padre-exorcista/auditoria/folha_marcacoes.png",
+    "efeitos": "runs/2026-11-23_cellbit_padre-exorcista/auditoria/folha_efeitos.png",
+    "geral": "runs/2026-11-23_cellbit_padre-exorcista/auditoria/folha_geral.png"
+  }
+}
