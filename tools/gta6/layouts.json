@@ -102,5 +102,24 @@
       }
     ],
     "nota": "Cena de JOGO medida em 23/11/2026 num clipe 1920x1080 (quadro com grade). Câmera no canto superior esquerdo (x 0-457, y 117-372); logo abaixo dela ficam os nomes do chat (y ~375-450) e alertas de inscrição (x ~90-350, y ~675-800): fora do recorte. Legenda do jogo começa em y ~890: gameplay recortada até y 880. Crop no formato [x,y,w,h]."
+  },
+  "alanzoka_jogo_stack": {
+    "crop_camera": [
+      1984,
+      652,
+      556,
+      340
+    ],
+    "crop_gameplay": [
+      741,
+      0,
+      1078,
+      1250
+    ],
+    "stack_h": [
+      668,
+      1252
+    ],
+    "nota": "Cena de JOGO do Alanzoka (clipe 2560x1440, medido 27/11/2026): câmera à direita x 1984-2540, y 652-992 (abaixo dela, y>1000, widget 'último sub' e combo: fora). Mini-mapa x<450 y>1180, HUD topo-esquerdo e topo-direito, aviso de missão à esquerda (y~920) e marca 'RENDER-SE' x>2290: todos fora do recorte da gameplay x 741-1819. Legenda do jogo queimada em y~1275-1310: gameplay recortada até y 1250. Em 20/11 a câmera estava mais alta (y 22-366): conferir o quadro a cada clipe."
   }
 }

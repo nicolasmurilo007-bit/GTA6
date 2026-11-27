@@ -1,0 +1,20 @@
+{
+  "id": "2026-11-27_alanzoka_trabalhadores",
+  "plataformas": ["youtube"],
+  "veredito": "APROVADO",
+  "aprovacao_humana": true,
+  "condicao": "item 6 (conteúdo sensível) em atencao: palavrões no áudio sem censura e violência de jogo com sangue leve. Pela regra de 25/11 a rotina NÃO posta sozinha; precisa do OK do usuário (ou de uma regra permanente dele para esse tipo de conteúdo)",
+  "autorizacao": "desconhecida",
+  "aviso": "Crédito na legenda NÃO é autorização do streamer. Nenhuma autorização por escrito registrada. Risco assumido pelo usuário (18/11/2026); não bloqueia, mas o streamer ou a Take-Two podem pedir remoção.",
+  "duracao_s": 60.0,
+  "itens": [
+    {"item": "bloco de créditos", "estado": "ok", "detalhe": "'Créditos: @alanzoka (twitch.tv/alanzoka)' idêntico ao padrão e #alanzoka no bloco 'Texto para publicar' de descricao.md. Notas internas ficam fora do bloco público"},
+    {"item": "origem registrada", "estado": "atencao", "detalhe": "link do clipe presente em descricao.md e contexto.json (twitch.tv/alanzoka/clip/BusyTolerantPanAsianGlow-ug2V5rGAUQf6xYV2); clipe usado inteiro (0-60 s, clipe.json). Faltam data e minuto do VOD (mesmo caso do molde de 20/11). Não bloqueia e não pede aprovação"},
+    {"item": "rótulo de IA", "estado": "ok", "detalhe": "sem voz sintética (áudio original do Alan, sem ElevenLabs); aviso de conteúdo alterado/sintético do YouTube marcado no envio por decisão do usuário (18/11). Texto público não afirma narração de IA"},
+    {"item": "sem monetização/afiliado/patrocínio/venda", "estado": "ok", "detalhe": "nada em descrição, título, gancho ou capa. Uso não comercial (Take-Two)"},
+    {"item": "música e logos", "estado": "ok", "detalhe": "sem música adicionada, só 11 SFX curtos; vídeo de 60 s, logo nenhuma música pode passar de 1 min. Sem logo de plataforma em folha_geral.png e capa.png (só HUD do jogo: 'ABRIR', 'USAR SLIM JIM/QUEBRAR JANELA', 'DRAPER ISLAND'; chat e widgets fora do recorte)"},
+    {"item": "conteúdo sensível", "estado": "atencao", "detalhe": "violência de jogo: briga com grupo de trabalhadores, NPCs caídos no chão, sangue leve no rosto do personagem (~36 s) e no chão (~32 s), polícia 'Mãos pra cima' e perseguição. Palavrões: 'foda-se' do Alan audível sem censura (45,4 s; legenda F*DA-SE); falas do jogo 'pau no c*' (32 s), 'F*deu pro seu lado' (39 s), 'F*da-se essa m*rda' (56 s), 'babaca' (2,5 s), abrandadas na legenda e audíveis no áudio. Sem discriminação, menores ou política ('revolta dos trabalhadores' é piada da cena, não tema político). Mesmo nível do molde de 20/11, que teve OK humano. Risco: restrição de idade/alcance, não remoção. Exige aprovação humana (regra 6; não há decisão permanente no HANDOFF)"},
+    {"item": "duração", "estado": "ok", "detalhe": "60,0 s (só registro; sem monetização)"},
+    {"item": "diversidade", "estado": "ok", "detalhe": "título ('vira alvo da revolta dos trabalhadores'), gancho ('Revolta dos trabalhadores! O Alan escapa?') e capa diferentes de 18/11, 20/11 e 21/11. Layout stack e faixa amarela iguais ao molde de 20/11 (3º Alanzoka da série): variar layout/gancho se a série crescer"}
+  ]
+}

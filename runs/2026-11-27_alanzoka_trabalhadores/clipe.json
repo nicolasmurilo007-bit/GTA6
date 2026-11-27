@@ -1,0 +1,232 @@
+{
+  "mode": "corte",
+  "language": "pt",
+  "background": "black",
+  "hook": "Revolta dos trabalhadores! O Alan escapa?",
+  "hook_seconds": 3.5,
+  "hook_y": 700,
+  "caption_y": 1000,
+  "subs_y": 1180,
+  "emphasis": [
+    "trabalhadores",
+    "polícia",
+    "revolta",
+    "socorro",
+    "portão",
+    "psicopata"
+  ],
+  "sources": {
+    "live": "clip.mp4"
+  },
+  "stack": [
+    {
+      "crop": [
+        1984,
+        652,
+        556,
+        340
+      ],
+      "h": 668,
+      "zoom": true
+    },
+    {
+      "crop": [
+        741,
+        0,
+        1078,
+        1250
+      ],
+      "h": 1252,
+      "zoom": true
+    }
+  ],
+  "segments": [
+    {
+      "src": "live",
+      "start": 0.0,
+      "end": 60.0
+    }
+  ],
+  "words_from": "../contexto.json",
+  "sfx": [
+    {
+      "name": "swish",
+      "t": 0.0
+    },
+    {
+      "name": "alert",
+      "t": 7.88
+    },
+    {
+      "name": "thud",
+      "t": 13.68
+    },
+    {
+      "name": "shimmer",
+      "t": 15.7
+    },
+    {
+      "name": "pop",
+      "t": 19.26
+    },
+    {
+      "name": "subdrop",
+      "t": 22.98
+    },
+    {
+      "name": "buzzer",
+      "t": 36.3
+    },
+    {
+      "name": "thock",
+      "t": 45.24
+    },
+    {
+      "name": "swoop_up",
+      "t": 53.36
+    },
+    {
+      "name": "success",
+      "t": 55.18
+    },
+    {
+      "name": "rise",
+      "t": 56.46
+    }
+  ],
+  "zooms": [
+    {
+      "t": 13.68,
+      "dur": 0.4,
+      "factor": 1.1
+    },
+    {
+      "t": 22.98,
+      "dur": 0.4,
+      "factor": 1.09
+    },
+    {
+      "t": 45.24,
+      "dur": 0.4,
+      "factor": 1.08
+    },
+    {
+      "t": 57.86,
+      "dur": 0.4,
+      "factor": 1.1
+    }
+  ],
+  "freezes": [
+    {
+      "t": 15.7,
+      "dur": 1.0
+    }
+  ],
+  "annotations": [
+    {
+      "type": "circle",
+      "t": 15.7,
+      "dur": 1.2,
+      "x": 870,
+      "y": 1370,
+      "rx": 190,
+      "ry": 210,
+      "path": [
+        [
+          15.7,
+          870,
+          1370
+        ],
+        [
+          16.7,
+          860,
+          1420
+        ],
+        [
+          16.9,
+          720,
+          1470
+        ]
+      ]
+    },
+    {
+      "type": "arrow",
+      "t": 19.26,
+      "dur": 2.0,
+      "x": 600,
+      "y": 340,
+      "angle": 180,
+      "scale": 1.0,
+      "path": [
+        [
+          19.26,
+          600,
+          340
+        ],
+        [
+          19.9,
+          590,
+          355
+        ],
+        [
+          20.6,
+          540,
+          370
+        ],
+        [
+          21.26,
+          600,
+          345
+        ]
+      ]
+    }
+  ],
+  "text": "Gente, daquele jeito! Uma defesa... Cadê o carro? Me ajuda, polícia! Meu Deus! Polícia! Meu Deus, os trabalhadores se juntaram contra mim! Socorro! Socorro! Socorro! Polícia, a revolta dos trabalhadores! Pelo amor de Deus! Me tira daqui! Alguém me tira daqui! Abre o portão! Abre o portão! Socorro! Os trabalhadores... Quebra a janela, f*da-se! Sai da frente, gente! Meu Deus, mano! Que loucura esse lugar! Um lugar de psicopata!",
+  "subs": [
+    {
+      "text": "Vamos nessa, babaca!",
+      "start": 2.5,
+      "end": 4.1
+    },
+    {
+      "text": "Mano!",
+      "start": 20.0,
+      "end": 20.6
+    },
+    {
+      "text": "299 no local.",
+      "start": 24.5,
+      "end": 27.1
+    },
+    {
+      "text": "Ah, qual é!",
+      "start": 28.5,
+      "end": 29.6
+    },
+    {
+      "text": "Beleza, pau no c*!",
+      "start": 32.0,
+      "end": 32.7
+    },
+    {
+      "text": "F*deu pro seu lado!",
+      "start": 39.0,
+      "end": 40.1
+    },
+    {
+      "text": "Mãos pra cima! Mãos pra cima!",
+      "start": 50.0,
+      "end": 51.6
+    },
+    {
+      "text": "Quê? F*da-se essa m*rda! Você não vale a dor!",
+      "start": 56.2,
+      "end": 57.6
+    },
+    {
+      "text": "Última chance, para o veículo!",
+      "start": 57.6,
+      "end": 59.8
+    }
+  ]
+}
