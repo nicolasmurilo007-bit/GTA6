@@ -1,0 +1,503 @@
+{
+  "id": "2026-11-27_alanzoka_trabalhadores",
+  "streamer": "alanzoka",
+  "fonte": "https://www.twitch.tv/alanzoka/clip/BusyTolerantPanAsianGlow-ug2V5rGAUQf6xYV2",
+  "duracao_s": 60.0,
+  "recorte": [
+    80,
+    240,
+    1668,
+    944
+  ],
+  "volume": {
+    "lufs": -13.6,
+    "true_peak_db": -0.3
+  },
+  "texto": "Gente, daquele edite, uma defesa, come o carro! Me ajuda, polícia! Meu Deus! Polícia! Meu Deus, os trabalhadores se juntaram contra mim! Socorro! Socorro! Socorro! Polícia, a revolta dos trabalhadores! Pelo amor de Deus! Me tira daqui! Alguém me tira daqui! Abre o portão! Abre o portão! Socorro! Os trabalhadores... Quebra a janela, foda -se! Sai da frente, gente! Meu Deus, mano! Que loucura esse lugar! Um lugar de psicopata!",
+  "palavras": [
+    {
+      "text": "Gente,",
+      "start": 0.0,
+      "end": 0.64
+    },
+    {
+      "text": "daquele",
+      "start": 0.64,
+      "end": 0.9
+    },
+    {
+      "text": "edite,",
+      "start": 0.9,
+      "end": 1.18
+    },
+    {
+      "text": "uma",
+      "start": 1.2,
+      "end": 1.3
+    },
+    {
+      "text": "defesa,",
+      "start": 1.3,
+      "end": 1.8
+    },
+    {
+      "text": "come",
+      "start": 1.88,
+      "end": 2.02
+    },
+    {
+      "text": "o",
+      "start": 2.02,
+      "end": 2.24
+    },
+    {
+      "text": "carro!",
+      "start": 2.24,
+      "end": 2.46
+    },
+    {
+      "text": "Me",
+      "start": 7.16,
+      "end": 7.28
+    },
+    {
+      "text": "ajuda,",
+      "start": 7.28,
+      "end": 7.64
+    },
+    {
+      "text": "polícia!",
+      "start": 7.88,
+      "end": 8.34
+    },
+    {
+      "text": "Meu",
+      "start": 9.6,
+      "end": 9.82
+    },
+    {
+      "text": "Deus!",
+      "start": 9.82,
+      "end": 10.42
+    },
+    {
+      "text": "Polícia!",
+      "start": 11.02,
+      "end": 11.54
+    },
+    {
+      "text": "Meu",
+      "start": 12.92,
+      "end": 13.18
+    },
+    {
+      "text": "Deus,",
+      "start": 13.18,
+      "end": 13.4
+    },
+    {
+      "text": "os",
+      "start": 13.48,
+      "end": 13.68
+    },
+    {
+      "text": "trabalhadores",
+      "start": 13.68,
+      "end": 14.26
+    },
+    {
+      "text": "se",
+      "start": 14.26,
+      "end": 14.48
+    },
+    {
+      "text": "juntaram",
+      "start": 14.48,
+      "end": 14.76
+    },
+    {
+      "text": "contra",
+      "start": 14.76,
+      "end": 15.08
+    },
+    {
+      "text": "mim!",
+      "start": 15.08,
+      "end": 15.7
+    },
+    {
+      "text": "Socorro!",
+      "start": 19.26,
+      "end": 19.78
+    },
+    {
+      "text": "Socorro!",
+      "start": 20.72,
+      "end": 21.24
+    },
+    {
+      "text": "Socorro!",
+      "start": 21.66,
+      "end": 22.18
+    },
+    {
+      "text": "Polícia,",
+      "start": 22.28,
+      "end": 22.74
+    },
+    {
+      "text": "a",
+      "start": 22.92,
+      "end": 22.98
+    },
+    {
+      "text": "revolta",
+      "start": 22.98,
+      "end": 23.18
+    },
+    {
+      "text": "dos",
+      "start": 23.18,
+      "end": 23.36
+    },
+    {
+      "text": "trabalhadores!",
+      "start": 23.36,
+      "end": 24.06
+    },
+    {
+      "text": "Pelo",
+      "start": 30.14,
+      "end": 30.54
+    },
+    {
+      "text": "amor",
+      "start": 30.54,
+      "end": 30.74
+    },
+    {
+      "text": "de",
+      "start": 30.74,
+      "end": 30.92
+    },
+    {
+      "text": "Deus!",
+      "start": 30.92,
+      "end": 31.02
+    },
+    {
+      "text": "Me",
+      "start": 31.04,
+      "end": 31.2
+    },
+    {
+      "text": "tira",
+      "start": 31.2,
+      "end": 31.32
+    },
+    {
+      "text": "daqui!",
+      "start": 31.32,
+      "end": 31.74
+    },
+    {
+      "text": "Alguém",
+      "start": 32.38,
+      "end": 32.52
+    },
+    {
+      "text": "me",
+      "start": 32.52,
+      "end": 32.66
+    },
+    {
+      "text": "tira",
+      "start": 32.66,
+      "end": 32.72
+    },
+    {
+      "text": "daqui!",
+      "start": 32.72,
+      "end": 33.3
+    },
+    {
+      "text": "Abre",
+      "start": 35.46,
+      "end": 35.64
+    },
+    {
+      "text": "o",
+      "start": 35.64,
+      "end": 35.82
+    },
+    {
+      "text": "portão!",
+      "start": 35.82,
+      "end": 36.12
+    },
+    {
+      "text": "Abre",
+      "start": 36.3,
+      "end": 36.36
+    },
+    {
+      "text": "o",
+      "start": 36.36,
+      "end": 36.56
+    },
+    {
+      "text": "portão!",
+      "start": 36.56,
+      "end": 37.0
+    },
+    {
+      "text": "Socorro!",
+      "start": 42.56,
+      "end": 42.96
+    },
+    {
+      "text": "Os",
+      "start": 42.98,
+      "end": 43.22
+    },
+    {
+      "text": "trabalhadores...",
+      "start": 43.22,
+      "end": 44.0
+    },
+    {
+      "text": "Quebra",
+      "start": 44.98,
+      "end": 45.18
+    },
+    {
+      "text": "a",
+      "start": 45.18,
+      "end": 45.24
+    },
+    {
+      "text": "janela,",
+      "start": 45.24,
+      "end": 45.38
+    },
+    {
+      "text": "foda",
+      "start": 45.42,
+      "end": 45.62
+    },
+    {
+      "text": "-se!",
+      "start": 45.62,
+      "end": 46.0
+    },
+    {
+      "text": "Sai",
+      "start": 53.36,
+      "end": 53.48
+    },
+    {
+      "text": "da",
+      "start": 53.48,
+      "end": 53.68
+    },
+    {
+      "text": "frente,",
+      "start": 53.68,
+      "end": 53.88
+    },
+    {
+      "text": "gente!",
+      "start": 53.88,
+      "end": 54.36
+    },
+    {
+      "text": "Meu",
+      "start": 55.18,
+      "end": 55.42
+    },
+    {
+      "text": "Deus,",
+      "start": 55.42,
+      "end": 55.78
+    },
+    {
+      "text": "mano!",
+      "start": 55.9,
+      "end": 56.02
+    },
+    {
+      "text": "Que",
+      "start": 56.04,
+      "end": 56.2
+    },
+    {
+      "text": "loucura",
+      "start": 56.2,
+      "end": 56.6
+    },
+    {
+      "text": "esse",
+      "start": 56.6,
+      "end": 56.74
+    },
+    {
+      "text": "lugar!",
+      "start": 56.74,
+      "end": 57.16
+    },
+    {
+      "text": "Um",
+      "start": 57.44,
+      "end": 57.54
+    },
+    {
+      "text": "lugar",
+      "start": 57.54,
+      "end": 57.7
+    },
+    {
+      "text": "de",
+      "start": 57.7,
+      "end": 57.86
+    },
+    {
+      "text": "psicopata!",
+      "start": 57.86,
+      "end": 58.58
+    }
+  ],
+  "rostos": [
+    {
+      "t": 0.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 4.5,
+      "score": 0.68,
+      "x": 736,
+      "y": 911,
+      "w": 49,
+      "h": 70,
+      "cx": 760,
+      "cy": 946
+    },
+    {
+      "t": 8.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 12.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 16.5,
+      "score": 0.9,
+      "x": 576,
+      "y": 842,
+      "w": 44,
+      "h": 65,
+      "cx": 598,
+      "cy": 874
+    },
+    {
+      "t": 20.5,
+      "score": 0.67,
+      "x": 691,
+      "y": 963,
+      "w": 76,
+      "h": 93,
+      "cx": 729,
+      "cy": 1010
+    },
+    {
+      "t": 24.5,
+      "score": 0.89,
+      "x": 901,
+      "y": 918,
+      "w": 76,
+      "h": 94,
+      "cx": 939,
+      "cy": 965
+    },
+    {
+      "t": 28.5,
+      "score": 0.8,
+      "x": 848,
+      "y": 848,
+      "w": 90,
+      "h": 105,
+      "cx": 893,
+      "cy": 900
+    },
+    {
+      "t": 32.5,
+      "score": 0.63,
+      "x": 561,
+      "y": 781,
+      "w": 61,
+      "h": 58,
+      "cx": 592,
+      "cy": 810
+    },
+    {
+      "t": 36.5,
+      "score": 0.85,
+      "x": 786,
+      "y": 793,
+      "w": 68,
+      "h": 96,
+      "cx": 820,
+      "cy": 840
+    },
+    {
+      "t": 40.5,
+      "score": 0.89,
+      "x": 409,
+      "y": 789,
+      "w": 54,
+      "h": 58,
+      "cx": 437,
+      "cy": 817
+    },
+    {
+      "t": 44.5,
+      "score": 0.86,
+      "x": 243,
+      "y": 759,
+      "w": 37,
+      "h": 46,
+      "cx": 262,
+      "cy": 782
+    },
+    {
+      "t": 48.5,
+      "score": 0.83,
+      "x": 45,
+      "y": 783,
+      "w": 47,
+      "h": 55,
+      "cx": 69,
+      "cy": 811
+    },
+    {
+      "t": 52.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 56.5,
+      "score": 0.65,
+      "x": 812,
+      "y": 1001,
+      "w": 22,
+      "h": 30,
+      "cx": 823,
+      "cy": 1016
+    }
+  ],
+  "bloco_de_creditos": "Créditos: @alanzoka (twitch.tv/alanzoka)",
+  "arquivos": {
+    "video": "source/clip.mp4",
+    "config_render": "clipe.json",
+    "quadros": "frames/"
+  }
+}

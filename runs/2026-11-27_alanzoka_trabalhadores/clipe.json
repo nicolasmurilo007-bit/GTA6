@@ -1,0 +1,50 @@
+{
+  "mode": "corte",
+  "language": "pt",
+  "background": "black",
+  "hook": "",
+  "hook_seconds": 3.5,
+  "hook_y": 700,
+  "caption_y": 1000,
+  "subs_y": 1180,
+  "emphasis": [],
+  "sources": {
+    "live": "clip.mp4"
+  },
+  "stack": [
+    {
+      "crop": [
+        1984,
+        652,
+        556,
+        340
+      ],
+      "h": 668,
+      "zoom": true
+    },
+    {
+      "crop": [
+        741,
+        0,
+        1078,
+        1250
+      ],
+      "h": 1252,
+      "zoom": true
+    }
+  ],
+  "segments": [
+    {
+      "src": "live",
+      "start": 0.0,
+      "end": 60.0
+    }
+  ],
+  "words_from": "../contexto.json",
+  "sfx": [],
+  "zooms": [],
+  "freezes": [],
+  "annotations": [],
+  "text": "",
+  "subs": []
+}
