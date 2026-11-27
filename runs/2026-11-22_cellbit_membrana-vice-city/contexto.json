@@ -1,0 +1,527 @@
+{
+  "id": "2026-11-22_cellbit_membrana-vice-city",
+  "streamer": "cellbit",
+  "fonte": "https://www.twitch.tv/cellbit/clip/DeafThoughtfulSardineDansGame-kjWAPtDuyzDQ5YHi",
+  "duracao_s": 60.02,
+  "recorte": null,
+  "volume": {
+    "lufs": -19.2,
+    "true_peak_db": -0.4
+  },
+  "texto": "Onde eu tô? Tem... Socorro! Alô! Abriu. Que porra é essa? Onde eu tô? Não é possível, cara! O que é isso? Onde eu tô? Eu tô... Eu vim parar em Silent Hill! O que é isso? Meu Deus, pega a lanterna. O que tá acontecendo? Por que tá todo mundo com fog? Eu tô fora de... Alô! Não consigo ver nada! Mano, eu transformei pra City Summit! Eu consigo descer?",
+  "palavras": [
+    {
+      "text": "Onde",
+      "start": 2.139999999999999,
+      "end": 2.58
+    },
+    {
+      "text": "eu",
+      "start": 2.58,
+      "end": 2.74
+    },
+    {
+      "text": "tô?",
+      "start": 2.74,
+      "end": 3.12
+    },
+    {
+      "text": "Tem...",
+      "start": 6.84,
+      "end": 7.28
+    },
+    {
+      "text": "Socorro!",
+      "start": 8.179999999999998,
+      "end": 8.62
+    },
+    {
+      "text": "Alô!",
+      "start": 9.44,
+      "end": 9.88
+    },
+    {
+      "text": "Abriu.",
+      "start": 11.98,
+      "end": 12.42
+    },
+    {
+      "text": "Que",
+      "start": 12.82,
+      "end": 12.94
+    },
+    {
+      "text": "porra",
+      "start": 12.94,
+      "end": 13.18
+    },
+    {
+      "text": "é",
+      "start": 13.18,
+      "end": 13.28
+    },
+    {
+      "text": "essa?",
+      "start": 13.28,
+      "end": 13.58
+    },
+    {
+      "text": "Onde",
+      "start": 13.96,
+      "end": 14.14
+    },
+    {
+      "text": "eu",
+      "start": 14.14,
+      "end": 14.28
+    },
+    {
+      "text": "tô?",
+      "start": 14.28,
+      "end": 14.52
+    },
+    {
+      "text": "Não",
+      "start": 15.84,
+      "end": 16.04
+    },
+    {
+      "text": "é",
+      "start": 16.04,
+      "end": 16.12
+    },
+    {
+      "text": "possível,",
+      "start": 16.12,
+      "end": 16.6
+    },
+    {
+      "text": "cara!",
+      "start": 16.78,
+      "end": 16.92
+    },
+    {
+      "text": "O",
+      "start": 16.94,
+      "end": 17.06
+    },
+    {
+      "text": "que",
+      "start": 17.06,
+      "end": 17.2
+    },
+    {
+      "text": "é",
+      "start": 17.2,
+      "end": 17.32
+    },
+    {
+      "text": "isso?",
+      "start": 17.32,
+      "end": 17.64
+    },
+    {
+      "text": "Onde",
+      "start": 17.88,
+      "end": 18.12
+    },
+    {
+      "text": "eu",
+      "start": 18.12,
+      "end": 18.26
+    },
+    {
+      "text": "tô?",
+      "start": 18.26,
+      "end": 18.48
+    },
+    {
+      "text": "Eu",
+      "start": 19.88,
+      "end": 20.1
+    },
+    {
+      "text": "tô...",
+      "start": 20.1,
+      "end": 20.4
+    },
+    {
+      "text": "Eu",
+      "start": 20.4,
+      "end": 20.62
+    },
+    {
+      "text": "vim",
+      "start": 20.62,
+      "end": 20.74
+    },
+    {
+      "text": "parar",
+      "start": 20.74,
+      "end": 20.94
+    },
+    {
+      "text": "em",
+      "start": 20.94,
+      "end": 21.14
+    },
+    {
+      "text": "Silent",
+      "start": 21.14,
+      "end": 21.28
+    },
+    {
+      "text": "Hill!",
+      "start": 21.28,
+      "end": 21.52
+    },
+    {
+      "text": "O",
+      "start": 21.58,
+      "end": 21.68
+    },
+    {
+      "text": "que",
+      "start": 21.68,
+      "end": 21.74
+    },
+    {
+      "text": "é",
+      "start": 21.74,
+      "end": 21.84
+    },
+    {
+      "text": "isso?",
+      "start": 21.84,
+      "end": 22.22
+    },
+    {
+      "text": "Meu",
+      "start": 22.94,
+      "end": 23.1
+    },
+    {
+      "text": "Deus,",
+      "start": 23.1,
+      "end": 23.18
+    },
+    {
+      "text": "pega",
+      "start": 23.26,
+      "end": 23.36
+    },
+    {
+      "text": "a",
+      "start": 23.36,
+      "end": 23.44
+    },
+    {
+      "text": "lanterna.",
+      "start": 23.44,
+      "end": 23.96
+    },
+    {
+      "text": "O",
+      "start": 25.94,
+      "end": 26.04
+    },
+    {
+      "text": "que",
+      "start": 26.04,
+      "end": 26.04
+    },
+    {
+      "text": "tá",
+      "start": 26.04,
+      "end": 26.14
+    },
+    {
+      "text": "acontecendo?",
+      "start": 26.14,
+      "end": 26.5
+    },
+    {
+      "text": "Por",
+      "start": 26.5,
+      "end": 26.66
+    },
+    {
+      "text": "que",
+      "start": 26.66,
+      "end": 26.72
+    },
+    {
+      "text": "tá",
+      "start": 26.72,
+      "end": 26.84
+    },
+    {
+      "text": "todo",
+      "start": 26.84,
+      "end": 26.96
+    },
+    {
+      "text": "mundo",
+      "start": 26.96,
+      "end": 27.1
+    },
+    {
+      "text": "com",
+      "start": 27.1,
+      "end": 27.34
+    },
+    {
+      "text": "fog?",
+      "start": 27.34,
+      "end": 27.62
+    },
+    {
+      "text": "Eu",
+      "start": 29.0,
+      "end": 29.14
+    },
+    {
+      "text": "tô",
+      "start": 29.14,
+      "end": 29.28
+    },
+    {
+      "text": "fora",
+      "start": 29.28,
+      "end": 29.44
+    },
+    {
+      "text": "de...",
+      "start": 29.44,
+      "end": 30.5
+    },
+    {
+      "text": "Alô!",
+      "start": 36.64,
+      "end": 37.0
+    },
+    {
+      "text": "Não",
+      "start": 40.18,
+      "end": 40.22
+    },
+    {
+      "text": "consigo",
+      "start": 40.22,
+      "end": 40.3
+    },
+    {
+      "text": "ver",
+      "start": 40.3,
+      "end": 40.4
+    },
+    {
+      "text": "nada!",
+      "start": 40.4,
+      "end": 40.58
+    },
+    {
+      "text": "Mano,",
+      "start": 46.68,
+      "end": 46.88
+    },
+    {
+      "text": "eu",
+      "start": 46.94,
+      "end": 47.12
+    },
+    {
+      "text": "transformei",
+      "start": 47.12,
+      "end": 47.54
+    },
+    {
+      "text": "pra",
+      "start": 47.54,
+      "end": 47.78
+    },
+    {
+      "text": "City",
+      "start": 47.78,
+      "end": 48.18
+    },
+    {
+      "text": "Summit!",
+      "start": 48.18,
+      "end": 48.44
+    },
+    {
+      "text": "Eu",
+      "start": 48.58,
+      "end": 48.74
+    },
+    {
+      "text": "consigo",
+      "start": 48.74,
+      "end": 48.86
+    },
+    {
+      "text": "descer?",
+      "start": 48.86,
+      "end": 49.34
+    }
+  ],
+  "rostos": [
+    {
+      "t": 0.5,
+      "score": 0.9,
+      "x": 80,
+      "y": 756,
+      "w": 47,
+      "h": 69,
+      "cx": 103,
+      "cy": 791
+    },
+    {
+      "t": 4.5,
+      "score": 0.91,
+      "x": 72,
+      "y": 760,
+      "w": 48,
+      "h": 64,
+      "cx": 96,
+      "cy": 792
+    },
+    {
+      "t": 8.5,
+      "score": 0.9,
+      "x": 82,
+      "y": 760,
+      "w": 48,
+      "h": 71,
+      "cx": 106,
+      "cy": 796
+    },
+    {
+      "t": 12.5,
+      "score": 0.92,
+      "x": 77,
+      "y": 760,
+      "w": 52,
+      "h": 72,
+      "cx": 102,
+      "cy": 796
+    },
+    {
+      "t": 16.5,
+      "score": 0.9,
+      "x": 74,
+      "y": 761,
+      "w": 51,
+      "h": 66,
+      "cx": 100,
+      "cy": 795
+    },
+    {
+      "t": 20.5,
+      "score": 0.9,
+      "x": 77,
+      "y": 755,
+      "w": 47,
+      "h": 69,
+      "cx": 100,
+      "cy": 790
+    },
+    {
+      "t": 24.5,
+      "score": 0.92,
+      "x": 79,
+      "y": 767,
+      "w": 49,
+      "h": 67,
+      "cx": 104,
+      "cy": 800
+    },
+    {
+      "t": 28.5,
+      "score": 0.92,
+      "x": 78,
+      "y": 762,
+      "w": 49,
+      "h": 67,
+      "cx": 103,
+      "cy": 796
+    },
+    {
+      "t": 32.5,
+      "score": 0.91,
+      "x": 71,
+      "y": 762,
+      "w": 48,
+      "h": 66,
+      "cx": 95,
+      "cy": 795
+    },
+    {
+      "t": 36.5,
+      "score": 0.92,
+      "x": 73,
+      "y": 756,
+      "w": 47,
+      "h": 67,
+      "cx": 97,
+      "cy": 790
+    },
+    {
+      "t": 40.5,
+      "score": 0.89,
+      "x": 84,
+      "y": 774,
+      "w": 51,
+      "h": 69,
+      "cx": 109,
+      "cy": 809
+    },
+    {
+      "t": 44.5,
+      "score": 0.91,
+      "x": 79,
+      "y": 780,
+      "w": 52,
+      "h": 70,
+      "cx": 105,
+      "cy": 815
+    },
+    {
+      "t": 48.5,
+      "score": 0.91,
+      "x": 82,
+      "y": 769,
+      "w": 49,
+      "h": 66,
+      "cx": 106,
+      "cy": 802
+    },
+    {
+      "t": 52.5,
+      "score": 0.91,
+      "x": 78,
+      "y": 755,
+      "w": 47,
+      "h": 65,
+      "cx": 101,
+      "cy": 788
+    },
+    {
+      "t": 56.5,
+      "score": 0.9,
+      "x": 84,
+      "y": 762,
+      "w": 42,
+      "h": 56,
+      "cx": 105,
+      "cy": 790
+    }
+  ],
+  "bloco_de_creditos": "Créditos: @cellbit (twitch.tv/cellbit)",
+  "arquivos": {
+    "video": "source/clip.mp4",
+    "config_render": "clipe.json",
+    "quadros": "frames/"
+  }
+}

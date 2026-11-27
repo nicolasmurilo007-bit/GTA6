@@ -54,5 +54,28 @@
       1252
     ],
     "nota": "Cena de JOGO do Alanzoka (25/11/2026, clipe 2560x1440): câmera no lado DIREITO mais baixa (x 1980-2540, y 650-1000), widget 'Último sub/Combo' logo abaixo (y>1000, cortado). Legenda do jogo em y~1290 e legenda automática da Twitch em y~1335: gameplay recortada até y 1250. A câmera muda de lugar entre lives (em 20/11 estava em y 22-366): sempre medir."
+  },
+  "cellbit_jogo_2211": {
+    "stack": [
+      {
+        "crop": [
+          6,
+          120,
+          448,
+          250
+        ],
+        "h": 604
+      },
+      {
+        "crop": [
+          572,
+          0,
+          780,
+          950
+        ],
+        "h": 1316
+      }
+    ],
+    "nota": "Cena de JOGO, clipe 1920x1080: câmera no canto superior esquerdo (x~4-456, y~118-372); chat logo abaixo (y>=375) fica de fora. Gameplay recortada no centro (personagem em x~960) e acima da legenda queimada da Twitch (começa em y~975); evita câmera e minimapa. Medido em 22/11/2026."
   }
 }
