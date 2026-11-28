@@ -1,0 +1,256 @@
+{
+  "id": "2026-11-28_alanzoka_se-fica-esperto",
+  "streamer": "alanzoka",
+  "fonte": "https://www.twitch.tv/alanzoka/clip/SneakySpicyFriseeMrDestructoid-NMhdykqeGjb7U-w0",
+  "duracao_s": 30.0,
+  "recorte": [
+    80,
+    240,
+    1668,
+    944
+  ],
+  "volume": {
+    "lufs": -17.2,
+    "true_peak_db": -0.6
+  },
+  "texto": "Não faça nada! Você vai fazer isso? Faça isso! Fique aí! Ela nunca vai deixar ele ficar vegana Você fica esperto! Você fica esperto! Beleza! Você fica espert... Toma então, mano",
+  "palavras": [
+    {
+      "text": "Não",
+      "start": 0.0,
+      "end": 0.0
+    },
+    {
+      "text": "faça",
+      "start": 0.0,
+      "end": 2.32
+    },
+    {
+      "text": "nada!",
+      "start": 2.32,
+      "end": 2.32
+    },
+    {
+      "text": "Você",
+      "start": 2.9,
+      "end": 3.08
+    },
+    {
+      "text": "vai",
+      "start": 3.08,
+      "end": 3.3
+    },
+    {
+      "text": "fazer",
+      "start": 3.3,
+      "end": 3.44
+    },
+    {
+      "text": "isso?",
+      "start": 3.44,
+      "end": 3.72
+    },
+    {
+      "text": "Faça",
+      "start": 4.6,
+      "end": 4.92
+    },
+    {
+      "text": "isso!",
+      "start": 4.92,
+      "end": 5.54
+    },
+    {
+      "text": "Fique",
+      "start": 6.92,
+      "end": 7.14
+    },
+    {
+      "text": "aí!",
+      "start": 7.14,
+      "end": 8.0
+    },
+    {
+      "text": "Ela",
+      "start": 17.560000000000002,
+      "end": 18.14
+    },
+    {
+      "text": "nunca",
+      "start": 18.14,
+      "end": 18.44
+    },
+    {
+      "text": "vai",
+      "start": 18.44,
+      "end": 18.54
+    },
+    {
+      "text": "deixar",
+      "start": 18.54,
+      "end": 18.54
+    },
+    {
+      "text": "ele",
+      "start": 18.54,
+      "end": 18.72
+    },
+    {
+      "text": "ficar",
+      "start": 18.72,
+      "end": 18.72
+    },
+    {
+      "text": "vegana",
+      "start": 18.72,
+      "end": 19.0
+    },
+    {
+      "text": "Você",
+      "start": 19.0,
+      "end": 19.0
+    },
+    {
+      "text": "fica",
+      "start": 19.0,
+      "end": 19.0
+    },
+    {
+      "text": "esperto!",
+      "start": 19.0,
+      "end": 20.38
+    },
+    {
+      "text": "Você",
+      "start": 20.48,
+      "end": 20.64
+    },
+    {
+      "text": "fica",
+      "start": 20.64,
+      "end": 20.86
+    },
+    {
+      "text": "esperto!",
+      "start": 20.86,
+      "end": 22.68
+    },
+    {
+      "text": "Beleza!",
+      "start": 23.16,
+      "end": 23.72
+    },
+    {
+      "text": "Você",
+      "start": 24.26,
+      "end": 24.32
+    },
+    {
+      "text": "fica",
+      "start": 24.32,
+      "end": 24.56
+    },
+    {
+      "text": "espert...",
+      "start": 24.56,
+      "end": 25.96
+    },
+    {
+      "text": "Toma",
+      "start": 25.96,
+      "end": 26.36
+    },
+    {
+      "text": "então,",
+      "start": 26.36,
+      "end": 26.6
+    },
+    {
+      "text": "mano",
+      "start": 27.4,
+      "end": 27.42
+    }
+  ],
+  "rostos": [
+    {
+      "t": 0.5,
+      "score": 0.74,
+      "x": 315,
+      "y": 737,
+      "w": 88,
+      "h": 135,
+      "cx": 359,
+      "cy": 804
+    },
+    {
+      "t": 4.5,
+      "score": 0.75,
+      "x": 299,
+      "y": 726,
+      "w": 106,
+      "h": 178,
+      "cx": 352,
+      "cy": 815
+    },
+    {
+      "t": 8.5,
+      "score": 0.8,
+      "x": 315,
+      "y": 732,
+      "w": 95,
+      "h": 159,
+      "cx": 363,
+      "cy": 812
+    },
+    {
+      "t": 12.5,
+      "sem_rosto": true
+    },
+    {
+      "t": 16.5,
+      "score": 0.93,
+      "x": 783,
+      "y": 929,
+      "w": 71,
+      "h": 101,
+      "cx": 818,
+      "cy": 979
+    },
+    {
+      "t": 20.5,
+      "score": 0.92,
+      "x": 730,
+      "y": 911,
+      "w": 66,
+      "h": 92,
+      "cx": 763,
+      "cy": 957
+    },
+    {
+      "t": 24.5,
+      "score": 0.93,
+      "x": 730,
+      "y": 913,
+      "w": 66,
+      "h": 97,
+      "cx": 763,
+      "cy": 962
+    },
+    {
+      "t": 28.5,
+      "score": 0.94,
+      "x": 879,
+      "y": 702,
+      "w": 141,
+      "h": 196,
+      "cx": 949,
+      "cy": 800
+    }
+  ],
+  "bloco_de_creditos": "Créditos: @alanzoka (twitch.tv/alanzoka)",
+  "arquivos": {
+    "video": "source/clip.mp4",
+    "config_render": "clipe.json",
+    "quadros": "frames/"
+  }
+}

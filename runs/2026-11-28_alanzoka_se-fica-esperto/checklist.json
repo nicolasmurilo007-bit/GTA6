@@ -1,0 +1,19 @@
+{
+  "id": "2026-11-28_alanzoka_se-fica-esperto",
+  "veredito": "APROVADO",
+  "condicao": "item 6 (conteúdo sensível) em atencao: exige OK humano antes de publicar. Pela regra da rotina, NÃO postar automaticamente.",
+  "autorizacao": "desconhecida",
+  "aviso": "Crédito na legenda NÃO é autorização do streamer. Risco da série Alanzoka já assumido pelo usuário (18/11/2026); não bloqueia a produção, mas bloqueia a postagem automática.",
+  "duracao_s": 30.0,
+  "itens": [
+    {"item": "bloco de créditos", "estado": "ok", "detalhe": "'Créditos: @alanzoka (twitch.tv/alanzoka)' no bloco 'Texto para publicar' de descricao.md"},
+    {"item": "origem registrada", "estado": "ok", "detalhe": "link do clipe presente; clipe usado inteiro (0-30 s)"},
+    {"item": "rótulo de IA", "estado": "ok", "detalhe": "sem voz sintética nem narração gerada; áudio original do Alan e do jogo"},
+    {"item": "sem monetização/afiliado/patrocínio/venda", "estado": "ok", "detalhe": "nada em descrição, título, gancho ou capa"},
+    {"item": "música e logos", "estado": "ok", "detalhe": "sem música; só SFX curtos; capa sem logo de plataforma (só o contador de sub do Twitch da câmera, que já está no clipe original)"},
+    {"item": "conteúdo sensível", "estado": "atencao", "detalhe": "violência de jogo (NPC ameaçado com arma, ordens 'Não se mexe!', 'No chão!'); palavrões abrandados na legenda (Don't ******* move -> 'Não se mexe!'; 'cuzões do caralho' -> 'C*zões do c*ralho'); áudio original do Alan pode ter palavrão não censurado. Exige aprovação humana"},
+    {"item": "duração", "estado": "ok", "detalhe": "30,0 s"},
+    {"item": "diversidade", "estado": "ok", "detalhe": "título, gancho e capa diferentes dos clipes anteriores; layout 'stack' com câmera no meio/direita reposicionado (câmera em y 644-1064)"},
+    {"item": "identificação do jogo", "estado": "atencao", "detalhe": "o jogo foi identificado pelo cenário (pôr do sol, estradas com palmeiras) e pela fonte de legenda; não há marca explícita de 'GTA 6' no quadro. Confirmar com o streamer/usuário antes de publicar com o rótulo GTA 6 no título"}
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "video": "/home/user/GTA6/runs/2026-11-28_alanzoka_se-fica-esperto/final.mp4",
+  "duracao": 30.0,
+  "palavras_legenda": 12,
+  "palavras_ouvidas": 30,
+  "problemas": [],
+  "sfx": [
+    {
+      "tipo": "sfx_info",
+      "t": 0.05,
+      "detalhe": "swish | -6.6 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 1.0,
+      "detalhe": "alert | -6.6 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 7.0,
+      "detalhe": "thud | -6.5 dB em relação à fala (média da fala; sem fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 19.2,
+      "detalhe": "pop | -10.8 dB em relação à fala (fala ali)"
+    },
+    {
+      "tipo": "sfx_info",
+      "t": 27.4,
+      "detalhe": "ding | -9.7 dB em relação à fala (fala ali)"
+    }
+  ],
+  "folhas": {
+    "efeitos": "/home/user/GTA6/runs/2026-11-28_alanzoka_se-fica-esperto/auditoria/folha_efeitos.png",
+    "geral": "/home/user/GTA6/runs/2026-11-28_alanzoka_se-fica-esperto/auditoria/folha_geral.png"
+  }
+}

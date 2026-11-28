@@ -501,7 +501,7 @@ def render(cfg: dict, workdir: Path, out: Path, whisper_model: str) -> None:
         # voz original do streamer: volume cheio, só normaliza
         base = "".join(f"[a{i}]" for i in range(n)) + f"concat=n={n}:v=0:a=1"
         if sfx_track:
-            amix = base + f"[orig];[orig][{len(src_names)}:a]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-12.8:TP=-1.5:LRA=11,aresample=48000,alimiter=limit=0.8:level=disabled:attack=2:release=40[a]"
+            amix = base + f"[orig];[orig][{len(src_names)}:a]amix=inputs=2:normalize=0:duration=first,loudnorm=I=-12.8:TP=-1.5:LRA=11,aresample=48000,alimiter=limit=0.6:level=disabled:attack=2:release=40[a]"
             extra_inputs = ["-i", str(sfx_track)]
         else:
             amix = base + ",loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,alimiter=limit=0.8:level=disabled:attack=2:release=40[a]"
